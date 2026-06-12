@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+
+# Temp
+*.tmp
+*.bak
+
+# Large research materials (stored in Obsidian iCloud, not in git)
+references/sources/
