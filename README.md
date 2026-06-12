@@ -25,10 +25,13 @@ Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-
 Installs to all supported agents automatically (Claude Code, Codex, Cursor, Hermes Agent, 50+ runtimes).
 
 ```bash
-npx skills add xiebaiyuan/xiebaiyuan-skills/qian-xuesen-cybernetics-thinking -y -g
-npx skills add xiebaiyuan/xiebaiyuan-skills/engineering-cybernetics-for-work -y -g
-npx skills add xiebaiyuan/xiebaiyuan-skills/performance-optimization-carmack-acton -y -g
+npx skills add xiebaiyuan/xiebaiyuan-skills/qian-xuesen-cybernetics-thinking
+npx skills add xiebaiyuan/xiebaiyuan-skills/engineering-cybernetics-for-work
+npx skills add xiebaiyuan/xiebaiyuan-skills/performance-optimization-carmack-acton
 ```
+
+运行后会弹出交互式界面，用空格选择要安装到的 agent，回车确认。
+默认已选中 Claude Code、Codex、Cursor、Hermes Agent 等主流 agent。
 
 ### 方式 2：手动安装 / Manual Installation
 
