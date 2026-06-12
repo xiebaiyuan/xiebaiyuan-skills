@@ -30,6 +30,14 @@ npx skills add xiebaiyuan/xiebaiyuan-skills/engineering-cybernetics-for-work
 npx skills add xiebaiyuan/xiebaiyuan-skills/performance-optimization-carmack-acton
 ```
 
+或者用 bunx（更快）/ Or use bunx (faster):
+
+```bash
+bunx skills add xiebaiyuan/xiebaiyuan-skills/qian-xuesen-cybernetics-thinking
+bunx skills add xiebaiyuan/xiebaiyuan-skills/engineering-cybernetics-for-work
+bunx skills add xiebaiyuan/xiebaiyuan-skills/performance-optimization-carmack-acton
+```
+
 运行后会弹出交互式界面，用空格选择要安装到的 agent，回车确认。
 默认已选中 Claude Code、Codex、Cursor、Hermes Agent 等主流 agent。
 
