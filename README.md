@@ -13,6 +13,7 @@ Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-
 | [qian-xuesen-cybernetics-thinking](./qian-xuesen-cybernetics-thinking/) | 女娲蒸馏 / nuwa | 钱学森系统控制论思维框架，5 心智模型 + 8 决策启发式 / Qian Xuesen's systems cybernetics thinking framework |
 | [engineering-cybernetics-for-work](./engineering-cybernetics-for-work/) | 女娲蒸馏 / nuwa | 工程控制论工作法，反馈闭环+综合集成+层次分解 / Engineering cybernetics methodology for work & learning |
 | [performance-optimization-carmack-acton](./performance-optimization-carmack-acton/) | 女娲蒸馏+达尔文优化 / nuwa+darwin | Carmack+Acton 性能优化思维，DOD+SIMD+缓存优化 / Performance optimization mindset from Carmack & Acton |
+| [obsidian-docs-link](./obsidian-docs-link/) | Claude Code 手写 / hand-written | 创建软链接关联项目文档到 Obsidian Vault / Symlink project docs into Obsidian Vault |
 
 ---
 
@@ -28,6 +29,7 @@ Installs to all supported agents automatically (Claude Code, Codex, Cursor, Herm
 npx skills add xiebaiyuan/xiebaiyuan-skills/qian-xuesen-cybernetics-thinking
 npx skills add xiebaiyuan/xiebaiyuan-skills/engineering-cybernetics-for-work
 npx skills add xiebaiyuan/xiebaiyuan-skills/performance-optimization-carmack-acton
+npx skills add xiebaiyuan/xiebaiyuan-skills/obsidian-docs-link
 ```
 
 或者用 bunx（更快）/ Or use bunx (faster):
@@ -36,6 +38,7 @@ npx skills add xiebaiyuan/xiebaiyuan-skills/performance-optimization-carmack-act
 bunx skills add xiebaiyuan/xiebaiyuan-skills/qian-xuesen-cybernetics-thinking
 bunx skills add xiebaiyuan/xiebaiyuan-skills/engineering-cybernetics-for-work
 bunx skills add xiebaiyuan/xiebaiyuan-skills/performance-optimization-carmack-acton
+bunx skills add xiebaiyuan/xiebaiyuan-skills/obsidian-docs-link
 ```
 
 运行后会弹出交互式界面，用空格选择要安装到的 agent，回车确认。
