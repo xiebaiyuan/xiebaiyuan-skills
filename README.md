@@ -12,10 +12,10 @@ Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-
 
 | Skill | 来源 / Source | 描述 / Description |
 |-------|--------------|-------------------|
-| [qian-xuesen-cybernetics-thinking](./skills/qian-xuesen-cybernetics-thinking/) | 女娲蒸馏 / nuwa | 钱学森系统控制论思维框架，5 心智模型 + 8 决策启发式 / Qian Xuesen's systems cybernetics thinking framework |
-| [engineering-cybernetics-for-work](./skills/engineering-cybernetics-for-work/) | 女娲蒸馏 / nuwa | 工程控制论工作法，反馈闭环+综合集成+层次分解 / Engineering cybernetics methodology for work & learning |
-| [performance-optimization-carmack-acton](./skills/performance-optimization-carmack-acton/) | 女娲蒸馏+达尔文优化 / nuwa+darwin | Carmack+Acton 性能优化思维，DOD+SIMD+缓存优化 / Performance optimization mindset from Carmack & Acton |
-| [obsidian-docs-link](./skills/obsidian-docs-link/) | Claude Code 手写 / hand-written | 创建软链接关联项目文档到 Obsidian Vault / Symlink project docs into Obsidian Vault |
+| [qian-xuesen-cybernetics-thinking](./skills/qian-xuesen-cybernetics-thinking/) | 女娲蒸馏 / nuwa | 钱学森系统控制论思维框架，5 心智模型 + 8 决策启发式 / Respond in Qian Xuesen's systems-cybernetics mindset: 5 mental models + 8 decision heuristics for technical decisions, architecture design, and problem analysis |
+| [engineering-cybernetics-for-work](./skills/engineering-cybernetics-for-work/) | 女娲蒸馏 / nuwa | 工程控制论工作法，反馈闭环+综合集成+层次分解 / Turn daily work & learning into executable processes: feedback loops for tasks, meta-synthesis for learning, hierarchical decomposition for architecture, global optimum for decisions |
+| [performance-optimization-carmack-acton](./skills/performance-optimization-carmack-acton/) | 女娲蒸馏+达尔文优化 / nuwa+darwin | Carmack+Acton 性能优化思维，DOD+SIMD+缓存优化 / Performance-optimization mindset distilled from Carmack & Acton: profile-driven, data-oriented design (DOD), cache-aware, simplification-as-optimization (C/C++, image processing, SIMD) |
+| [obsidian-docs-link](./skills/obsidian-docs-link/) | Claude Code 手写 / hand-written | 创建软链接关联项目文档到 Obsidian Vault / Symlink project docs into your Obsidian vault (creates an `obsidian-docs` symlink) |
 
 ---
 
@@ -150,11 +150,21 @@ Uses darwin-skill's 9-dimension rubric + hill-climbing optimization.
 钱学森视角：应该选择微服务还是单体？
 ```
 
+```
+Analyze this architecture design with systems thinking
+Qian Xuesen's view: should we choose microservices or a monolith?
+```
+
 ### 工程控制论工作法 / Engineering Cybernetics for Work
 
 ```
 控制论工作法：怎么规划这个项目？
 综合集成法：怎么学习一个新的技术栈？
+```
+
+```
+Engineering-cybernetics method: how should I plan this project?
+Meta-synthesis method: how do I learn a new tech stack?
 ```
 
 ### Carmack-Acton 性能优化 / Performance Optimization
@@ -163,6 +173,12 @@ Uses darwin-skill's 9-dimension rubric + hill-climbing optimization.
 用 Carmack 的视角分析一下这个热点
 DOD 怎么优化这个数据结构？
 SIMD 优化：灰度转换要不要写 NEON 版本？
+```
+
+```
+Analyze this hot spot from Carmack's perspective
+How would DOD optimize this data structure?
+SIMD: should the grayscale conversion use a NEON version?
 ```
 
 ---

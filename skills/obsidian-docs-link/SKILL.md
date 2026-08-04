@@ -1,6 +1,6 @@
 ---
 name: obsidian-docs-link
-description: Use when the user wants to 把项目文档关联/同步到 Obsidian Vault（创建 obsidian-docs 软链接），或提到 obsidian-docs、vault docs link。
+description: "Use when the user wants to link/sync project docs into their Obsidian vault by creating an obsidian-docs symlink. 触发词：关联/同步项目文档到 Vault、创建文档软链接、obsidian-docs、vault docs link。"
 ---
 
 # Obsidian Docs Link

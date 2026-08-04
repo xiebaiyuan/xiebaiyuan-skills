@@ -1,6 +1,6 @@
 ---
 name: performance-optimization-carmack-acton
-description: 性能优化思维框架，蒸馏自 John Carmack + Mike Acton：profile 驱动、数据导向设计（DOD）、缓存感知、简化即优化。用于 C/C++ 性能优化，尤其图像处理、译码库、SIMD 场景。触发词：性能优化、profile、SIMD优化、缓存优化、数据导向设计、DOD、热路径、瓶颈分析、代码优化。
+description: "Performance optimization mindset distilled from John Carmack + Mike Acton: profile-driven, data-oriented design (DOD), cache-aware, simplification-as-optimization. For C/C++ performance, especially image processing, decoders, SIMD. 触发词：性能优化、profile、SIMD优化、缓存优化、数据导向设计、DOD、热路径、瓶颈分析、代码优化。"
 ---
 
 # Carmack + Acton · 性能优化思维

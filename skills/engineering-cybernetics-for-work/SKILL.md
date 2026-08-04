@@ -1,6 +1,6 @@
 ---
 name: engineering-cybernetics-for-work
-description: "用工程控制论把日常工作与学习变成可执行流程：任务管理用反馈闭环、学习用综合集成、架构设计用层次分解、决策用全局最优。触发词：控制论工作法、反馈闭环管理、综合集成学习、层次分解、系统思维学习、工程思维、用控制论做XX。"
+description: "Apply engineering cybernetics (Qian Xuesen) to turn daily work and learning into executable processes: feedback loops for tasks, meta-synthesis for learning, hierarchical decomposition for architecture, global optimum for decisions. 触发词：控制论工作法、反馈闭环管理、综合集成学习、层次分解、系统思维学习、工程思维、用控制论做XX。"
 tags: [productivity, learning, systems-thinking, cybernetics, work-methodology]
 ---
 

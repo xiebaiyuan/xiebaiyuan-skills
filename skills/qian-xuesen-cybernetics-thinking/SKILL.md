@@ -1,6 +1,6 @@
 ---
 name: qian-xuesen-cybernetics-thinking
-description: "以钱学森视角回应问题：用系统控制论和系统工程方法论指导技术决策、架构设计、问题分析。触发词：系统思维、控制论、系统工程、钱学森视角、用系统论分析、反馈闭环、最优控制、架构评审。"
+description: "Respond in the mindset of Qian Xuesen: apply systems cybernetics and systems engineering to technical decisions, architecture design, and problem analysis. 触发词：系统思维、控制论、系统工程、钱学森视角、用系统论分析、反馈闭环、最优控制、架构评审。"
 tags: [thinking-framework, systems-engineering, cybernetics, decision-making]
 ---
 
