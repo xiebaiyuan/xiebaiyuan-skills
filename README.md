@@ -1,5 +1,7 @@
 # xiebaiyuan-skills
 
+[![skills.sh](https://skills.sh/b/xiebaiyuan/xiebaiyuan-skills)](https://skills.sh/xiebaiyuan/xiebaiyuan-skills)
+
 个人 AI Agent Skills 仓库。由 [Hermes Agent](https://hermes-agent.nousresearch.com) + [女娲(nuwa-skill)](https://github.com/alchaincyf/nuwa-skill) + [达尔文(darwin-skill)](https://github.com/alchaincyf/darwin-skill) 蒸馏和优化。
 
 Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-agent.nousresearch.com) + [nuwa-skill](https://github.com/alchaincyf/nuwa-skill) + [darwin-skill](https://github.com/alchaincyf/darwin-skill).
@@ -10,10 +12,10 @@ Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-
 
 | Skill | 来源 / Source | 描述 / Description |
 |-------|--------------|-------------------|
-| [qian-xuesen-cybernetics-thinking](./qian-xuesen-cybernetics-thinking/) | 女娲蒸馏 / nuwa | 钱学森系统控制论思维框架，5 心智模型 + 8 决策启发式 / Qian Xuesen's systems cybernetics thinking framework |
-| [engineering-cybernetics-for-work](./engineering-cybernetics-for-work/) | 女娲蒸馏 / nuwa | 工程控制论工作法，反馈闭环+综合集成+层次分解 / Engineering cybernetics methodology for work & learning |
-| [performance-optimization-carmack-acton](./performance-optimization-carmack-acton/) | 女娲蒸馏+达尔文优化 / nuwa+darwin | Carmack+Acton 性能优化思维，DOD+SIMD+缓存优化 / Performance optimization mindset from Carmack & Acton |
-| [obsidian-docs-link](./obsidian-docs-link/) | Claude Code 手写 / hand-written | 创建软链接关联项目文档到 Obsidian Vault / Symlink project docs into Obsidian Vault |
+| [qian-xuesen-cybernetics-thinking](./skills/qian-xuesen-cybernetics-thinking/) | 女娲蒸馏 / nuwa | 钱学森系统控制论思维框架，5 心智模型 + 8 决策启发式 / Qian Xuesen's systems cybernetics thinking framework |
+| [engineering-cybernetics-for-work](./skills/engineering-cybernetics-for-work/) | 女娲蒸馏 / nuwa | 工程控制论工作法，反馈闭环+综合集成+层次分解 / Engineering cybernetics methodology for work & learning |
+| [performance-optimization-carmack-acton](./skills/performance-optimization-carmack-acton/) | 女娲蒸馏+达尔文优化 / nuwa+darwin | Carmack+Acton 性能优化思维，DOD+SIMD+缓存优化 / Performance optimization mindset from Carmack & Acton |
+| [obsidian-docs-link](./skills/obsidian-docs-link/) | Claude Code 手写 / hand-written | 创建软链接关联项目文档到 Obsidian Vault / Symlink project docs into Obsidian Vault |
 
 ---
 
@@ -26,19 +28,27 @@ Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-
 Installs to all supported agents automatically (Claude Code, Codex, Cursor, Hermes Agent, 50+ runtimes).
 
 ```bash
-npx skills add xiebaiyuan/xiebaiyuan-skills/qian-xuesen-cybernetics-thinking
-npx skills add xiebaiyuan/xiebaiyuan-skills/engineering-cybernetics-for-work
-npx skills add xiebaiyuan/xiebaiyuan-skills/performance-optimization-carmack-acton
-npx skills add xiebaiyuan/xiebaiyuan-skills/obsidian-docs-link
+# 安装全部 skills / Install all skills
+npx skills add xiebaiyuan/xiebaiyuan-skills --all
+
+# 或安装单个 skill / Or install a single skill
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill qian-xuesen-cybernetics-thinking
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill engineering-cybernetics-for-work
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill performance-optimization-carmack-acton
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill obsidian-docs-link
 ```
 
 或者用 bunx（更快）/ Or use bunx (faster):
 
 ```bash
-bunx skills add xiebaiyuan/xiebaiyuan-skills/qian-xuesen-cybernetics-thinking
-bunx skills add xiebaiyuan/xiebaiyuan-skills/engineering-cybernetics-for-work
-bunx skills add xiebaiyuan/xiebaiyuan-skills/performance-optimization-carmack-acton
-bunx skills add xiebaiyuan/xiebaiyuan-skills/obsidian-docs-link
+# 安装全部 skills / Install all skills
+bunx skills add xiebaiyuan/xiebaiyuan-skills --all
+
+# 或安装单个 skill / Or install a single skill
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill qian-xuesen-cybernetics-thinking
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill engineering-cybernetics-for-work
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill performance-optimization-carmack-acton
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill obsidian-docs-link
 ```
 
 运行后会弹出交互式界面，用空格选择要安装到的 agent，回车确认。
@@ -51,15 +61,15 @@ bunx skills add xiebaiyuan/xiebaiyuan-skills/obsidian-docs-link
 git clone https://github.com/xiebaiyuan/xiebaiyuan-skills.git
 
 # Claude Code
-ln -s $(pwd)/xiebaiyuan-skills/* ~/.claude/skills/
+ln -s $(pwd)/xiebaiyuan-skills/skills/* ~/.claude/skills/
 
 # Codex
-ln -s $(pwd)/xiebaiyuan-skills/* ~/.codex/skills/
+ln -s $(pwd)/xiebaiyuan-skills/skills/* ~/.codex/skills/
 
 # Hermes Agent
-ln -s $(pwd)/xiebaiyuan-skills/qian-xuesen-cybernetics-thinking ~/.hermes/skills/creative/
-ln -s $(pwd)/xiebaiyuan-skills/engineering-cybernetics-for-work ~/.hermes/skills/productivity/
-ln -s $(pwd)/xiebaiyuan-skills/performance-optimization-carmack-acton ~/.hermes/skills/openclaw-imports/
+ln -s $(pwd)/xiebaiyuan-skills/skills/qian-xuesen-cybernetics-thinking ~/.hermes/skills/creative/
+ln -s $(pwd)/xiebaiyuan-skills/skills/engineering-cybernetics-for-work ~/.hermes/skills/productivity/
+ln -s $(pwd)/xiebaiyuan-skills/skills/performance-optimization-carmack-acton ~/.hermes/skills/openclaw-imports/
 ```
 
 ### 方式 3：项目级安装 / Project-level Installation
@@ -67,7 +77,7 @@ ln -s $(pwd)/xiebaiyuan-skills/performance-optimization-carmack-acton ~/.hermes/
 ```bash
 # 在你的项目目录下 / In your project directory
 mkdir -p .claude/skills/
-cp -r path/to/xiebaiyuan-skills/performance-optimization-carmack-acton .claude/skills/
+cp -r path/to/xiebaiyuan-skills/skills/performance-optimization-carmack-acton .claude/skills/
 ```
 
 ### 各 Agent 的 Skills 目录 / Agent Skills Directories
