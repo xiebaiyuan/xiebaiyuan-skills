@@ -1,6 +1,6 @@
 ---
 name: performance-optimization-carmack-acton
-description: 性能优化思维框架，蒸馏自 John Carmack + Mike Acton。用于 C/C++ 代码的性能优化和效果优化，特别适用于图像处理、译码库、SIMD 优化等场景。触发词：性能优化、profile、SIMD优化、缓存优化、数据导向设计、DOD、热路径、瓶颈分析、代码优化。
+description: 性能优化思维框架，蒸馏自 John Carmack + Mike Acton：profile 驱动、数据导向设计（DOD）、缓存感知、简化即优化。用于 C/C++ 性能优化，尤其图像处理、译码库、SIMD 场景。触发词：性能优化、profile、SIMD优化、缓存优化、数据导向设计、DOD、热路径、瓶颈分析、代码优化。
 ---
 
 # Carmack + Acton · 性能优化思维
@@ -18,11 +18,13 @@ description: 性能优化思维框架，蒸馏自 John Carmack + Mike Acton。�
 ## 🔴 红灯：绝对不要做
 
 - **不要在没有 Profile 的情况下优化** — 「我觉得这里慢」不是工程，是猜测
+- **不要过早 SIMD 化** — 还没 profile 就写 SIMD；先确认热点，再考虑 SIMD
 - **不要为 SIMD 扭曲算法** — 数据需要大量 shuffle = SIMD 不值得
 - **不要忽略标量尾部** — SIMD 循环 count 不对齐 = 越界或漏处理
 - **不要维护多套指令集路径** — SSE/AVX/NEON 各写一套成本极高
 - **不要在热路径上用 OOP** — 虚函数 ~50-100 cycles，封装隐藏了性能信息
 - **不要优化非热点代码** — 只占 1% 时间的代码优化了也没用
+- **不要不保留标量参考实现** — SIMD 版本必须与标量版本做对比测试
 
 ### 🔄 Fallback 路径
 
@@ -37,41 +39,7 @@ description: 性能优化思维框架，蒸馏自 John Carmack + Mike Acton。�
 
 ## 工具速查
 
-### Profile 工具
-
-| 平台 | 工具 | 安装 | 用途 |
-|------|------|------|------|
-| Linux | `perf` | `apt install linux-tools-common` | CPU 采样、缓存命中率、分支预测 |
-| Linux | `simpleperf` | Android NDK 自带 | Android 设备上的 CPU 采样 |
-| macOS | `Instruments` | Xcode 自带 | CPU/内存/GPU profiling |
-| 跨平台 | `gprof` | GCC 自带 `-pg` 编译 | 函数级耗时统计 |
-| 跨平台 | `VTune` | Intel 免费下载 | 缓存分析、内存带宽、SIMD 利用率 |
-| 跨平台 | `Tracy` | `apt install tracy-profiler` | 实时帧级 profiling |
-
-### SIMD 工具
-
-| 工具 | 用途 |
-|------|------|
-| Intel Intrinsics Guide (software.intel.com) | SSE/AVX 指令速查 |
-| ARM Neon Intrinsics Reference (developer.arm.com) | NEON 指令速查 |
-| `gcc -Rpass=loop-vectorize` | 检查编译器是否自动向量化 |
-| `objdump -d` 查看汇编 | 确认 SIMD 指令是否生成 |
-
-### 缓存分析
-
-```bash
-# Linux: 查看缓存层次
-lscpu | grep cache
-
-# perf: 缓存命中率
-perf stat -e cache-misses,cache-references,L1-dcache-load-misses ./your_binary
-
-# 典型值参考
-# L1: 32-64KB, 4 cycles
-# L2: 256KB-1MB, 12 cycles
-# L3: 4-32MB, 40 cycles
-# 主存: 100+ cycles
-```
+> 📚 需要 profile / SIMD 指令 / 缓存分析命令时，查阅 `references/tools.md`。
 
 ## 角色规则
 
@@ -232,17 +200,13 @@ perf stat -e cache-misses,cache-references,L1-dcache-load-misses ./your_binary
 
 4. **每个指针都是一次潜在的缓存未命中**：热路径上用数组+索引替代链表和指针。
 
-5. **不要为 SIMD 扭曲算法**：先写清晰的标量版本，profile 确认热点后再写 SIMD 版本。如果数据需要大量 shuffle，SIMD 可能不值得。
+5. **热冷数据必须分离**：频繁访问的字段紧凑排列，偶尔访问的放另一边。不要为冷数据付出缓存未命中的代价。
 
-6. **热冷数据必须分离**：频繁访问的字段紧凑排列，偶尔访问的放另一边。不要为冷数据付出缓存未命中的代价。
+6. **编译器比你想象的好，但没有你希望的那么好**：先信任编译器，用 intrinsics 做 profile 证明编译器做不好的部分。
 
-7. **编译器比你想象的好，但没有你希望的那么好**：先信任编译器，用 intrinsics 做 profile 证明编译器做不好的部分。
+7. **10x 提升靠换算法，2x 提升靠数据布局，1.5x 提升靠微优化**：根据目标选择优化层次。
 
-8. **10x 提升靠换算法，2x 提升靠数据布局，1.5x 提升靠微优化**：根据目标选择优化层次。
-
-9. **保留标量参考实现**：SIMD 版本必须与标量版本做对比测试验证正确性。
-
-10. **注释所有非直觉的优化**：被优化的代码段用注释解释 why，优化后接口不变。
+8. **注释所有非直觉的优化**：被优化的代码段用注释解释 why，优化后接口不变。
 
 ---
 
@@ -282,98 +246,11 @@ perf stat -e cache-misses,cache-references,L1-dcache-load-misses ./your_binary
 
 ## 具体优化技巧速查
 
-### SIMD 优化（C/C++）
-
-**NEON 灰度转换（ARM，一次处理 16 像素）**：
-```cpp
-// 标量版本（参考实现）
-void grayscale_scalar(const uint8_t* rgb, uint8_t* gray, int count) {
-    for (int i = 0; i < count; i++) {
-        gray[i] = (uint8_t)((77*rgb[i*3] + 150*rgb[i*3+1] + 29*rgb[i*3+2]) >> 8);
-    }
-}
-
-// NEON 版本（整数近似，避免浮点）
-void grayscale_neon(const uint8_t* rgb, uint8_t* gray, int count) {
-    const uint8x8_t r_w = vdup_n_u8(77);
-    const uint8x8_t g_w = vdup_n_u8(150);
-    const uint8x8_t b_w = vdup_n_u8(29);
-    int i = 0;
-    for (; i + 7 < count; i += 8) {
-        uint8x8x3_t rgb_val = vld3_u8(rgb + i*3);  // 加载 8 个 RGB 像素
-        uint16x8_t sum = vmull_u8(rgb_val.val[0], r_w);
-        sum = vmlal_u8(sum, rgb_val.val[1], g_w);
-        sum = vmlal_u8(sum, rgb_val.val[2], b_w);
-        vst1_u8(gray + i, vshrn_n_u16(sum, 8));     // 右移 8 位 = 除以 256
-    }
-    // 标量处理尾部
-    for (; i < count; i++) {
-        gray[i] = (uint8_t)((77*rgb[i*3] + 150*rgb[i*3+1] + 29*rgb[i*3+2]) >> 8);
-    }
-}
-```
-
-**关键参数**：
-- NEON 寄存器：128 位，一次处理 16 × uint8 或 8 × uint16
-- 对齐要求：`vld3_u8` 不要求对齐，`vld1q_u8` 要求 16 字节对齐
-- 整数近似系数：R=77, G=150, B=29（总和 256，右移 8 位代替除法）
-
-### 缓存优化
-
-```cpp
-// 不好：AoS 布局，遍历时缓存利用率低
-struct BarcodeResult {
-    int x, y;           // 8 bytes - 热
-    int width, height;  // 8 bytes - 热
-    char content[256];  // 256 bytes - 冷
-    char type[32];      // 32 bytes - 冷
-    float confidence;   // 4 bytes - 热
-};
-BarcodeResult results[1000];
-
-// 好：热冷分离 + SoA
-struct BarcodeResultsHot {
-    int x[1000], y[1000];
-    int width[1000], height[1000];
-    float confidence[1000];
-};
-struct BarcodeResultsCold {
-    char content[1000][256];
-    char type[1000][32];
-};
-```
-
-### 消除指针追逐
-
-```cpp
-// 不好：链表遍历，每次 next 都可能缓存未命中
-struct Node { DecodedRegion* data; Node* next; };
-
-// 好：数组 + 索引
-struct RegionPool {
-    int x[MAX_REGIONS];
-    int y[MAX_REGIONS];
-    int w[MAX_REGIONS];
-    int h[MAX_REGIONS];
-    int next[MAX_REGIONS];  // 索引而非指针
-    int count;
-};
-```
+> 📚 需要参考代码时，查阅 `references/code-snippets.md`（NEON 灰度转换、热冷分离、消除指针追逐）。
 
 ---
 
-## 反模式
-
-1. **凭直觉优化**：「我觉得这里慢」然后开改。必须 profile 数据说话。
-2. **过早 SIMD 化**：还没 profile 就写 SIMD。先确认热点，再考虑 SIMD。
-3. **为 SIMD 扭曲算法**：为了用 SIMD 把简单逻辑搞复杂。如果数据需要大量 shuffle，换思路。
-4. **维护多套指令集路径**：SSE/AVX/NEON 各写一套。成本极高，除非收益巨大。
-5. **忽略标量尾部**：SIMD 循环不处理 count 不对齐的情况，导致越界或漏处理。
-6. **OOP 硬套性能场景**：热路径上用虚函数、继承层次、封装对象。Acton 的批评：封装同时隐藏了性能信息。
-7. **优化非热点代码**：花时间优化只占 1% 时间的代码。
-8. **不保留参考实现**：SIMD 版本没有标量版本做对比验证，正确性无法保证。
-
-### 自检问题（优化前后各问一遍）
+## 自检问题（优化前后各问一遍）
 
 **优化前**：
 - 我有 Profile 数据吗？还是「我觉得慢」？
