@@ -56,10 +56,34 @@ description: Use when 每日监控调研 DeepSeek Harness (dsh) 插件生态，�
 3. **归类统计**：按类别（TUI/桌面、视觉、记忆进化、预设路由、多Agent、搜索内容、沙箱安全、皮肤娱乐、索引工具链、市场基建、提供商接入、Web UI）整理新增与爬升的优质插件。判断"优质"：星数增速 + dsh.fish 评分 + 近期有 commit + 能被 `dsh plugin add`（npm bundle）。
 4. **识别新趋势**：新冒出的市场/赛道/爆款（如 mirage 统一虚拟文件系统、dsh.fish 注册中心、商务商业化整族、订阅市场）。
 5. **写每日简报**：存入 Obsidian `调研分析/DeepSeek Harness/dsh插件每日雷达/YYYY-MM-DD.md`，2-4KB 简报，含：今日生态快照表 / 新增优质插件表 / 星数爬升榜 / 新市场新赛道 / 风险提示。更新该目录 00-索引.md（追加不覆盖，diff 校验）。中文人话、具体数字、表格、信源链接、标注 [源]/[推断]。
-6. **交叉关联**：在简报里链接相关 Trendshift 热门项目 / skills.sh 上榜项 / AI 要闻热点。
-7. **推送**：
+6. **并入插件总表（固定动作，别漏）**：日报写完后立即执行
+   `python ~/.hermes/skills/research/dsh-plugin-daily/scripts/dsh_ledger.py update`
+   脚本会解析全部日报（含今天这份）+ 拉 dsh.fish 最新快照，把新出现的插件并进
+   `调研分析/DeepSeek Harness/dsh插件每日雷达/00-插件总表.md`（含星数/星速/评级/赛道/首次收录/最近提及/状态）。
+   日报表格是脚本的解析源，所以**插件名尽量写 `owner/repo` 或 dsh.fish 的 id**；同名多仓库时补 owner 写法（`dsh-desktop(anywhere-labs)`）或直接写全名，脚本靠这个消歧。
+   看到脚本日志里报 `[ambig]` / `[track] 未归类` 时，把归属写进 `data/manual.json`（`aliases` 消歧、`track` 覆盖赛道），重跑一次即可。
+7. **交叉关联**：在简报里链接相关 Trendshift 热门项目 / skills.sh 上榜项 / AI 要闻热点。
+8. **推送**：
    - Telegram：总结当天要点（中文，含关键数字与 2-3 个重点插件）。
    - 负一屏：`python ~/skills/today-task/scripts/task_push.py --name "dsh插件雷达 <MM-DD>" --content "<markdown 摘要>" --result "已完成"`（内容简洁，负一屏不适合长文）。
+
+## 插件总表（历史全量台账）
+
+产物：`调研分析/DeepSeek Harness/dsh插件每日雷达/00-插件总表.md`（每天被步骤 6 重写，不要手工改正文，要改就改脚本或 manual.json）。
+
+```bash
+S=~/.hermes/skills/research/dsh-plugin-daily/scripts/dsh_ledger.py
+python $S update            # 每日：拉最新 dsh.fish 快照 + 并入今天的日报
+python $S update --offline  # 不联网，用 data/snapshot.json 缓存
+python $S rebuild           # 全量重建
+python $S report            # 只打印统计，不写文件
+```
+
+- 数据：`~/.hermes/skills/research/dsh-plugin-daily/data/` 下 `snapshot.json`（dsh.fish 快照缓存）、`ledger.json`（台账状态）、`manual.json`（**人工覆盖层，脚本不覆盖**）。
+- `manual.json` 三个字段：`aliases`（原始 key → 规范 key，用于改名与同名消歧）、`track`（覆盖赛道）、`notes`（备注）。
+- 表内含：总览 / 赛道分布 / 主台账（全量，按星数倒序）/ 深度调研清单 / 生态基建与跨生态参考 / 未收录名单 / 更新记录。
+- 状态列口径：深调研（≥8KB 文档存在）/ 头部（≥1000★）/ 成长（7 日星速≥20）/ 活跃（≥10★）/ 观察（<10★）/ 未入库（dsh.fish 查不到）/ 同名歧义。
+- 赛道列是关键词自动归类（[推断]），明确错了就在 `manual.json` 的 `track` 里钉死。
 
 ## 输出质量规则
 - 中文、无 emoji 标题、避免加粗列表刷屏、短句、具体数字（星数/仓库数/日期精确）。
@@ -68,6 +92,8 @@ description: Use when 每日监控调研 DeepSeek Harness (dsh) 插件生态，�
 
 ## 陷阱
 - topic:dsh-plugin 混入泛 AI 项目（如 colleague-skill、OpenPencil）——按与 dsh 关联度筛选，认准能 `dsh plugin add` 的 npm bundle 才是真插件 [推断]。
+- 台账脚本把日报里的 `topic:dsh-plugin` 误当插件名会命中同名仓库（`tabbit-browser/dsh-plugin` 那种坑），已修；自己写日报时不要用裸 slug 指代全生态。
+- dsh.fish 里的同名仓库极多（`dsh-plugin-manager` 15 个、`dsh-tui` 6 个、`dsh-remote` 3 个）——**没有 owner 就没法确定是哪个**，脚本对这种情况一律不猜，标 `同名歧义` 留在表里，别人工硬凑。
 - GitHub API 未认证限速 60 次/时——批量查询合并成一次 search 调用，别逐仓库请求。
 - 目录站 810 条目里大量 0-2★ 试水作——优质筛选看增速 + dsh.fish 评分 + commit 活跃度，别只看绝对星数。
 - 拼写：`dsh plugin --profile web add` 是真正装法源码；README 可能比代码长（雏形警示）[推断]。
@@ -76,4 +102,5 @@ description: Use when 每日监控调研 DeepSeek Harness (dsh) 插件生态，�
 ## 验证
 - 写完后 `wc -c` 确认文件非空且 > 0 字节。
 - `cat 00-索引.md` 确认更新时间戳与新增行已追加。
+- 台账：`python $S update` 输出里的条目数与 `ls -la 00-插件总表.md` 字节数；台账里应该能看到今天日报里出现过的插件（抽查 1-2 个，`grep` 名字）。
 - `cronjob list` 确认任务 last_status: ok。
