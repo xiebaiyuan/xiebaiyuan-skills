@@ -80,7 +80,8 @@ python $S report            # 只打印统计，不写文件
 ```
 
 - 数据：`~/.hermes/skills/research/dsh-plugin-daily/data/` 下 `snapshot.json`（dsh.fish 快照缓存）、`ledger.json`（台账状态）、`manual.json`（**人工覆盖层，脚本不覆盖**）。
-- `manual.json` 三个字段：`aliases`（原始 key → 规范 key，用于改名与同名消歧）、`track`（覆盖赛道）、`notes`（备注）。
+- `manual.json` 四个字段：`aliases`（原始 key → 规范 key，用于改名与同名消歧）、`track`（覆盖赛道）、`desc`（**「干啥的」一句话描述**，优先级最高；key/id/仓库短名三种写法都能命中）、`notes`（备注）。
+- 描述优先级：`desc` 人工描述 > 日报原句 > dsh.fish summary；超 90 字自动只留第一句。日报里没写清功能的条目，补进 `desc` 就永久生效。
 - 表内含：总览 / 赛道分布 / 主台账（全量，按星数倒序）/ 深度调研清单 / 生态基建与跨生态参考 / 未收录名单 / 更新记录。
 - 状态列口径：深调研（≥8KB 文档存在）/ 头部（≥1000★）/ 成长（7 日星速≥20）/ 活跃（≥10★）/ 观察（<10★）/ 未入库（dsh.fish 查不到）/ 同名歧义。
 - 赛道列是关键词自动归类（[推断]），明确错了就在 `manual.json` 的 `track` 里钉死。

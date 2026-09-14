@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14 16:46",
+ "generated_at": "2026-09-14 16:57",
  "snapshot": {
   "generatedAt": "2026-09-14T08:07:24.684Z",
   "dataVersion": "eb9939155627",
@@ -20,15 +20,15 @@
   }
  },
  "per_day_new": {
-  "2026-08-20": 14,
-  "2026-08-21": 8,
+  "2026-08-20": 13,
+  "2026-08-21": 7,
   "2026-08-22": 6,
   "2026-08-23": 12,
-  "2026-08-24": 10,
+  "2026-08-24": 9,
   "2026-08-26": 24,
   "2026-08-27": 20,
   "2026-08-28": 5,
-  "2026-08-30": 18,
+  "2026-08-30": 17,
   "2026-08-31": 14,
   "2026-09-01": 5,
   "2026-09-02": 2,
@@ -37,9 +37,9 @@
   "2026-09-07": 9,
   "2026-09-08": 5,
   "2026-09-09": 5,
-  "2026-09-10": 21,
-  "2026-09-11": 21,
-  "2026-09-12": 40,
+  "2026-09-10": 20,
+  "2026-09-11": 20,
+  "2026-09-12": 39,
   "2026-09-13": 16,
   "2026-09-14": 11
  },
@@ -69,58 +69,33 @@
  ],
  "entries": [
   {
-   "key": "api/search",
+   "key": "v1ki/dsh-plugin-subscriptions",
    "id": "",
    "raw_names": [
-    "api/search"
+    "~dsh-plugin-subscriptions",
+    "v1ki/dsh-plugin-subscriptions"
    ],
    "first": "2026-08-20",
-   "last": "2026-09-04",
-   "mentions": 2,
-   "one_liner": "topic:dsh-plugin 仓库总数",
-   "track": "搜索与浏览",
-   "report_star": null,
+   "last": "2026-09-12",
+   "mentions": 18,
+   "one_liner": "增速最快，Codex/Claude/Grok 订阅接入",
+   "track": "提供商与路由",
+   "report_star": 338,
    "in_registry": false,
+   "report_star_date": "2026-09-12",
+   "is_infra": true,
    "kind": "",
    "grade": "",
    "score": 0,
    "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/api/search",
+   "stars": 338,
+   "url": "https://github.com/v1ki/dsh-plugin-subscriptions",
    "summary_en": "",
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "i:dsh-plugin-subscriptions",
-   "id": "dsh-plugin-subscriptions",
-   "raw_names": [
-    "~dsh-plugin-subscriptions"
-   ],
-   "first": "2026-08-20",
-   "last": "2026-09-01",
-   "mentions": 15,
-   "one_liner": "增速最快，Codex/Claude/Grok 订阅接入",
-   "track": "提供商与路由",
-   "report_star": 306,
-   "in_registry": true,
-   "report_star_date": "2026-09-01",
-   "kind": "bundle",
-   "grade": "C",
-   "score": 45,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://www.npmjs.com/package/dsh-plugin-subscriptions",
-   "summary_en": "Use ChatGPT (Codex), Claude, Grok (X Premium), GitHub Copilot, and Google Antigravity subscriptions as DeepSeek Harness LLM providers, with OAuth login from the web Settings page",
-   "cats": [
-    "model",
-    "git"
-   ],
-   "status": "观察",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把 ChatGPT(Codex)/Claude/Grok/Copilot/Antigravity 订阅当 DSH 的模型来源（订阅接入赛道先例，171★→338★）"
   },
   {
    "key": "dshplugin/dsh-plugin-hub",
@@ -148,7 +123,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "社区内置市场，宣称收录 4000+"
   },
   {
    "key": "oil-oil/dsh-oil-creator",
@@ -177,7 +153,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "AI 本地创作工作台（08-20 新增榜领跑）"
   },
   {
    "key": "sluminositys/dsh-nested-followups",
@@ -189,7 +166,7 @@
    "last": "2026-08-20",
    "mentions": 1,
    "one_liner": "对任意历史回答发起隔离追问",
-   "track": "沙箱与安全",
+   "track": "会话与终端",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -204,7 +181,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "对任意历史回答发起隔离追问"
   },
   {
    "key": "kuangre123/deepseek-harness-mac",
@@ -229,7 +207,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "原生 macOS 封装（bun）"
   },
   {
    "key": "forgeax-games/forgeax-dsh-game-plugin",
@@ -256,7 +235,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "游戏 bundle 插件"
   },
   {
    "key": "starryhui/dsh-custom-background",
@@ -283,7 +263,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "自定义 WebUI 背景"
   },
   {
    "key": "lcgash/dsh-plugin-uw",
@@ -308,7 +289,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "多目录合并进同一会话"
   },
   {
    "key": "xing666173/dsh-vision-hub",
@@ -333,7 +315,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "15 个像素级视觉工具（EAC）"
   },
   {
    "key": "yuunnn/dsh-on-imessage",
@@ -360,7 +343,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "在 iPhone 的 iMessage 里和本机 DSH agent 聊天（不装 App、不用服务器、不过云）"
   },
   {
    "key": "hunter118/dsh-s7r",
@@ -387,7 +371,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "System 7 复古桌面界面"
   },
   {
    "key": "jelly-000/dsh-3d-plugin-graph",
@@ -414,7 +399,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "插件生态 3D 可视化"
   },
   {
    "key": "zhu1090093659/dsh-web",
@@ -444,7 +430,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": "日报旧称 dsh-web-ui，dsh.fish id 为 dsh-web"
+   "note": "日报旧称 dsh-web-ui，dsh.fish id 为 dsh-web",
+   "desc": "DSH Web GUI 插件全家桶 + 皮肤集合（皮肤是纯资产目录）"
   },
   {
    "key": "alibaba/anolisa",
@@ -470,7 +457,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "阿里 Agentic OS，今日最大星速，token 压缩/沙箱/可观测"
   },
   {
    "key": "beancookie/awesome-dsh-plugin",
@@ -496,7 +484,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "精选目录（awesome-dsh-plugin 组织的早期并列版本）"
   },
   {
    "key": "zseven-w/dsh-ios",
@@ -524,7 +513,8 @@
    ],
    "status": "成长",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "iOS 模拟器插件：在 iPhone/iPad 上跑 DSH（一周 0→290★）"
   },
   {
    "key": "~dsh-suite",
@@ -551,7 +541,8 @@
    "cats": [],
    "status": "同名歧义",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "活插件目录（living directory）"
   },
   {
    "key": "bihangchi9-creator/dsh-lark-bridge",
@@ -579,17 +570,19 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "原生飞书/Lark 桥接"
   },
   {
    "key": "dsh-market/dsh-market",
    "id": "",
    "raw_names": [
-    "dsh-market/dsh-market"
+    "dsh-market/dsh-market",
+    "~dsh-market"
    ],
    "first": "2026-08-21",
    "last": "2026-08-24",
-   "mentions": 4,
+   "mentions": 5,
    "one_liner": "",
    "track": "市场与索引",
    "report_star": null,
@@ -605,38 +598,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "~dsh-market",
-   "id": "",
-   "raw_names": [
-    "~dsh-market"
-   ],
-   "first": "2026-08-21",
-   "last": "2026-08-24",
-   "mentions": 5,
-   "one_liner": "",
-   "track": "市场与索引",
-   "report_star": null,
-   "in_registry": false,
-   "ambig_n": 0,
-   "ambig_max": 0,
-   "same_name": [
-    "dsh-market/dsh-market",
-    "2bingling/dsh-market"
-   ],
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "应用内插件市场：DSH 里直接浏览安装插件（08-21 记录 2,005★；仓库现已 404/改名）"
   },
   {
    "key": "noob-stupid/dsh-plugin-hub",
@@ -665,7 +628,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": "与 dshplugin/dsh-plugin-hub 同名不同仓库，历史解析曾并到这里"
+   "note": "与 dshplugin/dsh-plugin-hub 同名不同仓库，历史解析曾并到这里",
+   "desc": "插件管理面板 + 多源市场（GitHub/Gitee/自定义），一键启停，静态索引含 500+ 插件、300+ skill"
   },
   {
    "key": "dshworks/dsh-ego-browser",
@@ -694,7 +658,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把 ego-lite 浏览器塞进 DSH（8-07 建 8-21 仍活跃）"
   },
   {
    "key": "sjh9714/dsh-movein",
@@ -719,7 +684,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把 Claude Code/Codex/OpenCode 的 skills 迁移进 DSH"
   },
   {
    "key": "dttxorg/deepseekeyes",
@@ -748,7 +714,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "可审计的视觉 + 跨平台 Computer Use 运行时，带可溯源证据"
   },
   {
    "key": "jilian-dsh/dsh-rules-manager",
@@ -773,7 +740,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Rules/commands/skills 管理器：/rules 斜杠命令 + 可视化规则编辑设置面板"
   },
   {
    "key": "chenbin-dev/dsh-auth-everying",
@@ -800,7 +768,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "导入本机 Claude/Codex/Grok/Gemini 认证"
   },
   {
    "key": "strukto-ai/mirage",
@@ -827,7 +796,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "统一虚拟文件系统：把本地/远端/沙箱路径抽象成一层（生态基建）"
   },
   {
    "key": "sheep-programmer/dsh-web-search-free",
@@ -855,7 +825,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "免费网页搜索，双后端（Parallel 默认 + Exa 备用）均匿名免 key"
   },
   {
    "key": "ottohere-mourn/teachreplay",
@@ -880,7 +851,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "harness-agnostic「Teach-by-Demo」教训回放"
   },
   {
    "key": "10086ggqq/dsh_theme_terraria",
@@ -908,7 +880,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "泰拉瑞亚像素皮肤，向导陪写代码"
   },
   {
    "key": "sakthiveltofficial/dsh-git-plugins",
@@ -920,7 +893,7 @@
    "last": "2026-08-23",
    "mentions": 1,
    "one_liner": "Git & 源码控制插件套件",
-   "track": "市场与索引",
+   "track": "文件与工作区",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -937,7 +910,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Git & 源码控制插件套件"
   },
   {
    "key": "caoyixian06/dsh-lanchat",
@@ -962,7 +936,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "局域网聊天：同一网段里互相发消息"
   },
   {
    "key": "caob23/dsh-browser-control",
@@ -991,7 +966,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Chrome 扩展+DSH 插件，AI 直接操控真实浏览器"
   },
   {
    "key": "elviass/dsh-cost-insights",
@@ -1018,7 +994,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "用量/费用/Token/余额/模型价格分析"
   },
   {
    "key": "xiangrui979/foresight",
@@ -1045,7 +1022,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "时序切面长期记忆插件（ForeSight）"
   },
   {
    "key": "damonbao/dsh-dungeon-party",
@@ -1073,7 +1051,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "五 agent 地下城小队编排（safety-first 编队）"
   },
   {
    "key": "lcylym/dsh-plugin-compat-guardian",
@@ -1098,7 +1077,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "兼容守护，仓库级 CI 修复 bot"
   },
   {
    "key": "yimlt/dsh-notify-yimit",
@@ -1125,7 +1105,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "任务完成/报错/审批等多态通知"
   },
   {
    "key": "evan1u/deepseek-harness-desktop",
@@ -1154,34 +1135,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "v1ki/dsh-plugin-subscriptions",
-   "id": "",
-   "raw_names": [
-    "v1ki/dsh-plugin-subscriptions"
-   ],
-   "first": "2026-08-24",
-   "last": "2026-09-12",
-   "mentions": 3,
-   "one_liner": "171⭐（skill 记录）",
-   "track": "配置与治理",
-   "report_star": 338,
-   "in_registry": false,
-   "report_star_date": "2026-09-12",
-   "is_infra": true,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 338,
-   "url": "https://github.com/v1ki/dsh-plugin-subscriptions",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "macOS（Apple Silicon）桌面壳：双击即用，不用开终端"
   },
   {
    "key": "1014029855/dsh-context-lens",
@@ -1193,7 +1148,7 @@
    "last": "2026-08-24",
    "mentions": 1,
    "one_liner": "检查/测量/搜索/比较 provider-neutral 上下文",
-   "track": "搜索与浏览",
+   "track": "记忆与上下文",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -1208,7 +1163,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "检查/测量/搜索/比较 provider-neutral 上下文"
   },
   {
    "key": "lywusichen/dsh-sidebar-buttons",
@@ -1235,7 +1191,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "左下侧栏按钮拖拽排序/显隐/收起"
   },
   {
    "key": "zmh2000829/dsh-agent-bridge",
@@ -1262,7 +1219,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "通过 ACP 在 DSH Web 内用 Grok Build"
   },
   {
    "key": "ssshooter/dsh-mindmap-live",
@@ -1289,7 +1247,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Agent 与你实时共编同一棵思维导图"
   },
   {
    "key": "~dsh-office-for-mso",
@@ -1316,7 +1275,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "直接操控 Word/Excel"
   },
   {
    "key": "notload/dsh-session-toc",
@@ -1344,7 +1304,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "每会话页右侧常驻可折叠目录栏"
   },
   {
    "key": "chensl139-ok/dsh-archived-panel",
@@ -1373,7 +1334,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "侧栏「已归档」面板查看/打开会话"
   },
   {
    "key": "whale-zhang/dsh-complete-chime",
@@ -1401,7 +1363,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "任一轮对话结束时播放提示音，内置音色 + 可上传自定义"
   },
   {
    "key": "anywhere-labs/dsh-desktop",
@@ -1429,7 +1392,8 @@
    "cats": [],
    "status": "深调研",
    "deepdive": "anywhere-labs__dsh-desktop 技术调研.md",
-   "note": "日报里的「dsh-desktop(anywhere-labs)」，深度调研目录里另有 anywhere-labs/deepseek-harness-desktop 一份文档，疑为同项目不同阶段"
+   "note": "日报里的「dsh-desktop(anywhere-labs)」，深度调研目录里另有 anywhere-labs/deepseek-harness-desktop 一份文档，疑为同项目不同阶段",
+   "desc": "DSH 生态的高星桌面客户端：把上游 Web UI + Host 服务 + 插件系统装进 Electron 原生应用，**桌面壳自身也是一个 DSH 插件**；`upstream.json` 固定上游版本，31 份 ADR + 4 份 RFC"
   },
   {
    "key": "yjh051108/dsh-routing-suite",
@@ -1437,11 +1401,12 @@
    "raw_names": [
     "~dsh-routing-suite",
     "yjh051108/dsh-routing-suite",
+    "~dsh-super-injector",
     "~dsh-external-dsh-super-injector"
    ],
    "first": "2026-08-26",
    "last": "2026-09-14",
-   "mentions": 11,
+   "mentions": 13,
    "one_liner": "注意力路由/注入器，单仓库化后加速 [源: api]",
    "track": "提供商与路由",
    "report_star": 23,
@@ -1459,7 +1424,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "注意力路由/注入器套装（对外名 dsh-super-injector），高星但增速已回落"
   },
   {
    "key": "totoro-qaq/dsh-plugin-bridge",
@@ -1488,7 +1454,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "跨预设会话迁移：带预览、固定 schema 的会话交接"
   },
   {
    "key": "nagi-ovo/dsh-ads",
@@ -1519,7 +1486,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "广告注入插件（中文本地化投放）"
   },
   {
    "key": "f20880479-lab/dsh-peak-gate",
@@ -1544,7 +1512,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "高峰期发送前确认、可排队到空闲时段执行（错峰省钱）"
   },
   {
    "key": "louke6572/dsh-whale-widget-plus",
@@ -1571,7 +1540,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "余额鲸鱼 Widget 多表情版，账户可视化"
   },
   {
    "key": "~dsh-bio-image-dup-check",
@@ -1598,7 +1568,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "科研图片查重：离线检测重复/翻转/旋转/缩放/copy-move"
   },
   {
    "key": "sqfcyily/dsh-workspace-files",
@@ -1624,7 +1595,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Web GUI 内浏览目录/文件与 Git diff"
   },
   {
    "key": "qinpanwan/dsh-sky-skin",
@@ -1651,7 +1623,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "《光·遇》主题 DSH Web UI 皮肤"
   },
   {
    "key": "~dsh-cline",
@@ -1678,7 +1651,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH + Cline VS Code 生态融合"
   },
   {
    "key": "~dsh-question-jump-bar",
@@ -1705,7 +1679,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "会话右侧问题索引标尺，悬停预览/跳转"
   },
   {
    "key": "treers2/qq-operations",
@@ -1717,7 +1692,7 @@
    "last": "2026-08-26",
    "mentions": 0,
    "one_liner": "",
-   "track": "效率自动化",
+   "track": "接入与互操作",
    "report_star": null,
    "in_registry": true,
    "kind": "skill",
@@ -1733,7 +1708,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Windows 上操控 QQ NT（含效率/经典两种模式）的唯一权威方法 —— 基于 UI Automation 类名定位（qq-msg-editor / chat-header__contact-name / message-container / send-msg），可自动打开会话、读消息（区分己方对方）、发消息、发文件、读/下群文件、多会话轮询陪聊；内置环境自检与换机校准流程。环境：Windows + PowerShell 5.1+。"
   },
   {
    "key": "~dsh-gmail-plugins",
@@ -1760,7 +1736,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Gmail 套件 61 工具 + 2 provider"
   },
   {
    "key": "taoruiliu19/dsh-gsv",
@@ -1787,7 +1764,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "本地 GSV-TTS 语音合成"
   },
   {
    "key": "hw-cola/dsh-dynamic-agents",
@@ -1814,7 +1792,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "动态 AGENTS.md：输入框上方的「上下文」下拉，按工作区勾选规则注入系统提示"
   },
   {
    "key": "couplingartist/dsh-global-prompt",
@@ -1841,7 +1820,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "全局/项目级 AGENTS.md + 人设注入"
   },
   {
    "key": "artwar2020/dsh-model-center",
@@ -1868,7 +1848,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "免费模型目录/实测/价格/切换/用量统计"
   },
   {
    "key": "caseyyy/dsh-goal-planner",
@@ -1896,7 +1877,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "目标驱动每日任务计划器+微信推送"
   },
   {
    "key": "jasonfreelab/dsh-command-code-review",
@@ -1923,7 +1905,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "/code-review 五路并行审查"
   },
   {
    "key": "ssttone1/dsh-message-cleaner",
@@ -1950,7 +1933,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "历史消息面板/按条删除/节点导航"
   },
   {
    "key": "hoyyang/dsh-image-gen",
@@ -1977,7 +1961,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "gpt-image-2 生图，OpenAI Images 兼容"
   },
   {
    "key": "pensivefei/dsh-voice-scribe",
@@ -2006,7 +1991,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "语音输入：点按/按住 Alt 说话转文字，本地离线 SenseVoice，支持热词替换"
   },
   {
    "key": "fengyungithub/dsh-short-video-studio",
@@ -2033,7 +2019,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "类 MiniMax-Design AI 视频创作工作台"
   },
   {
    "key": "1624318455/dsh-plugin-tavily",
@@ -2062,7 +2049,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Tavily 搜索 provider，6★领跑新增 [源: api]"
   },
   {
    "key": "deepseek-ai/deepseek-harness",
@@ -2089,7 +2077,8 @@
    "cats": [],
    "status": "深调研",
    "deepdive": "deepseek-ai__deepseek-harness 技术调研.md",
-   "note": ""
+   "note": "",
+   "desc": "上游主仓：DeepSeek Harness 本体（一切皆插件）"
   },
   {
    "key": "nexu-io/open-design",
@@ -2116,7 +2105,8 @@
    "cats": [],
    "status": "深调研",
    "deepdive": "nexu-io__open-design 技术调研.md",
-   "note": ""
+   "note": "",
+   "desc": "设计插件霸主，\"开源版 Claude Design\""
   },
   {
    "key": "ruvnet/ruflo",
@@ -2143,7 +2133,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "跨生态参考：agent meta-harness（多 agent 编排框架）"
   },
   {
    "key": "amruthpillai/reactive-resume",
@@ -2168,7 +2159,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "跨生态参考：隐私优先简历构建器（非 dsh 插件）"
   },
   {
    "key": "esengine/deepseek-reasonix",
@@ -2195,7 +2187,8 @@
    "cats": [],
    "status": "深调研",
    "deepdive": "esengine__DeepSeek-Reasonix 技术调研.md",
-   "note": ""
+   "note": "",
+   "desc": "DSH 原生终端编码 agent"
   },
   {
    "key": "volcengine/openviking",
@@ -2222,7 +2215,8 @@
    "cats": [],
    "status": "深调研",
    "deepdive": "volcengine__OpenViking 技术调研.md",
-   "note": ""
+   "note": "",
+   "desc": "自进化上下文数据库（字节）"
   },
   {
    "key": "molunerfinn/picgo",
@@ -2247,7 +2241,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "跨生态参考：图片上传工具（非 dsh 插件）"
   },
   {
    "key": "titanwings/distilly",
@@ -2275,7 +2270,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把同事/关系/名人素材蒸馏成可复用 Person Profile 的 meta-skill 引擎"
   },
   {
    "key": "nocobase/nocobase",
@@ -2287,7 +2283,7 @@
    "last": "2026-08-30",
    "mentions": 3,
    "one_liner": "开源 AI+no-code 平台，支持 DSH agent",
-   "track": "多Agent与编排",
+   "track": "跨生态参考",
    "report_star": null,
    "in_registry": false,
    "kind": "",
@@ -2300,7 +2296,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "开源 AI+no-code 平台，支持 DSH agent"
   },
   {
    "key": "freestylefly/awesome-gpt-image-2",
@@ -2325,7 +2322,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "GPT-Image2 提示词引擎"
   },
   {
    "key": "tma1-ai/dsh-otel",
@@ -2353,7 +2351,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "OpenTelemetry 追踪：每次 DSH 运行花多少钱"
   },
   {
    "key": "hoyyang/dsh-mall",
@@ -2383,7 +2382,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "插件商场：全量收录 GitHub 插件 + 五维评分雷达图 + AI 智能搜索/安装/诊断 + 批量更新"
   },
   {
    "key": "k-ying/dsh-vsceditor",
@@ -2411,7 +2411,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "会话内嵌 code-server 或本机 VS Code，带 ACP 式编辑同步"
   },
   {
    "key": "gameswu/dsh-human-coding",
@@ -2438,7 +2439,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "古法编程：AI 出骨架、你写实现、AI 验收讲解（趣味练习模式）"
   },
   {
    "key": "i:dsh-project-prompt",
@@ -2466,7 +2468,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "项目级私有 prompt 规则（per-project AGENTS.md 管理）"
   },
   {
    "key": "the-thinker0/dsh-memory-search-plus",
@@ -2495,7 +2498,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "本地跨会话搜索：SQLite FTS5 + 中文分词"
   },
   {
    "key": "zmh2000829/dsh-x-connect",
@@ -2507,7 +2511,7 @@
    "last": "2026-08-27",
    "mentions": 1,
    "one_liner": "跨平台连接器 [源: api]",
-   "track": "沙箱与安全",
+   "track": "接入与互操作",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -2522,7 +2526,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "X (Twitter) 连接器：OAuth 绑定、发推带成本估算、读时间线"
   },
   {
    "key": "xiaoshi7915/dsh-memory-manager",
@@ -2550,7 +2555,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "统一记忆管理层 [源: api]"
   },
   {
    "key": "tieveto666-code/dsh-memory-migration",
@@ -2578,7 +2584,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "长期记忆：键值存储 + 提问时召回，可从官方 Chat 迁移"
   },
   {
    "key": "limbo947/dsh-recall-plugin",
@@ -2606,7 +2613,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "消息撤回：消息气泡旁加撤回按钮，项目文件（影子 git 快照）与对话历史一起回退到该消息之前"
   },
   {
    "key": "adamplatin123/awesome-dsh-plugins",
@@ -2633,7 +2641,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "雷达式精选榜：先收录候选，容器里实测合格才进 Top 50"
   },
   {
    "key": "fakek0f3st/dsh-mcp-diff",
@@ -2660,7 +2669,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "文件变更 diff 卡片可视化（MCP）"
   },
   {
    "key": "kilganon725/dsh-mic-dictation",
@@ -2688,7 +2698,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "composer 里的麦克风听写按钮"
   },
   {
    "key": "wanyexin1998/dsh-workbench",
@@ -2713,7 +2724,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "社区维护的双窗格源码预览"
   },
   {
    "key": "~dsh-ollama-usage",
@@ -2740,7 +2752,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Ollama Cloud 用量余量可视化（5h 会话/周双横条）[源: api]"
   },
   {
    "key": "agentrq/agentrq",
@@ -2752,7 +2765,7 @@
    "last": "2026-08-30",
    "mentions": 1,
    "one_liner": "人类在环实时会话任务管理器",
-   "track": "会话与终端",
+   "track": "跨生态参考",
    "report_star": null,
    "in_registry": false,
    "is_infra": true,
@@ -2766,7 +2779,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "人类在环实时会话任务管理器"
   },
   {
    "key": "cocode-agency/cocode",
@@ -2791,7 +2805,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 桌面发行版（GUI+CLI+插件市场）"
   },
   {
    "key": "cofy-x/axern",
@@ -2816,7 +2831,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "AI agent 沙箱（不信任代码执行+持久化）"
   },
   {
    "key": "wsl043/dsh-codex-subscriptions",
@@ -2841,7 +2857,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "ChatGPT/Codex 订阅接入（OAuth）"
   },
   {
    "key": "ramenne/deepseek-harness-gov",
@@ -2866,7 +2883,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "政务版：办事 WebUI + 红头公文插件"
   },
   {
    "key": "kr-atg/dsh-triad",
@@ -2894,19 +2912,19 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "三合一：用量工作台+技能管理+长期记忆"
   },
   {
    "key": "d86e/dsh-doctor",
    "id": "d86e-dsh-doctor",
    "raw_names": [
     "bruc3van/dsh-doctor",
-    "d86e/dsh-doctor",
-    "~dsh-doctor"
+    "d86e/dsh-doctor"
    ],
    "first": "2026-08-30",
    "last": "2026-09-07",
-   "mentions": 3,
+   "mentions": 2,
    "one_liner": "DSH 健康诊断（找出启动异常/升级不可用插件）",
    "track": "运维与可观测",
    "report_star": null,
@@ -2923,7 +2941,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 健康诊断（找出启动异常/升级不可用插件）"
   },
   {
    "key": "wishesl/dsh-launcher",
@@ -2948,7 +2967,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "插件市场+运行时管理（无需启动 DSH）"
   },
   {
    "key": "chongyangdu2008-cyrus/dsh-subagent-inspector",
@@ -2975,7 +2995,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "只读实时子 agent 进程检查器"
   },
   {
    "key": "severuszh/dsh-skills-mcp-group-manager",
@@ -2986,7 +3007,7 @@
    "first": "2026-08-30",
    "last": "2026-08-31",
    "mentions": 2,
-   "one_liner": "",
+   "one_liner": "Skills/MCP 分组管理+独立开关",
    "track": "界面与皮肤",
    "report_star": null,
    "in_registry": true,
@@ -3002,32 +3023,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "skills/mcp",
-   "id": "",
-   "raw_names": [
-    "skills/mcp"
-   ],
-   "first": "2026-08-30",
-   "last": "2026-08-31",
-   "mentions": 2,
-   "one_liner": "",
-   "track": "接入与互操作",
-   "report_star": null,
-   "in_registry": false,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/skills/mcp",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Skills 与 MCP 分组管理：按组独立开关、筛选模型可见的 skill 目录"
   },
   {
    "key": "yunniees/dsh-plugin-manager",
@@ -3056,7 +3053,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "可视化插件管理（AI自动翻译+一键安装）"
   },
   {
    "key": "bobjia/dsh-context-milvus",
@@ -3083,7 +3081,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "claude-context-milvus 移植 DSH（向量记忆）"
   },
   {
    "key": "noxtyrannus/dsh-cipher",
@@ -3110,7 +3109,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "cipher 三中台/四类记忆接入 DSH"
   },
   {
    "key": "mtdx2001/think-zh",
@@ -3135,7 +3135,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "AI 推理中文实时本地化套件"
   },
   {
    "key": "xiaosurongjia/dsh-improved-inline-edit",
@@ -3162,7 +3163,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "工作中不中断对话再次提需求"
   },
   {
    "key": "focksor/dsh-plugin-mini-dashboard",
@@ -3191,7 +3193,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "会话+token mini 看板"
   },
   {
    "key": "wenyixiaoqingnian/screenshot-review",
@@ -3219,7 +3222,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "截图审阅：模型自己截图看图改代码"
   },
   {
    "key": "jackywxsz/dsh-creator",
@@ -3247,7 +3251,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "面向内容创作者的本地内容与运营工作台"
   },
   {
    "key": "extracurricular-ai/dsh-filesnap",
@@ -3273,7 +3278,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "对话 + 文件一键回退，不依赖 git 仓库"
   },
   {
    "key": "chinosk6/dsh-roleplay",
@@ -3300,7 +3306,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Tavern 角色卡兼容+原生 Agent RolePlay"
   },
   {
    "key": "chen731215-dev/dsh-tavern-v2",
@@ -3325,7 +3332,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "角色扮演/世界观/记忆增强"
   },
   {
    "key": "keman-ai/dsh-skin-pack",
@@ -3350,7 +3358,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "皮肤合集：一仓库多主题"
   },
   {
    "key": "xianrui69/dsh-quick-phrases",
@@ -3377,7 +3386,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "快捷短语芯片栏+/-triggers"
   },
   {
    "key": "nullptr-dzf/dsh-academic-research-skills",
@@ -3389,7 +3399,7 @@
    "last": "2026-08-31",
    "mentions": 1,
    "one_liner": "学术研究技能集",
-   "track": "提供商与路由",
+   "track": "搜索与浏览",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -3405,7 +3415,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "学术研究 skill 集：4 个研究/写作/评审 skill"
   },
   {
    "key": "yu-wenchao/dsh-free-models-hub",
@@ -3430,7 +3441,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "免费模型排行榜（Web UI 侧栏），一键配自定义 provider"
   },
   {
    "key": "omdsh-dev/dsh-file-trace",
@@ -3455,7 +3467,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "文件追踪：记录模型读写+行号 diff"
   },
   {
    "key": "ccch1mneyyy/dsh-tui",
@@ -3481,7 +3494,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": "日报星速榜里的「dsh-TUI 2,968★（2,973★）」指这个仓库，dsh.fish 注册中心未收录"
+   "note": "日报星速榜里的「dsh-TUI 2,968★（2,973★）」指这个仓库，dsh.fish 注册中心未收录",
+   "desc": "命令行 TUI 补位（2,968★，官方公众号收录）：Claude Code 风格界面、鲸鱼顶栏、实时状态、Esc 回滚、上下文进度 + TPS"
   },
   {
    "key": "vshulcz/deja-vu",
@@ -3511,7 +3525,8 @@
    ],
    "status": "成长",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "跨 agent 持久记忆：一套记忆被 Claude/Codex/Cursor/Copilot/OpenClaw 共享"
   },
   {
    "key": "sandbaseai/sandbase-harness",
@@ -3540,7 +3555,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "本地优先、自托管 AI agent 运行时+沙箱"
   },
   {
    "key": "liguobao/ds-harness-remote",
@@ -3565,7 +3581,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "P2P 优先加密远程访问（PC/手机/平板）"
   },
   {
    "key": "morluto/jacobian",
@@ -3577,7 +3594,7 @@
    "last": "2026-08-31",
    "mentions": 1,
    "one_liner": "agent 数学原子库（统一数学工具）",
-   "track": "多Agent与编排",
+   "track": "跨生态参考",
    "report_star": null,
    "in_registry": false,
    "kind": "",
@@ -3590,7 +3607,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "agent 数学原子库（统一数学工具）"
   },
   {
    "key": "fishbottle7/opencode2dsh",
@@ -3618,7 +3636,8 @@
    ],
    "status": "成长",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把 OpenCode Zen 免费模型桥接进 DSH，无需 API key"
   },
   {
    "key": "bertramwang12399/dsh-projects-mode",
@@ -3643,7 +3662,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "侧边栏项目管理器：全屏切换 + 实时统计"
   },
   {
    "key": "jopenchen/dsh-go",
@@ -3668,7 +3688,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "纯 Go 进程内 DSH Agent 实现，可嵌入任意 Go 后端"
   },
   {
    "key": "liyi3068238601-oss/dsh-comfyui-ctl",
@@ -3695,7 +3716,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "ComfyUI 队列控制/历史/模型管理原生插件"
   },
   {
    "key": "huaji2077/empty-fort-strategy",
@@ -3722,7 +3744,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "空城计插件：纯粹烧多余 token 的娱乐作"
   },
   {
    "key": "tt-a1i/archify",
@@ -3748,7 +3771,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "架构可视化 skill（一句话生成架构图）"
   },
   {
    "key": "sagirimo/biodsh",
@@ -3773,7 +3797,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "生物信息学 Clinician agent 桌面"
   },
   {
    "key": "jimmy0123-ux/dsh-token-pet",
@@ -3802,7 +3827,8 @@
    ],
    "status": "成长",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Desktop 悬浮用量小宠物，12 帧动作反馈"
   },
   {
    "key": "liangdabiao/dsh-plugin-developer-skill",
@@ -3827,7 +3853,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 插件开发 Skill，教写插件"
   },
   {
    "key": "itbaymax/dsh-replay-theater",
@@ -3854,7 +3881,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "按原速回放 DSH 会话"
   },
   {
    "key": "taoshi1999/dsh-workspace-hygiene",
@@ -3881,7 +3909,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "工作区卫生：评估产物价值、清掉 agent 留下的垃圾文件"
   },
   {
    "key": "wbin0001/dsh-comfyui-canvas",
@@ -3908,7 +3937,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "ComfyUI 画布嵌入"
   },
   {
    "key": "rottenwooood/dsh-mnemos",
@@ -3937,7 +3967,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "记忆(女神 Mnemos)插件"
   },
   {
    "key": "aliuyanfeng/dsh-soul",
@@ -3949,7 +3980,7 @@
    "last": "2026-09-03",
    "mentions": 1,
    "one_liner": "Personalization 个性化设置",
-   "track": "记忆与上下文",
+   "track": "配置与治理",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -3964,7 +3995,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Personalization 个性化设置"
   },
   {
    "key": "cryjkd/dsh-clawbot",
@@ -3991,7 +4023,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "接微信官方 ilink 机器人网关：扫码绑定后 AI 能主动给自己发微信通知，每轮回复后自动推任务摘要"
   },
   {
    "key": "tangbut1/dsh-plugin-voice-input",
@@ -4018,7 +4051,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DeepSeek Harness Web 语音输入插件：按住说话的麦克风按钮 + 本机离线 sherpa-onnx SenseVoice ASR"
   },
   {
    "key": "weiwang988/dsh-session-spend",
@@ -4046,7 +4080,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 客户端插件：实时会话花费（¥）· 官方峰谷计价 + 节省分解 DSH client plugin: live s"
   },
   {
    "key": "10086ggqq/dsh_theme_minecraft",
@@ -4071,7 +4106,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把 DeepSeek Harness 变成 Minecraft Java Edition 风格——WebGL 旋转全景主"
   },
   {
    "key": "furongjun-1999/commontrustprotocol",
@@ -4096,7 +4132,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "共同信任协议（CTP）：Agent 间信任与身份验证协议，Intelligentics 系"
   },
   {
    "key": "hiq-ai/dingtalk-dsh-assistant",
@@ -4124,7 +4161,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "钉钉群聊常驻个人助理插件（DSH + 钉钉集成）"
   },
   {
    "key": "kr-atg/dsh-chat-flow",
@@ -4149,7 +4187,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 对话流增强（思考 chip 实时走秒+滚动文字，零 DSH 源码改动纯插件注入）"
   },
   {
    "key": "ai-scarlett/dsh-store",
@@ -4177,7 +4216,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "第三方插件市场 + 受控插件（guarded packages）"
   },
   {
    "key": "zuoyunlai/lunheng-article-pipeline-dsh",
@@ -4204,7 +4244,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "论衡文章流水线 DSH bundle"
   },
   {
    "key": "gengwg/dsh-kubectl-guard",
@@ -4216,7 +4257,7 @@
    "last": "2026-09-07",
    "mentions": 1,
    "one_liner": "按 kubeconfig 上下文门禁 kubectl 的策略插件",
-   "track": "记忆与上下文",
+   "track": "沙箱与安全",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -4231,7 +4272,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "按 kubeconfig 上下文门禁 kubectl 的策略插件"
   },
   {
    "key": "a792883583/dsh-message-gateway",
@@ -4256,7 +4298,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "通用消息平台网关（web GUI → 多平台消息）"
   },
   {
    "key": "tencent/weknora",
@@ -4282,7 +4325,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "LLM 知识平台（腾讯）今日活跃"
   },
   {
    "key": "tencent/browserskill",
@@ -4307,7 +4351,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "真机浏览器控制 skill，今日 push"
   },
   {
    "key": "hashgraph-online/hol-guard",
@@ -4333,7 +4378,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "「AI agent 杀毒」——拦截危险工具/密钥访问（agent 安全赛道）"
   },
   {
    "key": "existyay/polaris",
@@ -4360,7 +4406,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "自主科学发现（浙大团队，自动假设-实验-论文）"
   },
   {
    "key": "bradegithub/dsh-plugins-marketplace",
@@ -4388,7 +4435,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "第三方插件市场：Web GUI 里浏览 + 一键安装（126→163★）"
   },
   {
    "key": "skymecode/deepseek-harness-for-vscode",
@@ -4413,7 +4461,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 以**原生 VS Code 扩展**形态进桌面 IDE（editor 新赛道）"
   },
   {
    "key": "fangqian616/consensus-pipeline",
@@ -4438,7 +4487,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "多 agent 辩论式文献综述，防编引用（本日元视频调研，见下）"
   },
   {
    "key": "~oh-my-dsh",
@@ -4450,7 +4500,7 @@
    "last": "2026-09-08",
    "mentions": 1,
    "one_liner": "DSH 插件聚合社区，每 4 小时自动同步生态",
-   "track": "效率自动化",
+   "track": "市场与索引",
    "report_star": null,
    "in_registry": false,
    "ambig_n": 2,
@@ -4465,7 +4515,8 @@
    "cats": [],
    "status": "同名歧义",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 插件聚合社区，每 4 小时自动同步生态"
   },
   {
    "key": "dshplugin-me/dsh-plugin-radar",
@@ -4492,7 +4543,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "开源可自部署的插件生态雷达：自动发现 1.6 万候选 + k8s 运行级实测，产出可用清单"
   },
   {
    "key": "yelebai/dsh-plugin-marketplace",
@@ -4517,7 +4569,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "社区认证插件市场（核查后收录）"
   },
   {
    "key": "z-col/dsh-skillsmanageplugins",
@@ -4542,7 +4595,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH Skills 可视化管理器**（中文）：Web 界面可视化查看/编辑/创建/删除 skill"
   },
   {
    "key": "ruyiai-stack/dsh-osc",
@@ -4567,7 +4621,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "open-source code 插件（面向开源性协作）"
   },
   {
    "key": "zk-andy/dotnet-deepseek-harness-desktop",
@@ -4592,7 +4647,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": ".NET 桌面客户端（online-first）"
   },
   {
    "key": "jungod1121/dsh-anchored-standard",
@@ -4619,34 +4675,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "~dsh-tauri-desk",
-   "id": "",
-   "raw_names": [
-    "~dsh-tauri-desk"
-   ],
-   "first": "2026-09-10",
-   "last": "2026-09-10",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "界面与皮肤",
-   "report_star": null,
-   "in_registry": false,
-   "ambig_n": 0,
-   "ambig_max": 0,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "两阶段预设：先用 Minimal 对齐 bootstrap，再放出 Standard 全套工具（Project2 98/99）"
   },
   {
    "key": "perrylink/dsh-permission-rules",
@@ -4673,7 +4703,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Claude Code 式声明式权限规则**：有序 allow/deny/ask 规则 + 工具名匹配"
   },
   {
    "key": "2bingling/dsh-market",
@@ -4698,7 +4729,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "插件市场：持续收录 1,500+ 插件，中文搜索 + 五维评分 + 一键安装，Web 与侧栏双形态"
   },
   {
    "key": "ywsldxk/dsh-plugin-stars",
@@ -4723,7 +4755,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "插件星标/收藏管理"
   },
   {
    "key": "kvmem/dsh-super-advisor",
@@ -4750,7 +4783,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "按需向更强模型要「第二意见」，请求可编辑、每次调用要人工批准"
   },
   {
    "key": "kangshifu1/dsh-accounts",
@@ -4777,7 +4811,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "凭据桥接**：AI 代填登录表单 / 注入 env 跑 CLI，**值不进模型上下文**，附网页管理界面"
   },
   {
    "key": "winsonpong98-cloud/dsh-distillation-director",
@@ -4804,7 +4839,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "蒸馏主管：把一本书蒸馏成可执行 Agent 技能（V4.1 三闸门禁制）"
   },
   {
    "key": "little-traincar/dsh-imagegen",
@@ -4831,7 +4867,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "图像生成插件：豆包 Seedream 5.0 Pro / qwen-image"
   },
   {
    "key": "cai-mh/dsh-gpt-image",
@@ -4858,7 +4895,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "控制已登录的网页版 ChatGPT 生图并下载到本地"
   },
   {
    "key": "173787247/dsh-wsl-fetch",
@@ -4885,7 +4923,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "WSL 下代理感知的 `web_fetch`（走 Windows HTTP_PROXY）"
   },
   {
    "key": "~dsh-voice-input",
@@ -4912,7 +4951,8 @@
    "cats": [],
    "status": "同名歧义",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH Web 作曲器语音输入（浏览器 Web Speech + Windows 离线兜底）"
   },
   {
    "key": "mrsutivu/plugin-effort-slider",
@@ -4939,7 +4979,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "与 Trendshift 侧暴露的「effort 档位」概念呼应"
   },
   {
    "key": "damonbao/dsh-models-input-modalities",
@@ -4967,7 +5008,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "每个模型的输入模态选择器（文本/图像）"
   },
   {
    "key": "xiongyishun666-alt/dsh-archived-sessions",
@@ -4992,7 +5034,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "设置面板新增「已归档会话」页，可一键恢复"
   },
   {
    "key": "zoahdev/dsh-artifacts",
@@ -5021,7 +5064,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Web GUI 侧栏新增 Artifacts 标签，列出产出文件"
   },
   {
    "key": "yuanliangxiannan/dsh-hud",
@@ -5048,7 +5092,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "侧栏 HP/MP/时间 状态 HUD（把会话当游戏面板看）"
   },
   {
    "key": "a903067276-rgb/dsh-backup",
@@ -5076,7 +5121,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "自动备份 DSH 会话/配置/自定义目录：定时或手动，tgz 打包带轮转"
   },
   {
    "key": "a903067276-rgb/dsh-file-mentions",
@@ -5088,7 +5134,7 @@
    "last": "2026-09-10",
    "mentions": 1,
    "one_liner": "",
-   "track": "提供商与路由",
+   "track": "会话与终端",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -5103,7 +5149,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "回复里的文件路径变可点击：Codex 式直接打开文件/目录，另附被提及文件列表"
   },
   {
    "key": "a903067276-rgb/dsh-simple-memory",
@@ -5130,7 +5177,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "轻量记忆库：半自动攒 markdown，全局/项目分层加载，跨项目搜索"
   },
   {
    "key": "a903067276-rgb/dsh-todo-guard",
@@ -5157,7 +5205,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "可靠 todo 面板：重启不丢，勾完成必须给出证据"
   },
   {
    "key": "bowenliang123/dsh-context",
@@ -5186,7 +5235,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "上下文洞察与管理：看会话吃了多少 context、哪些该丢"
   },
   {
    "key": "kanneiren/dsh-network-settings",
@@ -5213,7 +5263,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Windows / WSL 网络状态面板"
   },
   {
    "key": "bugmaker2/dsh-plugin-template",
@@ -5242,7 +5293,8 @@
    ],
    "status": "成长",
    "deepdive": null,
-   "note": "另有 sunshine-lang/dsh-plugin-template 同名"
+   "note": "另有 sunshine-lang/dsh-plugin-template 同名",
+   "desc": "插件模板：host + client 双端起手式（7 天从 0 拿到 110★）"
   },
   {
    "key": "plolpl789/dsh-raw-html-v2",
@@ -5269,7 +5321,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "VCP 视觉联觉插件 v2（官方 Slot API）：raw-HTML 渲染路径"
   },
   {
    "key": "quqxui/dsh-memgas",
@@ -5297,7 +5350,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "长期记忆插件：**四通道检索融合 + 记忆演化闭环**，方法来自 **ICLR 2026 论文 MemGAS"
   },
   {
    "key": "fylaropen/dsh-fylar-office-editor",
@@ -5324,7 +5378,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Office 文档预览/编辑 + DOCX 生成"
   },
   {
    "key": "weiyangpro/dsh-deepseek-usage-panel",
@@ -5353,7 +5408,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Floating macOS-glass DeepSeek usage panel for the DSH web UI: live official balance + token usage (today, session, 24 h smooth trend, per model) without opening platform.deepseek.com/usage. · DSH 毛玻璃用量面板：官方余额 + Token 用量"
   },
   {
    "key": "better-er/dsh-live-token-stats",
@@ -5381,7 +5437,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH Web 插件：基于 DeepSeek 官方 BPE 分词表，在 composer 下方实时渲染 token 状态带，显示流式 TPS、输出 token 与首字延迟，并对比上次 step 的估算与实际偏差；纯插件自包含，不改 DSH 源码"
   },
   {
    "key": "clickpm/dsh-acp-interactive",
@@ -5406,7 +5463,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "面向 Zed 等 ACP 客户端的编辑器侧 ACP server**，由已发布组件组合而成"
   },
   {
    "key": "minglink/dsh-stream-market",
@@ -5418,7 +5476,7 @@
    "last": "2026-09-11",
    "mentions": 1,
    "one_liner": "内置可视化插件市场：秒开 + `dsh://` 联动 + 原子化彻底卸载",
-   "track": "搜索与浏览",
+   "track": "市场与索引",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -5433,7 +5491,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "内置可视化插件市场：秒开 + `dsh://` 联动 + 原子化彻底卸载"
   },
   {
    "key": "pelydeng/dsh-plugin-manager",
@@ -5458,7 +5517,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "带共享认证的插件包部署与管理"
   },
   {
    "key": "try-works/dsh-browser-agent",
@@ -5487,7 +5547,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Chrome 侧栏浏览器 agent"
   },
   {
    "key": "hcyinnn/dsh-tool-ssh",
@@ -5515,13 +5576,15 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "MobaXterm 风格的 SSH/SFTP 工具插件（含已保存连接）"
   },
   {
    "key": "noneadchina/dsh-nonead-universal-robots",
    "id": "dsh-nonead-universal-robots",
    "raw_names": [
-    "noneadchina/dsh-nonead-universal-robots"
+    "noneadchina/dsh-nonead-universal-robots",
+    "~robots"
    ],
    "first": "2026-09-11",
    "last": "2026-09-12",
@@ -5542,34 +5605,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "~robots",
-   "id": "",
-   "raw_names": [
-    "~robots"
-   ],
-   "first": "2026-09-11",
-   "last": "2026-09-11",
-   "mentions": 0,
-   "one_liner": "",
-   "track": "接入与互操作",
-   "report_star": null,
-   "in_registry": false,
-   "ambig_n": 0,
-   "ambig_max": 0,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "用自然语言直接控制 Universal Robots（UR）机械臂"
   },
   {
    "key": "f1star/dsh-research",
@@ -5597,7 +5634,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "证据优先的 PDF 阅读 + 论文持久记录 bundle"
   },
   {
    "key": "zoria-lind/dsh-behavior-enhancer",
@@ -5624,7 +5662,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "工具调用纪律的提示词安全段"
   },
   {
    "key": "better-er/dsh-pause",
@@ -5637,7 +5676,7 @@
    "last": "2026-09-12",
    "mentions": 2,
    "one_liner": "",
-   "track": "记忆与上下文",
+   "track": "配置与治理",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -5652,7 +5691,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH Web 暂停插件：agent 完成一轮工具交互、正要发出下一次模型请求之前暂停，保持 composer 输入框可用，人类以回车/发送放行并可携带补充文字；此暂停不打断任何在途 API 调用，模型上下文始终完整、无感知。纯插件自包含，不改 DSH 源码。"
   },
   {
    "key": "better-er/dsh-classic-coding",
@@ -5679,7 +5719,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "古法编程：在 DSH Web UI 中提供 Monaco 编辑器 + 文件树覆盖层面板"
   },
   {
    "key": "brokkai/bifrost",
@@ -5691,7 +5732,7 @@
    "last": "2026-09-11",
    "mentions": 1,
    "one_liner": "多语言静态分析（面向 agent/编辑器/大仓库）",
-   "track": "多Agent与编排",
+   "track": "跨生态参考",
    "report_star": null,
    "in_registry": false,
    "kind": "",
@@ -5704,7 +5745,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "多语言静态分析（面向 agent/编辑器/大仓库）"
   },
   {
    "key": "titanwings/colleague-skill",
@@ -5731,7 +5773,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "改名前的 colleague-skill（2026-09-11 起改叫 titanwings/distilly）"
   },
   {
    "key": "omdsh-dev/dsh-better-sidebar",
@@ -5762,7 +5805,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "VSCode 式右侧栏（资源管理器/编辑/…）"
   },
   {
    "key": "anbeime/skill",
@@ -5791,7 +5835,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "小跃虚拟伴侣：智谱 AI 对话陪伴 + 静态图片分享（skill 类，非 bundle）"
   },
   {
    "key": "yujunzhixue/dsh-purge",
@@ -5820,7 +5865,8 @@
    ],
    "status": "成长",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "「破甲」：面向国模的越狱提示词集，不同模型换不同提示词（风险项，见日报风险节）"
   },
   {
    "key": "superdesigndev/treg",
@@ -5850,7 +5896,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "工具超市：2,896 个 agent 友好工具按次计费（「工具的 OpenRouter」）"
   },
   {
    "key": "foryourhealth111-pixel/vibe-skills",
@@ -5881,7 +5928,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Vibe Code Orchestrator：受治理的运行时入口，先冻结需求、限定执行边界、强制验证（skill 类）"
   },
   {
    "key": "seaof0/dsh-redteam-model",
@@ -5911,7 +5959,8 @@
    ],
    "status": "成长",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 红队安全研究模式与运行时插件"
   },
   {
    "key": "flizzywine/dsh-tavern",
@@ -5941,7 +5990,8 @@
    ],
    "status": "成长",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "SillyTavern 式角色扮演 profile——增速榜里少见的 B 级与 AGPL"
   },
   {
    "key": "d-dev0101/open-sea-skin",
@@ -5969,7 +6019,8 @@
    ],
    "status": "成长",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "WebGPU 海洋皮肤"
   },
   {
    "key": "jesseovo/last30days-skill-cn",
@@ -5998,34 +6049,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "~dsh-super-injector",
-   "id": "",
-   "raw_names": [
-    "~dsh-super-injector"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-13",
-   "mentions": 2,
-   "one_liner": "",
-   "track": "配置与治理",
-   "report_star": null,
-   "in_registry": false,
-   "ambig_n": 0,
-   "ambig_max": 0,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "跨平台近 30 天主题调研 skill（微博/小红书/B站/知乎/抖音/微信/百度/头条）"
   },
   {
    "key": "grloper/dsh-claude-oauth",
@@ -6053,7 +6078,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Claude Pro/Max 订阅接入：Settings 里走 Google/Gmail 登录，自动续 token、实时额度"
   },
   {
    "key": "minglu6/dsh-provider-qoder",
@@ -6080,7 +6106,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Qoder CN 订阅接入：COSY 签名 + WAF 编码的流式代理"
   },
   {
    "key": "yequ172672/dsh-codex-subscription",
@@ -6107,7 +6134,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH LLM 适配器插件:复用 Codex CLI 本地登录凭证(~/.codex/auth.json)在 DSH 中直接使用 ChatGPT 订阅模型"
   },
   {
    "key": "i:dsh-coding-subscription-oauth",
@@ -6134,7 +6162,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "编程订阅 OAuth 合集：SuperGrok/Grok Build、ChatGPT Plus Codex、Kimi Code、Claude Code，附常见鉴权报错修复"
   },
   {
    "key": "agent-mobile/dsh-mobile",
@@ -6159,7 +6188,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "手机端 DSH：Flutter 客户端 + Dart wire-protocol SDK（仓库现已 404/改名）"
   },
   {
    "key": "i:dsh-pocket",
@@ -6186,7 +6216,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把 DeepSeek Harness 装进你的口袋：一个包、一个设置页，手机扫码即同步访问电脑上的 DSH（局域网 + 公网，实时同屏）。"
   },
   {
    "key": "linhay/harmony-next.skills",
@@ -6198,7 +6229,7 @@
    "last": "2026-09-12",
    "mentions": 1,
    "one_liner": "",
-   "track": "配置与治理",
+   "track": "跨生态参考",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
@@ -6213,7 +6244,8 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "鸿蒙 HarmonyOS NEXT 适配的 skill 包"
   },
   {
    "key": "lijunyu726/dsh-header-balance",
@@ -6240,7 +6272,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "会话页头部的余额芯片。点击跳转充值页，悬停看赠送与充值的拆分。每 60 秒与窗口获得焦点时刷新；未配置密钥、密钥失效、余额不足、限流、超时、断网、响应异常各自给出提示。密钥只在宿主侧读取。"
   },
   {
    "key": "aliensweety/dsh-usage-dock",
@@ -6269,7 +6302,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "输入框 dock 里的本会话人民币花费胶囊，点开看 token 分桶与计费上下限"
   },
   {
    "key": "~dsh-deepseek-tide",
@@ -6296,7 +6330,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "峰谷计费/用量可视化插件带的一员（日报未给 owner，仓库待确认）"
   },
   {
    "key": "lijunyu726/dsh-price-phase",
@@ -6323,19 +6358,20 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "输入卡底部工具行的计费时段徽标，附倒计时。高峰为北京时间周一至周五 09:00-12:00、14:00-18:00；周末全天算空闲，周五 18:00 后显示距下周一 09:00 还有 63 小时。"
   },
   {
-   "key": "wings1848/dsh-mcp-lazy",
+   "key": "xine2009cn/dsh-branch-inbox-guard",
    "id": "",
    "raw_names": [
-    "wings1848/dsh-mcp-lazy"
+    "xine2009cn/dsh-branch-inbox-guard"
    ],
    "first": "2026-09-12",
-   "last": "2026-09-13",
-   "mentions": 2,
-   "one_liner": "懒加载 MCP 网关**：一个稳定代理工具",
-   "track": "接入与互操作",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "沙箱与安全",
    "report_star": null,
    "in_registry": false,
    "kind": "",
@@ -6343,12 +6379,13 @@
    "score": 0,
    "velocity": 0,
    "stars": 0,
-   "url": "https://github.com/wings1848/dsh-mcp-lazy",
+   "url": "https://github.com/xine2009cn/dsh-branch-inbox-guard",
    "summary_en": "",
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "分支会话护栏：fork 出的子会话不再继承父会话排队的下一条提示词"
   },
   {
    "key": "aaronandwork/dsh-evidence-gate",
@@ -6374,19 +6411,20 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "证据门禁（无描述，S/A 未评级）"
   },
   {
-   "key": "xine2009cn/dsh-branch-inbox-guard",
+   "key": "wings1848/dsh-mcp-lazy",
    "id": "",
    "raw_names": [
-    "xine2009cn/dsh-branch-inbox-guard"
+    "wings1848/dsh-mcp-lazy"
    ],
    "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "沙箱与安全",
+   "last": "2026-09-13",
+   "mentions": 2,
+   "one_liner": "懒加载 MCP 网关**：一个稳定代理工具",
+   "track": "接入与互操作",
    "report_star": null,
    "in_registry": false,
    "kind": "",
@@ -6394,37 +6432,13 @@
    "score": 0,
    "velocity": 0,
    "stars": 0,
-   "url": "https://github.com/xine2009cn/dsh-branch-inbox-guard",
+   "url": "https://github.com/wings1848/dsh-mcp-lazy",
    "summary_en": "",
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "duhu2000/dsh-form-fill-agent",
-   "id": "",
-   "raw_names": [
-    "duhu2000/dsh-form-fill-agent"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "多Agent与编排",
-   "report_star": null,
-   "in_registry": false,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/duhu2000/dsh-form-fill-agent",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "懒加载 MCP 网关**：一个稳定代理工具"
   },
   {
    "key": "mekansm1/dsh-webgis",
@@ -6451,19 +6465,20 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "地图插件：读图、改图与三维世界理解（GIS 场景）"
   },
   {
-   "key": "clclyzybzjsq/dsh-btw",
+   "key": "duhu2000/dsh-form-fill-agent",
    "id": "",
    "raw_names": [
-    "clclyzybzjsq/dsh-btw"
+    "duhu2000/dsh-form-fill-agent"
    ],
    "first": "2026-09-12",
    "last": "2026-09-12",
    "mentions": 1,
    "one_liner": "",
-   "track": "会话与终端",
+   "track": "多Agent与编排",
    "report_star": null,
    "in_registry": false,
    "kind": "",
@@ -6471,12 +6486,13 @@
    "score": 0,
    "velocity": 0,
    "stars": 0,
-   "url": "https://github.com/clclyzybzjsq/dsh-btw",
+   "url": "https://github.com/duhu2000/dsh-form-fill-agent",
    "summary_en": "",
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "AI 填表：用企查查 MCP 填 XLSX 空字段，预览确认后导出新副本"
   },
   {
    "key": "mx1syk/dsh-x-opencode-session",
@@ -6504,7 +6520,60 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "给 provider 请求注入动态 HTTP 头（${uuid} 模板），例如 run 级稳定的 x-opencode-session"
+  },
+  {
+   "key": "clclyzybzjsq/dsh-btw",
+   "id": "",
+   "raw_names": [
+    "clclyzybzjsq/dsh-btw"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "会话与终端",
+   "report_star": null,
+   "in_registry": false,
+   "kind": "",
+   "grade": "",
+   "score": 0,
+   "velocity": 0,
+   "stars": 0,
+   "url": "https://github.com/clclyzybzjsq/dsh-btw",
+   "summary_en": "",
+   "cats": [],
+   "status": "未入库",
+   "deepdive": null,
+   "note": "",
+   "desc": "会话里加 /btw 旁问命令：问一句不打断主对话（Claude Code /btw 移植）"
+  },
+  {
+   "key": "nguyenduclong-ict/dsh-session-progress",
+   "id": "",
+   "raw_names": [
+    "nguyenduclong-ict/dsh-session-progress"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "会话与终端",
+   "report_star": null,
+   "in_registry": false,
+   "kind": "",
+   "grade": "",
+   "score": 0,
+   "velocity": 0,
+   "stars": 0,
+   "url": "https://github.com/nguyenduclong-ict/dsh-session-progress",
+   "summary_en": "",
+   "cats": [],
+   "status": "未入库",
+   "deepdive": null,
+   "note": "",
+   "desc": "实时会话进度与任务跟踪：抽屉面板 + composer 进度按钮"
   },
   {
    "key": "beihzb/dsh-opencode-session-header",
@@ -6533,32 +6602,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "nguyenduclong-ict/dsh-session-progress",
-   "id": "",
-   "raw_names": [
-    "nguyenduclong-ict/dsh-session-progress"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "会话与终端",
-   "report_star": null,
-   "in_registry": false,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/nguyenduclong-ict/dsh-session-progress",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "给 OpenCode Go 按会话注入 x-opencode-session 头：修 400 MissingSessionID、保住提示缓存路由"
   },
   {
    "key": "online111111/whalechan-dsh-theme",
@@ -6583,59 +6628,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "acidgr/dsh-web-whale-maid",
-   "id": "",
-   "raw_names": [
-    "acidgr/dsh-web-whale-maid"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-13",
-   "mentions": 2,
-   "one_liner": "二次元女仆鲸鱼桌宠",
-   "track": "界面与皮肤",
-   "report_star": null,
-   "in_registry": false,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/acidgr/dsh-web-whale-maid",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "11zld22/dsh-model-info-fill",
-   "id": "dsh-model-info-fill",
-   "raw_names": [
-    "11zld22/dsh-model-info-fill"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "记忆与上下文",
-   "report_star": null,
-   "in_registry": true,
-   "kind": "bundle",
-   "grade": "B",
-   "score": 51,
-   "velocity": 0,
-   "stars": 3,
-   "url": "https://github.com/11zld22/dsh-model-info-fill",
-   "summary_en": "模型信息补全：按模型名自动补全上下文、输出上限、思考档位和图片能力",
-   "cats": [
-    "model"
-   ],
-   "status": "观察",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "非官方鲸鱼娘社区同人主题（鲸鱼已成社区公共符号）"
   },
   {
    "key": "sz1698/dsh-bg-new",
@@ -6662,7 +6656,62 @@
    ],
    "status": "活跃",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 网页界面换背景：侧栏壁纸抽屉，支持预设/纯色/渐变/图片/视频，滚轮+拖动同时管缩放定位，本地媒体伺服"
+  },
+  {
+   "key": "acidgr/dsh-web-whale-maid",
+   "id": "",
+   "raw_names": [
+    "acidgr/dsh-web-whale-maid"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-13",
+   "mentions": 2,
+   "one_liner": "二次元女仆鲸鱼桌宠",
+   "track": "界面与皮肤",
+   "report_star": null,
+   "in_registry": false,
+   "kind": "",
+   "grade": "",
+   "score": 0,
+   "velocity": 0,
+   "stars": 0,
+   "url": "https://github.com/acidgr/dsh-web-whale-maid",
+   "summary_en": "",
+   "cats": [],
+   "status": "未入库",
+   "deepdive": null,
+   "note": "",
+   "desc": "二次元女仆鲸鱼桌宠"
+  },
+  {
+   "key": "11zld22/dsh-model-info-fill",
+   "id": "dsh-model-info-fill",
+   "raw_names": [
+    "11zld22/dsh-model-info-fill"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "配置与治理",
+   "report_star": null,
+   "in_registry": true,
+   "kind": "bundle",
+   "grade": "B",
+   "score": 51,
+   "velocity": 0,
+   "stars": 3,
+   "url": "https://github.com/11zld22/dsh-model-info-fill",
+   "summary_en": "模型信息补全：按模型名自动补全上下文、输出上限、思考档位和图片能力",
+   "cats": [
+    "model"
+   ],
+   "status": "观察",
+   "deepdive": null,
+   "note": "",
+   "desc": "模型信息补全：按模型名自动补全上下文、输出上限、思考档位和图片能力"
   },
   {
    "key": "a86582751/dsh-nexttavern",
@@ -6687,7 +6736,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "原生 Agent 驱动的**长篇角色扮演**：交互式创作 + 主动世界书 + 动态记忆 + 多角色推演 + **小说导出"
   },
   {
    "key": "enteguo/dsh-plugin-quick-chat",
@@ -6712,7 +6762,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "侧边栏「快速会话」窗口：不打断主会话快速提问，可选带上当前会话全文"
   },
   {
    "key": "weilantianhai/dsh-command-skill-list",
@@ -6739,32 +6790,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
-  },
-  {
-   "key": "zzjzzb/ai-memory",
-   "id": "",
-   "raw_names": [
-    "zzjzzb/ai-memory"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "记忆与上下文",
-   "report_star": null,
-   "in_registry": false,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/zzjzzb/ai-memory",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "/skills 命令：列出可调用的 skill（描述自动中英互译），选中即载入当前消息"
   },
   {
    "key": "xingmen-1/dsh-move-rag",
@@ -6789,7 +6816,34 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "住在桌面上的本地知识库"
+  },
+  {
+   "key": "zzjzzb/ai-memory",
+   "id": "",
+   "raw_names": [
+    "zzjzzb/ai-memory"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "记忆与上下文",
+   "report_star": null,
+   "in_registry": false,
+   "kind": "",
+   "grade": "",
+   "score": 0,
+   "velocity": 0,
+   "stars": 0,
+   "url": "https://github.com/zzjzzb/ai-memory",
+   "summary_en": "",
+   "cats": [],
+   "status": "未入库",
+   "deepdive": null,
+   "note": "",
+   "desc": "Rust + SQLite 的个人记忆语义层 SDK（短/中/长期分层）"
   },
   {
    "key": "stvlynn/dsh.fish",
@@ -6815,7 +6869,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "注册中心本体不靠星，靠数据与评分权威性"
   },
   {
    "key": "siriusneo/d.sh",
@@ -6840,7 +6895,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "一个 Bash 文件的最小 agent harness**，一行启动"
   },
   {
    "key": "menghuan1918/dsh-apollo",
@@ -6865,7 +6921,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把单一会话不可能完成的巨任务拆成无数可验证子系统，大规模并行有纪律执行"
   },
   {
    "key": "ttxs66666/dsh-review-gate",
@@ -6891,7 +6948,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "独立审查门：把完成的产出交给独立 reviewer"
   },
   {
    "key": "1420079678-ctrl/agent-body",
@@ -6916,7 +6974,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "器官化 agent 插件平台：23 个 organ"
   },
   {
    "key": "stylejeke/dsh-tunnel-plugin",
@@ -6942,7 +7001,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "⚠️ **把本机 DSH Web GUI 安全发布到公网**，在外面用浏览器操作家里那台机器"
   },
   {
    "key": "wangzhanchao883/dsh-hold-to-talk",
@@ -6967,7 +7027,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "按住说话语音输入（Web 输入框）"
   },
   {
    "key": "wwwangzilin/dsh-luna-preset",
@@ -6992,7 +7053,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "「露娜模式」agent preset：魔界小恶魔人设 + **六层情感引擎"
   },
   {
    "key": "dxxcao/dsh-self-improvement",
@@ -7017,7 +7079,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "跨会话自我改进：持久化…"
   },
   {
    "key": "lcestou/dsh-oh-my-claude",
@@ -7043,7 +7106,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把 Claude Code CLI 当 dsh 的 LLM provider（跨 CLI 互操作层）"
   },
   {
    "key": "longmiaoo/dsh-native-browser",
@@ -7068,7 +7132,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 原生浏览器运行时（production-grade）"
   },
   {
    "key": "wx971025/dsh-openspec",
@@ -7096,7 +7161,8 @@
    ],
    "status": "观察",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把 OpenSpec（SDD）接进 DSH：内置 6 个 agent skill"
   },
   {
    "key": "zjuatri/dsh-terminal-plugin",
@@ -7121,7 +7187,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "VS Code 风 PTY 终端面板"
   },
   {
    "key": "guomonth/dsh-erp",
@@ -7147,7 +7214,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "ERP 学习与自动化（面向 dsh 0.1.5-rc2，带证据门）"
   },
   {
    "key": "ysr666/dsh-vision-router",
@@ -7178,7 +7246,8 @@
    ],
    "status": "头部",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "给纯文本模型配眼睛：内置免费视觉链（免 key）+ 像素级视觉工具"
   },
   {
    "key": "riekelt/principal-engineer",
@@ -7203,7 +7272,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "资深工程师行为约束 skill：产出必须过验证才算完成（verifying-before-done）"
   },
   {
    "key": "fission-ai/openspec",
@@ -7229,7 +7299,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "OpenSpec 本体（规范驱动开发 SDD 框架），被 dsh-openspec 等插件接进 DSH"
   },
   {
    "key": "clearailhc/clearai-dsh",
@@ -7254,7 +7325,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把「Epistemic Loop（认知闭环）」做成 DSH 原生插件"
   },
   {
    "key": "corrinehu/dsh-buddy-checkin",
@@ -7279,7 +7351,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "DSH 启动时自动完成 WorkBuddy 国内版每日签到"
   },
   {
    "key": "mrrisega/dsh-remote",
@@ -7304,7 +7377,8 @@
    "cats": [],
    "status": "深调研",
    "deepdive": "mrRisega__dsh-remote 技术调研.md",
-   "note": "同名仓库 20+ 个，日报口径指 B 站视频侧调研的这个"
+   "note": "同名仓库 20+ 个，日报口径指 B 站视频侧调研的这个",
+   "desc": "手机远程接管本机 DSH：桥主动外连免穿透 + 一次性扫码配对 + E2EE（视频侧已出调研）"
   },
   {
    "key": "wwwangzilin/dsh-character-presets",
@@ -7329,7 +7403,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "10 个角色（露娜/小喵/绯音/凛/芽衣/白夜…）**共用一套六层情感引擎"
   },
   {
    "key": "vlln/dsh-autofork",
@@ -7354,7 +7429,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "Agent 忙时自动分叉会话**：新指令立刻在新会话响应，旧会话后台跑完并回注结果"
   },
   {
    "key": "leolee9086/sac_search",
@@ -7379,7 +7455,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "多引擎元搜索：**约 200 个免 API key 引擎**，运行时零依赖"
   },
   {
    "key": "zlzayn/dsh-zhihu-search",
@@ -7404,7 +7481,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "知乎开放平台官方 API 三工具（站内/全网/直答），结果带可引用来源"
   },
   {
    "key": "ryanzeeee/dsh-chattree",
@@ -7429,7 +7507,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "非线性对话画布，每一轮是一个节点"
   },
   {
    "key": "canelaslorenzoenego-ai/orderzx",
@@ -7454,7 +7533,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "把「有隐身能力的自主 Chrome」塞进 DSH 会话**（与 Trendshift 侧 AIHawk 同题材）"
   },
   {
    "key": "jackeyunjie/dsh-rule-lens",
@@ -7479,7 +7559,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "AGENTS.md/rules 加载可视化 + 预算治理 + 硬拦截 + Lint + 遵守率"
   },
   {
    "key": "vergil-long/dsh-email-notify",
@@ -7504,7 +7585,8 @@
    "cats": [],
    "status": "未入库",
    "deepdive": null,
-   "note": ""
+   "note": "",
+   "desc": "任务完成/等授权/等回答时发邮件，配「离开模式」开关"
   }
  ]
 }

@@ -46,6 +46,7 @@ DENY_KEYS = {
     "agent/pre-step", "chatgpt/codex", "agents.md/rules", "search/repositories",
     "dataversion/generatedat", "evaluation/dsh-minimal.patch",
     "dshplugin.app/browsers", "dsh-plugins.net/zh", "198/1d", "162/1d",
+    "api/search", "skills/mcp", "universal/robots", "见/日报",
 }
 
 # 赛道分类：加权关键词打分，最高分胜出；ASCII 关键词按词边界匹配（防 skill 里命中 kill）
@@ -152,7 +153,7 @@ FIELD_DOC = """| 列 | 含义 |
 | 赛道 | 本表按名称/简介/关键词自动归类，[推断]，可用 manual.json 覆盖 |
 | 首次/最近 | 该条目第一次 / 最近一次出现在日报中的日期 |
 | 状态 | 深调研（已出 ≥8KB 调研文档）/ 头部（≥1000★）/ 成长（星速≥20）/ 活跃（≥10★）/ 观察（<10★）/ 未入库（dsh.fish 未收录） |
-| 一句话 | 取自日报原句；日报未给描述时回落到注册中心英文 summary |
+| 一句话 | 干啥的。优先级：`manual.json` 的 `desc` 人工描述 > 日报原句 > 注册中心 summary；超过 90 字只留第一句 |
 """
 
 
@@ -341,9 +342,12 @@ def scan_report(path: str):
                 e["one_liner"] = one
             if star and not e["stars"]:
                 e["stars"] = star
+        pair_parts = {p for fp in found_ok for p in fp.split("/")}
         for tok in slugs:
             if len(tok) < 6 or tok in GENERIC_SLUGS:
                 continue
+            if tok in pair_parts:
+                continue          # owner/repo 里的 owner（dsh-market/dsh-market）别当独立插件
             if re.search(r"\.(net|com|dev|app|org|io|fish|cn|ai|sh)$", tok):
                 continue          # 站点名（dsh-plugins.net 之类）不是插件
             e = entries.setdefault("~" + tok, {"mentions": 0, "one_liner": "", "stars": None})
@@ -450,6 +454,14 @@ def build(offline: bool = False) -> dict:
     aliases = {k.lower(): v.lower() for k, v in manual.get("aliases", {}).items()}
     track_override = manual.get("track", {})
     notes = manual.get("notes", {})
+    descs = manual.get("desc", {})
+
+    def lookup_desc(key: str, art) -> str:
+        for k in (key, (art or {}).get("id", ""), key.split("/")[-1], "~" + key.split("/")[-1]):
+            if k and k in descs:
+                return descs[k]
+        return ""
+
     deepdives = scan_deepdives()
 
     reports = sorted(
@@ -578,6 +590,11 @@ def build(offline: bool = False) -> dict:
             rec["status"] = "同名歧义"
         rec["deepdive"] = deepdives.get(key)
         rec["note"] = notes.get(key, "")
+        # 一句话描述优先级：人工 desc > 中文（日报原句/注册中心 summary）> 兜底原文
+        cand = [lookup_desc(key, rec.get("art")), rec.get("one_liner", ""),
+                rec.get("summary_en", "")]
+        rec["desc"] = next((c for c in cand if c and len(CJK.findall(c)) >= 4),
+                           next((c for c in cand if c), ""))
     # 只按最终条目的首次日期统计，保证「当日新增」求和 == 条目总数
     per_day_new = Counter(rec["first"] for rec in ledger.values())
     if AMBIG:
@@ -722,7 +739,7 @@ def render(ledger: dict) -> str:
     for e in alle:
         A(f"| {link_name(e)} | {e['kind'] or '—'} | {fmt_stars(e['stars'])} | "
           f"{e['velocity'] or '—'} | {e['grade'] or '—'} | {e['track']} | {e['first'][5:]} | "
-          f"{e['last'][5:]} | {e['status']} | {clean_cell(e['one_liner']) or clean_cell(e.get('summary_en',''))} |")
+          f"{e['last'][5:]} | {e['status']} | {clean_cell(e['desc'])} |")
     A("")
     A("## 四、已出深度调研文档（Tier 1/2）")
     A("")
@@ -821,9 +838,21 @@ def link_name(e: dict) -> str:
 
 def clean_cell(s: str) -> str:
     s = (s or "").replace("|", "／").replace("\n", " ")
+    s = re.sub(r"\[源[^\]]*\]", "", s)          # 去掉 [源: api] 之类尾部标注
+    s = s.replace("🆕", "").replace("⭐", "").replace("★", "")
     s = re.sub(r"\*{1,}", "", s)
-    s = re.sub(r"^[\s:：、。·\-]+", "", s)
-    return re.sub(r"\s+", " ", s).strip()[:150]
+    s = re.sub(r"^[\s:：、。·\-（）()]+", "", s)
+    s = re.sub(r"^新进\s*", "", s)
+    s = re.sub(r"^[（(]?(改名|更名|旧名)[)）]?\s*", "", s)
+    s = re.sub(r"[\s:：、]+$", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    if len(s) > 90:                      # 长句只留第一句，保持「一句话」体例
+        cut = max(s.find("。"), s.find("；"))
+        if 20 <= cut <= 140:
+            s = s[:cut + 1]
+        elif len(s) > 120:
+            s = s[:118].rstrip() + "…"
+    return s
 
 
 # ---------------------------------------------------------------- main
