@@ -182,14 +182,17 @@ npm view {package-name} --json | jq '.versions | length'
 
 ### 🔴 关键规则：每个 Tier 1/Tier 2 新入库项目必须有 `技术调研.md` 文件
 
+**🔴 索引必需 wikilink（2026-09-01 用户要求）**：索引中每条调研记录必须用 `[[wikilink]]` 指向调研文档，禁止纯文本仓库条目。已调研无文档 → 需补建文档或将链接指到最近似文档；Tier 3 无文档的一律附 GitHub URL 以便跳转复用。
+
 新增项目到索引时，**必须同时生成对应的 `{owner}__{repo} 技术调研.md` 调研文档**。索引中的 wiki link 必须指向存在的文件，禁止纯文本条目（`- librepods-org/librepods — 28,766⭐ | 描述` 不带 `[[ ]]` 是不合格的）。
 
 **检查方法：**
 ```bash
 # 验证索引中每行 Tier 1/Tier 2 项目是否有对应的调研文件
 # 正则匹配 `owner__repo 技术调研.md` 存在于文件系统的
-ls 调研分析/Trendshift 热门项目/ | grep -oP '\w+__\w+ 技术调研'
-diff <(grep -oP '^\w+/\w+' 索引.md | sort) <(ls 调研分析/Trendshift 热门项目/*技术调研.md | grep -oP '\w+__\w+' | sort)
+# 技术调研文件已细分到 17 个类别子目录，递归统计
+find 调研分析 -name '*技术调研.md' | grep -oP '\w+__\w+ 技术调研'
+diff <(grep -oP '^\w+/\w+' 索引.md | sort) <(find 调研分析 -name '*技术调研.md' | grep -oP '\w+__\w+' | sort)
 ```
 
 如果缺少，必须先调研再更新索引，或者调研失败则在索引中标注 `⚠️ 调研失败`。
@@ -338,11 +341,15 @@ cat /tmp/ts-{repo}/package.json  # 或 Cargo.toml、pyproject.toml
 
 ## Obsidian Vault 存储流程
 
+> 📁 **2026-09-01 目录统一分类**：`调研分析/` 顶层按 17 个技术类别目录统一收纳所有技术调研文档（AI-Agent与编码Agent/、Skill与插件/、开发者工具/、LLM与模型/ 等），`Trendshift 热门项目/` 类别数据已提升到 `调研分析/` 顶层。（AI-Agent与编码Agent/、Skill与插件/、开发者工具/、LLM与模型/、前端与UI/、基础设施与网络/、音视频与图像/、内容与创意/、数据库与存储/、安全与隐私/、操作系统与桌面/、商业与金融/、社交与通讯/、生活与健康/、生活方式与工具/、游戏与模拟/、硬件与嵌入/）。**新写调研文档默认进 `AI-Agent与编码Agent/` 子目录**（该类占多数）；若项目明显属其他类则写对应子目录。简报/、Tier3摘要、索引仍在顶层。下方示例路径中的 `Trendshift 热门项目/{owner}__{repo}` 应理解为 `Trendshift 热门项目/<类别>/<owner>__{repo}`。
+
+
+
 所有调研报告必须存入 Obsidian vault 知识库。
 
 **路径模板：**
 ```
-调研文件：调研分析/Trendshift 热门项目/{owner}__{repo} 技术调研.md
+调研文件：调研分析/AI-Agent与编码Agent/{owner}__{repo} 技术调研.md
 简报：     调研分析/Trendshift 热门项目/简报/YYYY-MM-DD-简报.md
 ```
 专题对比文章用描述性文件名，如 `AI编程Agent上下文压缩工具对比 RTK Headroom Lean-ctx 技术调研.md`。
@@ -359,7 +366,7 @@ vault = "/Users/xiebaiyuan/Library/Mobile Documents/iCloud~md~obsidian/Documents
 
 def write_research(owner, repo, content):
     """直接写入 Obsidian vault 物理路径（iCloud 自动同步）"""
-    path = Path(vault) / "调研分析" / "Trendshift 热门项目" / f"{owner}__{repo} 技术调研.md"
+    path = Path(vault) / "调研分析" / "AI-Agent与编码Agent" / f"{owner}__{repo} 技术调研.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     return str(path)
@@ -371,7 +378,7 @@ python3 << 'PYEOF'
 import json, os
 from pathlib import Path
 vault = os.path.expanduser("~/Library/Mobile Documents/iCloud~md~obsidian/Documents/AI")
-path = Path(vault) / "调研分析" / "Trendshift 热门项目" / "{owner}__{repo} 技术调研.md"
+path = Path(vault) / "调研分析" / "AI-Agent与编码Agent" / "{owner}__{repo} 技术调研.md"
 path.parent.mkdir(parents=True, exist_ok=True)
 content = """撰写好的 markdown 内容"""
 path.write_text(content, encoding="utf-8")
@@ -408,7 +415,7 @@ vault = '/Users/xiebaiyuan/Library/Mobile Documents/iCloud~md~obsidian/Documents
 import urllib.request
 ... 调研逻辑 ...
 # 写入调研文件
-path = Path(vault) / '调研分析/Trendshift 热门项目' / '{owner}__{repo} 技术调研.md'
+path = Path(vault) / '调研分析/AI-Agent与编码Agent' / '{owner}__{repo} 技术调研.md'
 path.parent.mkdir(parents=True, exist_ok=True)
 path.write_text(content, encoding='utf-8')
 print('OK')
@@ -447,11 +454,30 @@ obsidian eval 'code=(async()=>{const f=app.vault.getAbstractFileByPath("调研�
 ```
 **验证方法：** `grep "^### " 索引.md | head -10` 确认批次间顺序正确。如果 `（第二批）` 出现在 `### 2026-07-12` 之后，需要交换两者位置。
 
-### 已有项目信息更新
-再次上 trending 的已调研仓库：
+### 已有项目信息更新 & 🔄 反复上榜追踪（重点，2026-08-30 用户要求）
+
+再次上 trending 的已调研仓库**分两类处理——反复上榜的仓库必须做「近期大更新」深挖，不能只更新 star 数**。
+
+**第一步：识别反复上榜仓库**
+- 简便法：读该 repo 调研文档 frontmatter 的 `trending_times:`（上榜累计次数）与 `updated:`（上次调研日期）；
+- 全面法：`grep -rl` 近 7-14 天简报（`调研分析/Trendshift 热门项目/简报/`）统计各 owner/repo 出现次数；
+- 阈值：近 7 天 ≥2 次 **或** 近 14 天 ≥3 次 → 判为「反复上榜」。
+
+**第二步：普通再次上榜（近 7 天仅 1 次）→ 轻量信息更新**
 1. 调 GitHub API 获取最新 Stars/Release/Push
 2. 索引原记录追加 `| ↻ YYYY-MM-DD Stars变化`
 3. 调研报告更新量化数据 + `updated` 日期
+
+**第三步：反复上榜仓库 → 必有「🔄 近期大更新」小节（重点升级，禁止只更新 star）**
+反复上榜说明热度持续，必须挖清「这次为什么又火」的实质变化：
+1. **Release/里程碑对比**：`gh api repos/{o}/{r}/releases?per_page=10`，取上次调研（`updated`）之后的新版本；列 tag/时间/release body 亮点；`grep -iE "breaking|deprecat|migrat|大版本"` 抓**主版本跃迁与 breaking changes**。
+2. **Commit 活跃度**：`gh api "repos/{o}/{r}/commits?since={updated}T00:00:00Z&per_page=100"` 数 commit 数 + 提炼主题（新 feature/重构/修复）。
+3. **Changelog**：抓 CHANGELOG.md / release notes / docs 近更新方向。
+4. **Star/Momentum 变化率**：star 增量 ÷ 时间窗口算增速，区分「有机增长」vs「突发暴涨（新 release/大事件/投喂）」。
+5. **产出一段「🔄 近期大更新」落地**：
+   - 追加到该 repo 调研文档 `## 🔄 近期大更新（YYYY-MM-DD）`：新增版本 / 核心变化 / 为什么反复火 / 更新后的判断；同步 frontmatter `updated:` 与 `trending_times: +1`
+   - 索引原记录追加 `| ↻ YYYY-MM-DD +N⭐ 新版本 vX→vY 更新要点`
+   - 简报加「🔄 反复上榜追踪」小节：反复上榜仓库一行（仓库 / 近7-14天上榜次数 / 本次star变化 / 最近一次大更新一句话）
 
 ### 简报生成（必须步骤）
 `YYYY-MM-DD-简报.md` 存放在 `调研分析/Trendshift 热门项目/简报/` 子目录中。包含：
@@ -460,7 +486,10 @@ obsidian eval 'code=(async()=>{const f=app.vault.getAbstractFileByPath("调研�
 - Tier 2 亮点列表（每行加 `[[wikilink]]` 如果有调研文档）
 - Tier 3 一句话摘要（有调研文档加 `[[wikilink]]`）
 - 信息更新项目列表（有调研文档加 `[[wikilink]]`）
+- 🔄 反复上榜追踪列表（近7-14天上榜≥2/3次的仓库：仓库 / 次数 / star变化 / 最近一次大更新一句话；有调研文档加 `[[wikilink]]`）
 - 关键发现（1-3 个）
+
+**调研文档 frontmatter（用于反复上榜自动识别）**：每个新调研文档（Tier 1/2）开头 YAML frontmatter 必须含 `trending_times: 1`、`first_seen: YYYY-MM-DD`、`updated: YYYY-MM-DD`；反复上榜更新时 `trending_times` +1、刷新 `updated`。没有 frontmatter 的旧文档先补上。
 
 ### 🚫 禁止自动 Star（2026-08-11 用户要求）
 
@@ -538,7 +567,7 @@ When running manually (not cron), split Tier 1 projects across 2-3 parallel sub-
   ```python
   from pathlib import Path
   vault = "/Users/xiebaiyuan/Library/Mobile Documents/iCloud~md~obsidian/Documents/AI/"
-  path = Path(vault) / "调研分析" / "Trendshift 热门项目" / "{owner}__{repo} 技术调研.md"
+  path = Path(vault) / "调研分析" / "AI-Agent与编码Agent" / "{owner}__{repo} 技术调研.md"
   path.write_text(content, encoding="utf-8")
   ```
 - Explicit instruction: do NOT use `obsidian create` CLI — direct file write to iCloud path
@@ -653,7 +682,26 @@ content = content.replace('|- ', '- ')
 
 **自动化 cron 场景**：CHECKPOINT 跳过，直接执行全流程。cron 产出的结果自动投递，用户事后审阅。
 
-## Skill 仓库管理
+## Skill 总表（全量台账，2026-09-14 新增）
+
+产物：`调研分析/SKILLS/00-Skill 总表.md`（脚本重写，不要手工改正文；要改就改脚本或 `data/skills_manual.json`）。
+它把三处分散的东西合并成一张表：本索引（人工分类）、`SKILLS/榜单/` 简报（上榜日期）、`Skill与插件/` 348 份调研文档（一句话）。
+
+```bash
+S=~/.hermes/skills/research/trendshift-deep-research/scripts/skills_ledger.py
+python $S update              # 每日：刷新星数（gh api，带缓存）+ 重建总表
+python $S update --no-stars   # 不联网，纯本地
+python $S check               # 质量门禁：缺中文描述 / 缺分类（退出码 1 = 未通过）
+python $S check --since 2026-09-15   # 只查当天新进的条目
+python $S report              # 只打印统计
+```
+
+- 数据：`~/.hermes/skills/research/trendshift-deep-research/data/` 下 `skills_ledger.json`（台账状态）、
+  `skills_stars.json`（星数缓存）、`skills_manual.json`（**人工覆盖层，脚本不覆盖**：`desc`/`cat`/`topic`/`aliases`/`notes`/`deny`）。
+- 一句话（干啥的）优先级：调研文档里的 `**解决的问题**：` > index.md 策展要点 > `skills_manual.json` 的 `desc`。
+  **所以调研文档里写好「解决的问题」= 总表里自动有描述**，这是最省事的做法。
+- 表内含：总览 / 领域分布 / 主台账（342 条，按星数倒序）/ **只上榜未建档待办** / 平台风险样本 / 榜单覆盖。
+
 
 调研产出的蒸馏 Skill 统一管理在 GitHub 仓库：`xiebaiyuan/xiebaiyuan-skills`
 
@@ -674,16 +722,23 @@ skills.sh（Vercel 的 Agent Skills 目录站）是 Trendshift 的姊妹调研�
 
 ### 🔴 只抓榜单不调研 = 收集癖（2026-08-05 用户纠正，必须遵守）
 
+**每日收尾固定动作（2026-09-14 加）：**
+1. 写调研文档时，必须带 `**解决的问题**：` 一句话（这行直接进 Skill 总表的「干啥的」列，不写就空白）。
+2. 简报写完 + 调研文档写完后，跑 `python ~/.hermes/skills/research/trendshift-deep-research/scripts/skills_ledger.py update`
+   把当天内容并入总表，再跑 `check --since <今天>`，退出码必须为 0；
+   不通过说明当天新条目缺中文描述或分类——查仓库 README/SKILL.md 后补进 `data/skills_manual.json`（desc/cat/topic）重跑。
+3. 总表「只上榜、还没建档」一节是次日待办清单，优先补官方技能 > 独立 skill > 聚合仓库。
+
 用户明确指正：榜单简报里满屏「未调研」标签、不产出调研文档 = **没有沉淀价值**。每个 cron 运行必须：
 2. 对「未调研」项目做真实调研（解析真实 repo → API 元数据 → 读 SKILL.md）
-3. 产出调研文档到 `SKILLS/调研/{真实owner}__{真实repo}.md`（紧凑结构：基本信息表/是什么/包含 skills/SKILL.md 要点/评价）
+3. 产出调研文档到 `调研分析/Skill与插件/{真实owner}__{真实repo}.md`（紧凑结构：基本信息表/是什么/包含 skills/SKILL.md 要点/评价）
 4. **🔴 每份调研文档必须说清「它解决了什么问题」（2026-08-11 用户要求）**：「是什么」章节必须以 `**解决的问题**：` 开头写一句话——这个 skill 解决什么痛点、什么场景下的什么失败。禁止只写「XX 类技能/隐蔽调查」这种名词性描述（读者必须不看源码就能答出「这技能是干嘛的、救什么命」）。家族内登顶或上榜的单技能，单独开 `## 深挖：{skill名}` 章节：解决什么问题（一句话）/ 核心方法论（威胁建模、决策表等）/ 关键表格 / 伦理边界 / 为什么火。登顶技能只给表格一行 = 不合格
 3. 简报「Vault 关联」列禁止只写「未调研」——要么给调研 wikilink，要么写明跳过原因
 4. 每批次新增调研文档 ≤5 份（按优先级：官方技能 > 独立 skill > 聚合仓库，聚合仓库调研一次覆盖全家）
 
 **🔴 三向闭环（用户 2026-08-05 二次纠正：「调研之后要关联回榜单文档和 index 文档，要在任务中明确写清楚」）——调研完必须把关联写回，断链 = 白调研：**
 - **A. 调研文档 → 来源榜单**：frontmatter 写 `source: "[[榜单/YYYY-MM-DD-...]]"` + 正文末尾「来源与关联」小节
-- **B. 简报 → 调研文档**：表格关联列给 `[[SKILLS/调研/xxx|📄 调研]]`，且简报新增「本次新增调研」小节列全部新文档链接
+- **B. 简报 → 调研文档**：表格关联列给 `[[调研分析/Skill与插件/xxx|📄 调研]]`，且简报新增「本次新增调研」小节列全部新文档链接
 - **C. index.md → 两者**：「每日榜单」小节登记简报 + 「六、skills.sh 榜单调研」小节登记新调研文档到对应子类
 - **写入后必须做闭环验证**（三方向链接全部可达：调研文档含来源链接、简报链接文件存在、index 链接文件存在）
 
