@@ -56,14 +56,23 @@ description: Use when 每日监控调研 DeepSeek Harness (dsh) 插件生态，�
 3. **归类统计**：按类别（TUI/桌面、视觉、记忆进化、预设路由、多Agent、搜索内容、沙箱安全、皮肤娱乐、索引工具链、市场基建、提供商接入、Web UI）整理新增与爬升的优质插件。判断"优质"：星数增速 + dsh.fish 评分 + 近期有 commit + 能被 `dsh plugin add`（npm bundle）。
 4. **识别新趋势**：新冒出的市场/赛道/爆款（如 mirage 统一虚拟文件系统、dsh.fish 注册中心、商务商业化整族、订阅市场）。
 5. **写每日简报**：存入 Obsidian `调研分析/DeepSeek Harness/dsh插件每日雷达/YYYY-MM-DD.md`，2-4KB 简报，含：今日生态快照表 / 新增优质插件表 / 星数爬升榜 / 新市场新赛道 / 风险提示。更新该目录 00-索引.md（追加不覆盖，diff 校验）。中文人话、具体数字、表格、信源链接、标注 [源]/[推断]。
+   **日报写法要求（直接决定总表质量，必守）**：
+   - **每个插件都要有一句「干啥的」中文描述**：说清楚它让 DSH 多出什么能力，不要写「XX 相关插件」「值得关注」「新增/持平」这类空话；不要只写名字，不要只写星数。
+   - **插件名写全**：优先 `owner/repo` 或 dsh.fish 的 id（如 `dsh-web`）。同名多仓库时把 owner 放进括号（`dsh-desktop(anywhere-labs)`）或直接写全名——总表靠这个消歧。不要用裸 slug 指代整个生态（`dsh-plugin`）。
+   - 日报表格里一行只放一个插件；一行堆多个的名字会把星数/描述归属搞混（脚本会因此丢弃这两列）。
+   - 简报末尾可附一个 ` ```dsh-ledger ` 代码块，行格式 `owner/repo | 星数 | 赛道 | 一句话描述`，作为脚本的精确输入（可选，写了就以此为准）。
 6. **并入插件总表（固定动作，别漏）**：日报写完后立即执行
    `python ~/.hermes/skills/research/dsh-plugin-daily/scripts/dsh_ledger.py update`
    脚本会解析全部日报（含今天这份）+ 拉 dsh.fish 最新快照，把新出现的插件并进
    `调研分析/DeepSeek Harness/dsh插件每日雷达/00-插件总表.md`（含星数/星速/评级/赛道/首次收录/最近提及/状态）。
    日报表格是脚本的解析源，所以**插件名尽量写 `owner/repo` 或 dsh.fish 的 id**；同名多仓库时补 owner 写法（`dsh-desktop(anywhere-labs)`）或直接写全名，脚本靠这个消歧。
    看到脚本日志里报 `[ambig]` / `[track] 未归类` 时，把归属写进 `data/manual.json`（`aliases` 消歧、`track` 覆盖赛道），重跑一次即可。
-7. **交叉关联**：在简报里链接相关 Trendshift 热门项目 / skills.sh 上榜项 / AI 要闻热点。
-8. **推送**：
+7. **过总表质量门禁（固定动作）**：
+   `python ~/.hermes/skills/research/dsh-plugin-daily/scripts/dsh_ledger.py check --since <今天>`
+   门禁查两件事：今天新增条目是否都有中文「干啥的」描述、赛道是否都归类好。**未通过时不要跳过**：查仓库 README / dsh.fish summary 后把中文描述补进 `data/manual.json` 的 `desc`（key/id/仓库短名都能命中），赛道补进 `track`，重跑 `update` 再跑一次 `check` 直到通过（退出码 0）。
+   注：日报里已写清楚中文描述的条目会自动过门禁，门禁主要拦「只有英文 summary / 空描述」的新条目。
+8. **交叉关联**：在简报里链接相关 Trendshift 热门项目 / skills.sh 上榜项 / AI 要闻热点。
+9. **推送**：
    - Telegram：总结当天要点（中文，含关键数字与 2-3 个重点插件）。
    - 负一屏：`python ~/skills/today-task/scripts/task_push.py --name "dsh插件雷达 <MM-DD>" --content "<markdown 摘要>" --result "已完成"`（内容简洁，负一屏不适合长文）。
 
@@ -77,7 +86,11 @@ python $S update            # 每日：拉最新 dsh.fish 快照 + 并入今天�
 python $S update --offline  # 不联网，用 data/snapshot.json 缓存
 python $S rebuild           # 全量重建
 python $S report            # 只打印统计，不写文件
+python $S check --since 2026-09-15   # 质量门禁：当天新增条目是否描述齐全/赛道归类（退出码 1 = 未通过）
+python $S check             # 门禁查全表
 ```
+
+**总表每条必带「干啥的」中文描述**，这是硬要求（用户 2026-09-14 明确提出）：生成时按优先级取 `manual.json` 的 `desc` > 日报原句 > dsh.fish summary；带的是英文或空的，就要在 `desc` 里补齐中文，别放任英文留在表里。
 
 - 数据：`~/.hermes/skills/research/dsh-plugin-daily/data/` 下 `snapshot.json`（dsh.fish 快照缓存）、`ledger.json`（台账状态）、`manual.json`（**人工覆盖层，脚本不覆盖**）。
 - `manual.json` 四个字段：`aliases`（原始 key → 规范 key，用于改名与同名消歧）、`track`（覆盖赛道）、`desc`（**「干啥的」一句话描述**，优先级最高；key/id/仓库短名三种写法都能命中）、`notes`（备注）。
@@ -104,4 +117,6 @@ python $S report            # 只打印统计，不写文件
 - 写完后 `wc -c` 确认文件非空且 > 0 字节。
 - `cat 00-索引.md` 确认更新时间戳与新增行已追加。
 - 台账：`python $S update` 输出里的条目数与 `ls -la 00-插件总表.md` 字节数；台账里应该能看到今天日报里出现过的插件（抽查 1-2 个，`grep` 名字）。
+- **门禁**：`python $S check --since <今天>` 退出码必须是 0；不通过就去补 `desc`/`track` 后重跑（退出码 1 说明还有条目在裸奔）。
+- 总表里抽查 3 条今天的条目，确认「一句话」列是中文且说清了功能，不是名字或「新增/持平」。
 - `cronjob list` 确认任务 last_status: ok。

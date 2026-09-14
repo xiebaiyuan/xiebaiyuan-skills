@@ -855,13 +855,50 @@ def clean_cell(s: str) -> str:
     return s
 
 
+def check(ledger: dict, since: str | None = None) -> int:
+    """质量门禁：返回问题数（0 = 全过）。
+
+    门禁项：
+    1. 每条都要有中文「干啥的」描述（无 = 要么日报没写清，要么 desc 没补）
+    2. 赛道不能落在「其他」
+    3. 同名歧义条目数量（提示，不算失败）
+    `since` 只检查首次出现日期 >= since 的条目（当天新增），用于日报跑完后自查。
+    """
+    ents = ledger["entries"]
+    if since:
+        ents = [e for e in ents if e["first"] >= since]
+    no_desc = [e for e in ents if len(CJK.findall(e.get("desc") or "")) < 4]
+    no_track = [e for e in ents if not e.get("track") or e.get("track") == DEFAULT_TRACK]
+    ambig = [e for e in ents if e.get("status") == "同名歧义"]
+    scope = f"（自 {since} 起新增 {len(ents)} 条）" if since else "（全表 %d 条）" % len(ents)
+    log(f"[check] 范围 {scope}")
+    if no_desc:
+        log(f"[check] ✗ {len(no_desc)} 条缺中文描述 → 补进 data/manual.json 的 desc（key/id/仓库短名都能命中）：")
+        for e in no_desc[:40]:
+            log(f"        {e['key']}  {e['stars']}★  EN={(e.get('summary_en') or '')[:70]!r}")
+    else:
+        log("[check] ✓ 中文描述齐全")
+    if no_track:
+        log(f"[check] ✗ {len(no_track)} 条赛道未归类 → 补进 data/manual.json 的 track：")
+        for e in no_track[:20]:
+            log(f"        {e['key']}")
+    else:
+        log("[check] ✓ 赛道全部归类")
+    if ambig:
+        log(f"[check] ⚠ {len(ambig)} 条同名歧义（不阻塞，确认后可用 aliases 钉死）：{', '.join(e['key'] for e in ambig)}")
+    bad = len(no_desc) + len(no_track)
+    log(f"[check] {'通过' if bad == 0 else '未通过，问题 %d 项' % bad}")
+    return bad
+
+
 # ---------------------------------------------------------------- main
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["rebuild", "update", "report"])
+    ap.add_argument("mode", choices=["rebuild", "update", "report", "check"])
     ap.add_argument("--offline", action="store_true")
     ap.add_argument("--dry", action="store_true", help="只打印不写文件")
+    ap.add_argument("--since", help="check 模式：只检查此日期（含）之后首次进表的条目，如 2026-09-15")
     args = ap.parse_args()
 
     ledger = build(offline=args.offline)
@@ -871,6 +908,8 @@ def main():
     ents = ledger["entries"]
     inreg = [e for e in ents if e.get("art")]
     log(f"[ledger] 条目 {len(ents)}（入库 {len(inreg)}）| 快照 {ledger['snapshot']['artifactCount']}")
+    if args.mode == "check":
+        sys.exit(1 if check(ledger, args.since) else 0)
     if args.mode != "report" and not args.dry:
         with open(LEDGER_JSON, "w", encoding="utf-8") as f:
             json.dump({k: v for k, v in ledger.items() if k != "entries"} |
