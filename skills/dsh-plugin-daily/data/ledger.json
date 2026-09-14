@@ -458,7 +458,7 @@
    "status": "未入库",
    "deepdive": null,
    "note": "",
-   "desc": "阿里 Agentic OS，今日最大星速，token 压缩/沙箱/可观测"
+   "desc": "阿里 Agentic OS：token 压缩 + 沙箱 + 可观测（企业级 agent 基座）"
   },
   {
    "key": "beancookie/awesome-dsh-plugin",
@@ -4352,7 +4352,7 @@
    "status": "未入库",
    "deepdive": null,
    "note": "",
-   "desc": "真机浏览器控制 skill，今日 push"
+   "desc": "真机浏览器控制 skill（腾讯）"
   },
   {
    "key": "hashgraph-online/hol-guard",
@@ -4980,7 +4980,7 @@
    "status": "观察",
    "deepdive": null,
    "note": "",
-   "desc": "与 Trendshift 侧暴露的「effort 档位」概念呼应"
+   "desc": "推理 effort 档位滑块：手动调模型思考强度"
   },
   {
    "key": "damonbao/dsh-models-input-modalities",
@@ -5409,7 +5409,7 @@
    "status": "活跃",
    "deepdive": null,
    "note": "",
-   "desc": "Floating macOS-glass DeepSeek usage panel for the DSH web UI: live official balance + token usage (today, session, 24 h smooth trend, per model) without opening platform.deepseek.com/usage. · DSH 毛玻璃用量面板：官方余额 + Token 用量"
+   "desc": "macOS 玻璃质感悬浮用量面板：官方余额 + token 用量（当日/本会话/24 小时趋势/分模型），不用开官网"
   },
   {
    "key": "better-er/dsh-live-token-stats",
@@ -6053,6 +6053,34 @@
    "desc": "跨平台近 30 天主题调研 skill（微博/小红书/B站/知乎/抖音/微信/百度/头条）"
   },
   {
+   "key": "minglu6/dsh-provider-qoder",
+   "id": "dsh-provider-qoder",
+   "raw_names": [
+    "mo-n/dsh-provider-qoder"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "提供商与路由",
+   "report_star": null,
+   "in_registry": true,
+   "kind": "bundle",
+   "grade": "B",
+   "score": 50,
+   "velocity": 2,
+   "stars": 2,
+   "url": "https://github.com/minglu6/dsh-provider-qoder",
+   "summary_en": "Qoder CN adapter plugin for DeepSeek Harness: COSY-signed, WAF-encoded streaming against gateway.qoder.com.cn",
+   "cats": [
+    "model"
+   ],
+   "status": "观察",
+   "deepdive": null,
+   "note": "",
+   "desc": "Qoder CN 订阅接入：COSY 签名 + WAF 编码的流式代理"
+  },
+  {
    "key": "grloper/dsh-claude-oauth",
    "id": "dsh-claude-oauth",
    "raw_names": [
@@ -6080,34 +6108,6 @@
    "deepdive": null,
    "note": "",
    "desc": "Claude Pro/Max 订阅接入：Settings 里走 Google/Gmail 登录，自动续 token、实时额度"
-  },
-  {
-   "key": "minglu6/dsh-provider-qoder",
-   "id": "dsh-provider-qoder",
-   "raw_names": [
-    "mo-n/dsh-provider-qoder"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "提供商与路由",
-   "report_star": null,
-   "in_registry": true,
-   "kind": "bundle",
-   "grade": "B",
-   "score": 50,
-   "velocity": 2,
-   "stars": 2,
-   "url": "https://github.com/minglu6/dsh-provider-qoder",
-   "summary_en": "Qoder CN adapter plugin for DeepSeek Harness: COSY-signed, WAF-encoded streaming against gateway.qoder.com.cn",
-   "cats": [
-    "model"
-   ],
-   "status": "观察",
-   "deepdive": null,
-   "note": "",
-   "desc": "Qoder CN 订阅接入：COSY 签名 + WAF 编码的流式代理"
   },
   {
    "key": "yequ172672/dsh-codex-subscription",
@@ -6362,32 +6362,6 @@
    "desc": "输入卡底部工具行的计费时段徽标，附倒计时。高峰为北京时间周一至周五 09:00-12:00、14:00-18:00；周末全天算空闲，周五 18:00 后显示距下周一 09:00 还有 63 小时。"
   },
   {
-   "key": "xine2009cn/dsh-branch-inbox-guard",
-   "id": "",
-   "raw_names": [
-    "xine2009cn/dsh-branch-inbox-guard"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "沙箱与安全",
-   "report_star": null,
-   "in_registry": false,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/xine2009cn/dsh-branch-inbox-guard",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": "",
-   "desc": "分支会话护栏：fork 出的子会话不再继承父会话排队的下一条提示词"
-  },
-  {
    "key": "aaronandwork/dsh-evidence-gate",
    "id": "",
    "raw_names": [
@@ -6441,32 +6415,30 @@
    "desc": "懒加载 MCP 网关**：一个稳定代理工具"
   },
   {
-   "key": "mekansm1/dsh-webgis",
-   "id": "dsh-webgis",
+   "key": "xine2009cn/dsh-branch-inbox-guard",
+   "id": "",
    "raw_names": [
-    "mekansm1/dsh-webgis"
+    "xine2009cn/dsh-branch-inbox-guard"
    ],
    "first": "2026-09-12",
    "last": "2026-09-12",
    "mentions": 1,
    "one_liner": "",
-   "track": "视觉与多模态",
+   "track": "沙箱与安全",
    "report_star": null,
-   "in_registry": true,
-   "kind": "bundle",
-   "grade": "B",
-   "score": 50,
+   "in_registry": false,
+   "kind": "",
+   "grade": "",
+   "score": 0,
    "velocity": 0,
-   "stars": 2,
-   "url": "https://github.com/Mekansm1/DSH-WebGIS",
-   "summary_en": "DeepSeek Harness (DSH) WebGIS Plugin: Map reading, map manipulation, and 3D world comprehension.",
-   "cats": [
-    "other"
-   ],
-   "status": "观察",
+   "stars": 0,
+   "url": "https://github.com/xine2009cn/dsh-branch-inbox-guard",
+   "summary_en": "",
+   "cats": [],
+   "status": "未入库",
    "deepdive": null,
    "note": "",
-   "desc": "地图插件：读图、改图与三维世界理解（GIS 场景）"
+   "desc": "分支会话护栏：fork 出的子会话不再继承父会话排队的下一条提示词"
   },
   {
    "key": "duhu2000/dsh-form-fill-agent",
@@ -6495,85 +6467,32 @@
    "desc": "AI 填表：用企查查 MCP 填 XLSX 空字段，预览确认后导出新副本"
   },
   {
-   "key": "mx1syk/dsh-x-opencode-session",
-   "id": "dsh-x-opencode-session",
+   "key": "mekansm1/dsh-webgis",
+   "id": "dsh-webgis",
    "raw_names": [
-    "coco-king/dsh-x-opencode-session"
+    "mekansm1/dsh-webgis"
    ],
    "first": "2026-09-12",
    "last": "2026-09-12",
    "mentions": 1,
    "one_liner": "",
-   "track": "提供商与路由",
+   "track": "视觉与多模态",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
-   "grade": "C",
-   "score": 45,
+   "grade": "B",
+   "score": 50,
    "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/MX1syk/dsh-x-opencode-session",
-   "summary_en": "DSH plugin: inject dynamic/random HTTP request headers (${uuid} templates) into LLM provider requests, e.g. a run-stable x-opencode-session for the opencode-go gateway.",
+   "stars": 2,
+   "url": "https://github.com/Mekansm1/DSH-WebGIS",
+   "summary_en": "DeepSeek Harness (DSH) WebGIS Plugin: Map reading, map manipulation, and 3D world comprehension.",
    "cats": [
-    "model",
-    "session"
+    "other"
    ],
    "status": "观察",
    "deepdive": null,
    "note": "",
-   "desc": "给 provider 请求注入动态 HTTP 头（${uuid} 模板），例如 run 级稳定的 x-opencode-session"
-  },
-  {
-   "key": "clclyzybzjsq/dsh-btw",
-   "id": "",
-   "raw_names": [
-    "clclyzybzjsq/dsh-btw"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "会话与终端",
-   "report_star": null,
-   "in_registry": false,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/clclyzybzjsq/dsh-btw",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": "",
-   "desc": "会话里加 /btw 旁问命令：问一句不打断主对话（Claude Code /btw 移植）"
-  },
-  {
-   "key": "nguyenduclong-ict/dsh-session-progress",
-   "id": "",
-   "raw_names": [
-    "nguyenduclong-ict/dsh-session-progress"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "会话与终端",
-   "report_star": null,
-   "in_registry": false,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/nguyenduclong-ict/dsh-session-progress",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": "",
-   "desc": "实时会话进度与任务跟踪：抽屉面板 + composer 进度按钮"
+   "desc": "地图插件：读图、改图与三维世界理解（GIS 场景）"
   },
   {
    "key": "beihzb/dsh-opencode-session-header",
@@ -6606,16 +6525,16 @@
    "desc": "给 OpenCode Go 按会话注入 x-opencode-session 头：修 400 MissingSessionID、保住提示缓存路由"
   },
   {
-   "key": "online111111/whalechan-dsh-theme",
+   "key": "nguyenduclong-ict/dsh-session-progress",
    "id": "",
    "raw_names": [
-    "online111111/whalechan-dsh-theme"
+    "nguyenduclong-ict/dsh-session-progress"
    ],
    "first": "2026-09-12",
    "last": "2026-09-12",
    "mentions": 1,
    "one_liner": "",
-   "track": "界面与皮肤",
+   "track": "会话与终端",
    "report_star": null,
    "in_registry": false,
    "kind": "",
@@ -6623,41 +6542,68 @@
    "score": 0,
    "velocity": 0,
    "stars": 0,
-   "url": "https://github.com/online111111/whalechan-dsh-theme",
+   "url": "https://github.com/nguyenduclong-ict/dsh-session-progress",
    "summary_en": "",
    "cats": [],
    "status": "未入库",
    "deepdive": null,
    "note": "",
-   "desc": "非官方鲸鱼娘社区同人主题（鲸鱼已成社区公共符号）"
+   "desc": "实时会话进度与任务跟踪：抽屉面板 + composer 进度按钮"
   },
   {
-   "key": "sz1698/dsh-bg-new",
-   "id": "dsh-bg-new",
+   "key": "clclyzybzjsq/dsh-btw",
+   "id": "",
    "raw_names": [
-    "sz1698/dsh-bg-new"
+    "clclyzybzjsq/dsh-btw"
    ],
    "first": "2026-09-12",
-   "last": "2026-09-13",
-   "mentions": 2,
-   "one_liner": "DSH 网页界面换背景：侧栏壁纸抽屉，支持预设/纯色/渐变/图片/视频，滚轮+拖动同时管缩放定位，本地媒体伺服",
-   "track": "界面与皮肤",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "会话与终端",
+   "report_star": null,
+   "in_registry": false,
+   "kind": "",
+   "grade": "",
+   "score": 0,
+   "velocity": 0,
+   "stars": 0,
+   "url": "https://github.com/clclyzybzjsq/dsh-btw",
+   "summary_en": "",
+   "cats": [],
+   "status": "未入库",
+   "deepdive": null,
+   "note": "",
+   "desc": "会话里加 /btw 旁问命令：问一句不打断主对话（Claude Code /btw 移植）"
+  },
+  {
+   "key": "mx1syk/dsh-x-opencode-session",
+   "id": "dsh-x-opencode-session",
+   "raw_names": [
+    "coco-king/dsh-x-opencode-session"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "提供商与路由",
    "report_star": null,
    "in_registry": true,
    "kind": "bundle",
-   "grade": "B",
-   "score": 58,
+   "grade": "C",
+   "score": 45,
    "velocity": 0,
-   "stars": 19,
-   "url": "https://github.com/sz1698/dsh-bg-new",
-   "summary_en": "DSH 插件：给 DeepSeek Harness 换网页界面背景（系统预设/纯色/渐变/图片/视频）。侧栏「壁纸」按钮弹出右侧抽屉，滚轮+拖动的小图同时管缩放与定位，支持毛玻璃质感、本地媒体伺服、客户端即时生效并持久化到 settings；模型也可用 bg_apply 工具直接换。",
+   "stars": 0,
+   "url": "https://github.com/MX1syk/dsh-x-opencode-session",
+   "summary_en": "DSH plugin: inject dynamic/random HTTP request headers (${uuid} templates) into LLM provider requests, e.g. a run-stable x-opencode-session for the opencode-go gateway.",
    "cats": [
-    "theme"
+    "model",
+    "session"
    ],
-   "status": "活跃",
+   "status": "观察",
    "deepdive": null,
    "note": "",
-   "desc": "DSH 网页界面换背景：侧栏壁纸抽屉，支持预设/纯色/渐变/图片/视频，滚轮+拖动同时管缩放定位，本地媒体伺服"
+   "desc": "给 provider 请求注入动态 HTTP 头（${uuid} 模板），例如 run 级稳定的 x-opencode-session"
   },
   {
    "key": "acidgr/dsh-web-whale-maid",
@@ -6714,6 +6660,60 @@
    "desc": "模型信息补全：按模型名自动补全上下文、输出上限、思考档位和图片能力"
   },
   {
+   "key": "online111111/whalechan-dsh-theme",
+   "id": "",
+   "raw_names": [
+    "online111111/whalechan-dsh-theme"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "界面与皮肤",
+   "report_star": null,
+   "in_registry": false,
+   "kind": "",
+   "grade": "",
+   "score": 0,
+   "velocity": 0,
+   "stars": 0,
+   "url": "https://github.com/online111111/whalechan-dsh-theme",
+   "summary_en": "",
+   "cats": [],
+   "status": "未入库",
+   "deepdive": null,
+   "note": "",
+   "desc": "非官方鲸鱼娘社区同人主题（鲸鱼已成社区公共符号）"
+  },
+  {
+   "key": "sz1698/dsh-bg-new",
+   "id": "dsh-bg-new",
+   "raw_names": [
+    "sz1698/dsh-bg-new"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-13",
+   "mentions": 2,
+   "one_liner": "DSH 网页界面换背景：侧栏壁纸抽屉，支持预设/纯色/渐变/图片/视频，滚轮+拖动同时管缩放定位，本地媒体伺服",
+   "track": "界面与皮肤",
+   "report_star": null,
+   "in_registry": true,
+   "kind": "bundle",
+   "grade": "B",
+   "score": 58,
+   "velocity": 0,
+   "stars": 19,
+   "url": "https://github.com/sz1698/dsh-bg-new",
+   "summary_en": "DSH 插件：给 DeepSeek Harness 换网页界面背景（系统预设/纯色/渐变/图片/视频）。侧栏「壁纸」按钮弹出右侧抽屉，滚轮+拖动的小图同时管缩放与定位，支持毛玻璃质感、本地媒体伺服、客户端即时生效并持久化到 settings；模型也可用 bg_apply 工具直接换。",
+   "cats": [
+    "theme"
+   ],
+   "status": "活跃",
+   "deepdive": null,
+   "note": "",
+   "desc": "DSH 网页界面换背景：侧栏壁纸抽屉，支持预设/纯色/渐变/图片/视频，滚轮+拖动同时管缩放定位，本地媒体伺服"
+  },
+  {
    "key": "a86582751/dsh-nexttavern",
    "id": "",
    "raw_names": [
@@ -6738,32 +6738,6 @@
    "deepdive": null,
    "note": "",
    "desc": "原生 Agent 驱动的**长篇角色扮演**：交互式创作 + 主动世界书 + 动态记忆 + 多角色推演 + **小说导出"
-  },
-  {
-   "key": "enteguo/dsh-plugin-quick-chat",
-   "id": "",
-   "raw_names": [
-    "enteguo/dsh-plugin-quick-chat"
-   ],
-   "first": "2026-09-12",
-   "last": "2026-09-12",
-   "mentions": 1,
-   "one_liner": "",
-   "track": "会话与终端",
-   "report_star": null,
-   "in_registry": false,
-   "kind": "",
-   "grade": "",
-   "score": 0,
-   "velocity": 0,
-   "stars": 0,
-   "url": "https://github.com/enteguo/dsh-plugin-quick-chat",
-   "summary_en": "",
-   "cats": [],
-   "status": "未入库",
-   "deepdive": null,
-   "note": "",
-   "desc": "侧边栏「快速会话」窗口：不打断主会话快速提问，可选带上当前会话全文"
   },
   {
    "key": "weilantianhai/dsh-command-skill-list",
@@ -6792,6 +6766,32 @@
    "deepdive": null,
    "note": "",
    "desc": "/skills 命令：列出可调用的 skill（描述自动中英互译），选中即载入当前消息"
+  },
+  {
+   "key": "enteguo/dsh-plugin-quick-chat",
+   "id": "",
+   "raw_names": [
+    "enteguo/dsh-plugin-quick-chat"
+   ],
+   "first": "2026-09-12",
+   "last": "2026-09-12",
+   "mentions": 1,
+   "one_liner": "",
+   "track": "会话与终端",
+   "report_star": null,
+   "in_registry": false,
+   "kind": "",
+   "grade": "",
+   "score": 0,
+   "velocity": 0,
+   "stars": 0,
+   "url": "https://github.com/enteguo/dsh-plugin-quick-chat",
+   "summary_en": "",
+   "cats": [],
+   "status": "未入库",
+   "deepdive": null,
+   "note": "",
+   "desc": "侧边栏「快速会话」窗口：不打断主会话快速提问，可选带上当前会话全文"
   },
   {
    "key": "xingmen-1/dsh-move-rag",

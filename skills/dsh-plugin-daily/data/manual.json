@@ -223,6 +223,11 @@
   "dsh-plugin-template": "插件模板：host + client 双端起手式（7 天从 0 拿到 110★）",
   "bradegithub/dsh-plugins-marketplace": "第三方插件市场：Web GUI 里浏览 + 一键安装（126→163★）",
   "dsh-plugin-radar": "开源可自部署的插件生态雷达：自动发现 1.6 万候选 + k8s 运行级实测，产出可用清单",
-  "zseven-w/dsh-ios": "iOS 模拟器插件：在 iPhone/iPad 上跑 DSH（一周 0→290★）"
+  "zseven-w/dsh-ios": "iOS 模拟器插件：在 iPhone/iPad 上跑 DSH（一周 0→290★）",
+  "weiyangpro/dsh-deepseek-usage-panel": "macOS 玻璃质感悬浮用量面板：官方余额 + token 用量（当日/本会话/24 小时趋势/分模型），不用开官网",
+  "alibaba/anolisa": "阿里 Agentic OS：token 压缩 + 沙箱 + 可观测（企业级 agent 基座）",
+  "tencent/browserskill": "真机浏览器控制 skill（腾讯）",
+  "mrsutivu/plugin-effort-slider": "推理 effort 档位滑块：手动调模型思考强度",
+  "zorya-lind/dsh-behavior-enhancer": "行为增强：给提示词加工具调用纪律与安全约束段"
  }
 }
