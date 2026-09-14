@@ -3633,5 +3633,1825 @@
 "points": 163,
 "comments": 50,
 "title": "AI Chip Architectures"
-}
+},
+"itemv4::49551096": {
+"url": "",
+"title": "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
+"points": 404,
+"comments": 704
+},
+"itemv4::49548600": {
+"url": "",
+"title": "Ask HN: Who is using MCP in production?",
+"points": 198,
+"comments": 201
+},
+"urlv4::thereallo.dev/blog/claude-code-prompt-steganography": {
+"id": "48734373",
+"points": 2445,
+"comments": 750,
+"title": "Claude Code is steganographically marking requests"
+},
+"urlv4::anthropic.com/news/claude-sonnet-5": {
+"id": "48736605",
+"points": 1266,
+"comments": 784,
+"title": "Claude Sonnet 5"
+},
+"urlv4::mlq.ai/news/meta-caps-internal-ai-token-spending-after-costs-a": null,
+"urlv4::reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03": {
+"id": "48772443",
+"points": 336,
+"comments": 280,
+"title": "Alibaba to ban Claude Code in workplace over alleged backdoor risks, source says"
+},
+"urlv4::github.com/teamchong/pxpipe": {
+"id": "48776464",
+"points": 315,
+"comments": 99,
+"title": "60% Fable cost cut by converting code to images and having the model OCR it"
+},
+"urlv4::github.com/huangchihhungleo/claude-real-video": {
+"id": "48766005",
+"points": 167,
+"comments": 62,
+"title": "Claude-real-video － any LLM can watch a video"
+},
+"urlv4::inpreparation.substack.com/p/opinion-i-was-not-allowed-to-type": {
+"id": "48777728",
+"points": 234,
+"comments": 141,
+"title": "I Wasn't Allowed Prompting ChatGPT During My Chalk Talk: This Is Discrimination (2025)"
+},
+"urlv4::github.com/ctxrs/ctx": {
+"id": "48763462",
+"points": 65,
+"comments": 43,
+"title": "Show HN: ctx – Search the coding agent history already on your machine"
+},
+"urlv4::epoch.ai/data-insights/cve-severity-spike": {
+"id": "48780056",
+"points": 156,
+"comments": 73,
+"title": "New serious vulnerabilities spiked around release of Claude Mythos Preview"
+},
+"urlv4::daringfireball.net/2026/07/claudes_criminally_bad_mac_app_is_an_inside_job": {
+"id": "48781434",
+"points": 26,
+"comments": 22,
+"title": "Claude's Criminally Bad Electron Mac App Is an Inside Job"
+},
+"urlv4::github.com/clidey/deptrust": {
+"id": "48752948",
+"points": 26,
+"comments": 5,
+"title": "Show HN: CLI that helps AI agents avoid vulnerable dependencies"
+},
+"urlv4::righttointelligence.org": {
+"id": "48768951",
+"points": 554,
+"comments": 200,
+"title": "Protect your right to run local AI"
+},
+"urlv4::blog.okturtles.org/2026/07/short-leash-ai-method": {
+"id": "48766026",
+"points": 196,
+"comments": 246,
+"title": "The short leash AI coding method for beating Fable"
+},
+"urlv4::tratt.net/laurie/blog/2026/local_reasoning_for_global_properties.html": {
+"id": "48739140",
+"points": 36,
+"comments": 6,
+"title": "Local Reasoning for Global Properties"
+},
+"urlv4::github.com/anuragmerndev/kontext-ai": {
+"id": "48778955",
+"points": 8,
+"comments": 2,
+"title": "Show HN: Kontext – Move an AI chat's full context to another AI in one click"
+},
+"urlv4::github.com/openai/codex/issues/30364": {
+"id": "48789428",
+"points": 372,
+"comments": 152,
+"title": "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance"
+},
+"urlv4::science.org/content/article/instead-banning-ai-i-made-classroom-contract-my-students": {
+"id": "48775499",
+"points": 95,
+"comments": 91,
+"title": "Instead of banning AI, I made a classroom contract with my students"
+},
+"urlv4::hyperstitionai.com/unslop-results": {
+"id": "48782890",
+"points": 68,
+"comments": 149,
+"title": "2026 Unslop AI-Written Fiction Contest Results"
+},
+"urlv4::github.com/ammaarreshi/generals-mac-ios-ipad/tree/main": {
+"id": "48788283",
+"points": 690,
+"comments": 288,
+"title": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable"
+},
+"urlv4::abc.net.au/news/2026-07-05/lily-jay-foundation-posts-ai-generated-misleading-videos/106866422": {
+"id": "48789416",
+"points": 45,
+"comments": 6,
+"title": "Australian influencer Lily Jay's tangled web of AI manipulation"
+},
+"urlv4::ekinertac.com/blog/i-dont-know-rust-my-ai-is-rewriting-php-in-it": {
+"id": "48789325",
+"points": 34,
+"comments": 65,
+"title": "My AI-built PHP engine in Rust passes 17% of PHP-src tests, renders WordPress"
+},
+"urlv4::studios.disneyresearch.com/2026/07/01/neural-render-proxies-for-interactive-and-differentiable-lighting": {
+"id": "48753160",
+"points": 62,
+"comments": 13,
+"title": "Neural Render Proxies for Interactive and Differentiable Lighting"
+},
+"urlv4::github.com/justvugg/colibri": {
+"id": "48842459",
+"points": 937,
+"comments": 240,
+"title": "Show HN: Getting GLM 5.2 running on my slow computer"
+},
+"urlv4::old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a": {
+"id": "48957779",
+"points": 601,
+"comments": 391,
+"title": "GPT-5.6 used a prompt to close a 30-year gap in convex optimization"
+},
+"urlv4::kimi.com/blog/kimi-k3": {
+"id": "48935342",
+"points": 2107,
+"comments": 1214,
+"title": "Kimi K3: Open Frontier Intelligence"
+},
+"urlv4::codex-resets.com": {
+"id": "48963465",
+"points": 312,
+"comments": 200,
+"title": "Codex Resets"
+},
+"urlv4::data.stackexchange.com/stackoverflow/query/1953768": {
+"id": "48956949",
+"points": 483,
+"comments": 583,
+"title": "What AI did to stackoverflow in a graph"
+},
+"urlv4::charlesazam.com/blog/fable-5-gpt-5-6-sol-goal": {
+"id": "48956879",
+"points": 257,
+"comments": 125,
+"title": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?"
+},
+"urlv4::localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse": {
+"id": "48952880",
+"points": 563,
+"comments": 380,
+"title": "Kaiser nurses say AI, surveillance are making their jobs and patient care worse"
+},
+"urlv4::ykdojo.github.io/claude-controls-mac": {
+"id": "48959392",
+"points": 251,
+"comments": 196,
+"title": "Setting up your spare Mac for Claude Code to control, a step-by-step guide"
+},
+"urlv4::simonwillison.net/2026/jul/16/kimi-k3": {
+"id": "48947717",
+"points": 407,
+"comments": 223,
+"title": "Kimi K3, and what we can still learn from the pelican benchmark"
+},
+"urlv4::petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties": {
+"id": "48962983",
+"points": 591,
+"comments": 266,
+"title": "NYC may require landlords and realtors to disclose the use of AI in listings"
+},
+"urlv4::qainsights.com/20-month-the-price-ceiling-every-ai-company-copied": {
+"id": "48962535",
+"points": 6,
+"comments": 0,
+"title": "$20/Month: The Price Ceiling Every AI Company Copied"
+},
+"urlv4::techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out": {
+"id": "48963614",
+"points": 43,
+"comments": 8,
+"title": "Anthropic's newest ad is creeping people out"
+},
+"urlv4::blog.zksecurity.xyz/posts/openvm-bugs": {
+"id": "48947714",
+"points": 100,
+"comments": 9,
+"title": "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM"
+},
+"urlv4::simonwillison.net/2026/jul/19/claude-code-in-bun-in-rust": {
+"id": "48966569",
+"points": 608,
+"comments": 852,
+"title": "Claude Code uses Bun written in Rust now"
+},
+"urlv4::twitter.com/kimi_moonshot/status/2078855608565207130": {
+"id": "48969291",
+"points": 284,
+"comments": 114,
+"title": "Moonshot AI suspends new subscriptions due to Kimi K3 demand"
+},
+"urlv4::github.com/openai/codex/pull/33972/files": {
+"id": "48965850",
+"points": 371,
+"comments": 166,
+"title": "OpenAI reduces Codex Model Context Size from 372k to 272k"
+},
+"urlv4::mastergodzilla.github.io/posts/2025/07/muon-clip": {
+"id": "48893346",
+"points": 28,
+"comments": 0,
+"title": "From Muon to Gradient Clipping: Some Thoughts on QK Stability"
+},
+"urlv4::claude.com/blog/ai-code-migration": {
+"id": "48966044",
+"points": 36,
+"comments": 32,
+"title": "Anthropic runs large-scale code migrations with Claude Code"
+},
+"urlv4::thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study": {
+"id": "48971738",
+"points": 364,
+"comments": 211,
+"title": "AI advice made people less accurate but more confident – sudy"
+},
+"urlv4::kimi.com/products/kimi-work": {
+"id": "48981703",
+"points": 678,
+"comments": 279,
+"title": "Kimi Work"
+},
+"urlv4::werd.io/american-ai-is-locked-down-and-proprietary-its-losing": {
+"id": "48979269",
+"points": 1243,
+"comments": 931,
+"title": "China’s open-weights AI strategy is winning"
+},
+"urlv4::xcancel.com/__alpoge__/status/2079028340955197566": {
+"id": "48973869",
+"points": 803,
+"comments": 514,
+"title": "Claude Fable produced a counterexample to the Jacobian Conjecture"
+},
+"urlv4::sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html": {
+"id": "49085698",
+"points": 507,
+"comments": 111,
+"title": "Kimi K3 Architecture Overview and Notes"
+},
+"urlv4::anthropic.com/research/discovering-cryptographic-weaknesses": {
+"id": "49087091",
+"points": 232,
+"comments": 188,
+"title": "Discovering Cryptographic Weaknesses with Claude"
+},
+"urlv4::fermisense.com/when-machines-take-the-wheel": {
+"id": "49078454",
+"points": 342,
+"comments": 127,
+"title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review"
+},
+"urlv4::blog.modelcontextprotocol.io/posts/2026-07-28": {
+"id": "49088058",
+"points": 127,
+"comments": 41,
+"title": "MCP 2026-07-28 Specification: transport going stateless"
+},
+"urlv4::spawn-queue.acm.org/doi/10.1145/3819083": {
+"id": "49081644",
+"points": 160,
+"comments": 83,
+"title": "Google's Beyond Zero: Enterprise Security for the AI Era"
+},
+"urlv4::github.com/gavamedia/deltafin": {
+"id": "49090233",
+"points": 138,
+"comments": 93,
+"title": "Running Kimi K3 on a M1 Max"
+},
+"urlv4::lzon.ca/posts/other/llm-fantasy": {
+"id": "49088595",
+"points": 28,
+"comments": 61,
+"title": "What if useful AI is a fantasy?"
+},
+"urlv4::studio.academa.ai": {
+"id": "49091703",
+"points": 49,
+"comments": 32,
+"title": "Show HN: Manim (3Blue1Brown's animation engine) in the browser via WebGPU"
+},
+"urlv4::github.com/funador/claude-code-merge-queue": {
+"id": "49104747",
+"points": 42,
+"comments": 22,
+"title": "Show HN: A local merge queue for parallel Claude Code agents"
+},
+"urlv4::usetokenless.com": {
+"id": "49099143",
+"points": 71,
+"comments": 63,
+"title": "Launch HN: Tokenless (YC S26) – Automatic model switching to save money"
+},
+"urlv4::juliahub.com/blog/frontier-models-physical-ai-evaluation": {
+"id": "49098388",
+"points": 101,
+"comments": 21,
+"title": "GPT-5.6 vs. Claude Fable 5 for Physical AI, which performs best?"
+},
+"urlv4::enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word": {
+"id": "49096188",
+"points": 384,
+"comments": 299,
+"title": "Document-borne AI worms can self-propagate through Copilot for Word"
+},
+"urlv4::embracethered.com/blog/posts/2026/defcon-talk-copirate-365": {
+"id": "49103398",
+"points": 8,
+"comments": 1,
+"title": "Copirate 365: Plundering in the Depths of Microsoft Copilot (CVE-2026-24299)"
+},
+"urlv4::llm2human.pages.dev": {
+"id": "49104117",
+"points": 387,
+"comments": 106,
+"title": "LLM Honeypot"
+},
+"urlv4::huggingface.co/blog/agent-intrusion-technical-timeline": {
+"id": "49089500",
+"points": 469,
+"comments": 259,
+"title": "Anatomy of a Frontier Lab Agent Intrusion: A Timeline of the July 2026 Incident"
+},
+"urlv4::emergingtrajectories.com/lh/commodification-and-circularity": {
+"id": "49101529",
+"points": 88,
+"comments": 48,
+"title": "Commodification of Intelligence: Good, Bad, and Ugly Circular AI Deals"
+},
+"urlv4::blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results": {
+"id": "49099804",
+"points": 192,
+"comments": 116,
+"title": "Some thoughts about Anthropic's new cryptanalysis results"
+},
+"urlv4::science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research": {
+"id": "49103285",
+"points": 619,
+"comments": 317,
+"title": "AI's top startups are barely publishing their research"
+},
+"urlv4::deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots": {
+"id": "49111237",
+"points": 620,
+"comments": 558,
+"title": "Gemini Robotics 2 brings whole body intelligence to robots"
+},
+"urlv4::ctgt.ai/research/distillation-censorship-transfer": {
+"id": "49113599",
+"points": 170,
+"comments": 73,
+"title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it"
+},
+"urlv4::bottlenecklabs.com/blog/autonomously-run-businesses": {
+"id": "49113059",
+"points": 409,
+"comments": 233,
+"title": "We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447"
+},
+"urlv4::github.com/experientiallabs/world-model-optimizer": {
+"id": "49063454",
+"points": 71,
+"comments": 30,
+"title": "Show HN: Optimize and serve models with Fable quality at half the cost"
+},
+"urlv4::github.com/aminblg/simpleenglish": {
+"id": "49114639",
+"points": 363,
+"comments": 122,
+"title": "Agent Skill to Force Docs in ASD-STE100 Simplified Technical English"
+},
+"urlv4::kedge.dev": {
+"id": "49099434",
+"points": 141,
+"comments": 25,
+"title": "Show HN: Kedge – Full-stack cloud with forkable VM snapshots and global SQLite"
+},
+"urlv4::prized.dev": {
+"id": "49109721",
+"points": 79,
+"comments": 59,
+"title": "Launch HN: Prized (YC S26) – Let non-engineer staff build secure internal tools"
+},
+"urlv4::github.com/sawfwair/mere-run": {
+"id": "49109663",
+"points": 16,
+"comments": 7,
+"title": "Show HN: Local text, image, video, music and 3D from one CLI, no Python"
+},
+"urlv4::lwn.net/articles/1086041": {
+"id": "49108685",
+"points": 357,
+"comments": 429,
+"title": "GCC steering committee announces AI policy"
+},
+"urlv4::blog.jim-nielsen.com/2026/ai-aesthetic": {
+"id": "49117099",
+"points": 378,
+"comments": 175,
+"title": "The AI Aesthetic"
+},
+"urlv4::news.ycombinator.com": null,
+"itemv4::48740771": {
+"url": "https://twitter.com/AnthropicAI/status/2072106151890809341",
+"title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
+"points": 977,
+"comments": 692
+},
+"itemv4::48736605": {
+"url": "https://www.anthropic.com/news/claude-sonnet-5",
+"title": "Claude Sonnet 5",
+"points": 1266,
+"comments": 784
+},
+"itemv4::48754713": {
+"url": "https://mlq.ai/news/meta-caps-internal-ai-token-spending-after-costs-approach-billions-in-2026/",
+"title": "Meta caps internal AI token spending",
+"points": 148,
+"comments": 148
+},
+"itemv4::48746752": {
+"url": "",
+"title": "Launch HN: Parsewise (YC P25) – Reason Across Documents with an API",
+"points": 56,
+"comments": 54
+},
+"itemv4::48748182": {
+"url": "https://golemui.com",
+"title": "Show HN: GolemUI – Declarative Form Engine",
+"points": 53,
+"comments": 71
+},
+"itemv4::48734373": {
+"url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+"title": "Claude Code is steganographically marking requests",
+"points": 2445,
+"comments": 750
+},
+"itemv4::48749961": {
+"url": "https://github.com/openai/codex/issues/30364",
+"title": "Codex reasoning-token clustering at 516 may be leading to degraded performance",
+"points": 13,
+"comments": 2
+},
+"itemv4::48753927": {
+"url": "https://www.sfgate.com/tech/article/san-francisco-ai-backlash-22325141.php",
+"title": "'It's like having a dumb friend': Young San Franciscans hate AI",
+"points": 46,
+"comments": 15
+},
+"itemv4::48753831": {
+"url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+"title": "Your Site, your rules: new AI traffic options for all customers",
+"points": 13,
+"comments": 7
+},
+"itemv4::48754099": {
+"url": "https://www.avclub.com/weird-al-yankovic-ai-commercial-exit",
+"title": "Weird Al declined 'a nice pile of money' to star in AI ad",
+"points": 29,
+"comments": 0
+},
+"itemv4::48748447": {
+"url": "https://www.thefunsinthefight.com/p/welcome-to-the-dual-state-of-ai-regulation",
+"title": "Welcome to the Dual State of AI Regulation",
+"points": 18,
+"comments": 0
+},
+"itemv4::48754232": {
+"url": "",
+"title": "I'm opening VSCode less and less every day",
+"points": 21,
+"comments": 23
+},
+"itemv4::48769110": {
+"url": "https://www.goldmansachs.com/static-libs/pdf-redirect/prod/index.html?path=/pdfs/insights/goldman-sachs-research/an-ai-job-apocalypse/report.pdf&originalQuery=&referrer=",
+"title": "\"An AI Job Apocalypse?\" – Goldman Sachs Report [pdf]",
+"points": 31,
+"comments": 81
+},
+"itemv4::48789428": {
+"url": "https://github.com/openai/codex/issues/30364",
+"title": "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
+"points": 372,
+"comments": 152
+},
+"itemv4::48847834": {
+"url": "",
+"title": "Show HN: Reverse-engineering web apps into agent tools",
+"points": 96,
+"comments": 40
+},
+"itemv4::48863490": {
+"url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+"title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
+"points": 538,
+"comments": 442
+},
+"itemv4::48886741": {
+"url": "",
+"title": "Ask HN: Add flag for AI-generated articles",
+"points": 1102,
+"comments": 459
+},
+"itemv4::48981136": {
+"url": "",
+"title": "Launch HN: Bloomy (YC S26) – AI-powered mastery learning for K-12",
+"points": 102,
+"comments": 107
+},
+"itemv4::48968606": {
+"url": "",
+"title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+"points": 2935,
+"comments": 359
+},
+"itemv4::49026810": {
+"url": "",
+"title": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
+"points": 484,
+"comments": 228
+},
+"itemv4::49024882": {
+"url": "https://github.com/izeigerman/claude-thermos",
+"title": "Show HN: Claude-thermos keeps your Claude session warm for you",
+"points": 111,
+"comments": 86
+},
+"itemv4::49023486": {
+"url": "https://github.com/Conradqh/scrapemychats",
+"title": "Free way to get your data out of ChatGPT Business accounts",
+"points": 83,
+"comments": 15
+},
+"itemv4::49022911": {
+"url": "https://github.com/palmier-io/palmier-pro",
+"title": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+"points": 191,
+"comments": 41
+},
+"itemv4::49024620": {
+"url": "",
+"title": "Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents",
+"points": 88,
+"comments": 67
+},
+"itemv4::49023427": {
+"url": "https://github.com/onecli/onecli",
+"title": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
+"points": 110,
+"comments": 32
+},
+"itemv4::49023016": {
+"url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+"title": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+"points": 1069,
+"comments": 889
+},
+"itemv4::49015639": {
+"url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/",
+"title": "OpenAI’s accidental attack against Hugging Face is science fiction that happened",
+"points": 587,
+"comments": 450
+},
+"itemv4::49020999": {
+"url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
+"title": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
+"points": 696,
+"comments": 380
+},
+"itemv4::49052912": {
+"url": "https://github.com/demo-zexuan/liang-wenfeng-investor-meeting-2026-7-22/blob/15c6504be51b884a0adc5d77e4dba41f94431454/%E6%A2%81%E6%96%87%E9%94%8B%E6%8A%95%E8%B5%84%E8%80%85%E4%BA%A4%E6%B5%81%E4%BC%9A-%E6%96%87%E5%AD%97%E7%A8%BF_1_18_translate_20260723201651.pdf",
+"title": "DeepSeek pause fundraise after comments on compute gap to US leaked (transcript) [pdf]",
+"points": 255,
+"comments": 202
+},
+"itemv4::49056620": {
+"url": "https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf",
+"title": "Terence Tao: Mathematics in the Age of AI [pdf]",
+"points": 168,
+"comments": 64
+},
+"itemv4::49466715": {
+"url": "",
+"title": "Launch HN: Salem Robotics (YC S26) – Software for industrial inspection robots",
+"points": 49,
+"comments": 31
+},
+"urlv4::spectrum.ieee.org/small-language-models-ai-pharmaceuticals": {
+"id": "48812055",
+"points": 277,
+"comments": 82,
+"title": "Small AI Models Gain Traction In places with unreliable networks"
+},
+"urlv4::openai.com/index/unlocking-self-improvement-gpt-red": {
+"id": "48924453",
+"points": 35,
+"comments": 1,
+"title": "GPT‑Red: Unlocking Self-Improvement for Robustness"
+},
+"relatedv4::https openai com index unlocking self improvement gpt red#263#2026-07-16#Claude Code MCP": null,
+"urlv4::unslop.run/blog/measuring-ai-writing-on-arxiv": {
+"id": "48981206",
+"points": 244,
+"comments": 170,
+"title": "How we measured AI writing across arXiv, and where the measurement breaks"
+},
+"relatedv4::https openai com index apple is getting this wrong #336#2026-08-05#Apple is getting this wrong Apple 起诉 Ope": null,
+"urlv4::techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist": null,
+"urlv4::cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_security%20incident%20inc-2026-07-28-01.pdf": {
+"id": "49175717",
+"points": 65,
+"comments": 54,
+"title": "Security Incident INC-2026-07-28-01 – UK AI Security Institute [pdf]"
+},
+"urlv4::blog.cloudflare.com/kitesurf": {
+"id": "49208393",
+"points": 221,
+"comments": 63,
+"title": "Kitesurf: Agent-first browser that runs in V8 isolates"
+},
+"urlv4::openai.com/index/responding-next-frontier-critical-cyber-capabilities": {
+"id": "49213029",
+"points": 206,
+"comments": 195,
+"title": "Responding to the next frontier of critical cyber capabilities"
+},
+"urlv4::youtube.com/watch": {
+"id": "19624226",
+"points": 2164,
+"comments": 489,
+"title": "Unveiling the first-ever image of a black hole [video]"
+},
+"urlv4::techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek": {
+"id": "49650135",
+"points": 7,
+"comments": 1,
+"title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek"
+},
+"relatedv4::https techcrunch com 2026 09 10 anthropic details distillati#69#2026-09-11#": null,
+"urlv4::earendil.com/posts/measuring-code-sloppiness": {
+"id": "49658311",
+"points": 287,
+"comments": 234,
+"title": "Measuring the sloppiness of code"
+},
+"urlv4::this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot": {
+"id": "48427643",
+"points": 709,
+"comments": 265,
+"title": "Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot"
+},
+"urlv4::cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html": {
+"id": "48417490",
+"points": 327,
+"comments": 955,
+"title": "Google to pay SpaceX $920M a month for compute capacity at xAI data centers"
+},
+"urlv4::openai.com/index/harness-engineering": {
+"id": "48416264",
+"points": 297,
+"comments": 206,
+"title": "Harness engineering: Leveraging Codex in an agent-first world"
+},
+"urlv4::eetimes.com/computex-2026-are-we-heading-for-the-agentic-pc-era-yet": {
+"id": "48428647",
+"points": 32,
+"comments": 38,
+"title": "Computex 2026: Are We Heading for the Agentic PC Era Yet?"
+},
+"urlv4::human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do": {
+"id": "48434312",
+"points": 1151,
+"comments": 1074,
+"title": "LLMs are eroding my software engineering career and I don't know what to do"
+},
+"urlv4::blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index": {
+"id": "48431981",
+"points": 324,
+"comments": 266,
+"title": "I design with Claude more than Figma now"
+},
+"urlv4::github.com/devenjarvis/lathe": {
+"id": "48433756",
+"points": 402,
+"comments": 72,
+"title": "Show HN: Lathe – Use LLMs to learn a new domain, not skip past it"
+},
+"urlv4::github.com/anthropics/claude-code/issues/65697": {
+"id": "48434436",
+"points": 538,
+"comments": 305,
+"title": "Anthropic, please ship an official Claude Desktop for Linux"
+},
+"urlv4::ranpara.net/posts/perceptron-explained-from-scratch": {
+"id": "48440064",
+"points": 307,
+"comments": 73,
+"title": "The Smallest Brain You Can Build: A Perceptron in Python"
+},
+"urlv4::symbolica.io/posts/symbolica_2_0_release": {
+"id": "48415457",
+"points": 162,
+"comments": 29,
+"title": "Symbolica 2.0: Programmable Symbols for Python and Rust"
+},
+"urlv4::ycombinator.com/companies/proliferate/jobs/l3copvk-founding-engineer": {
+"id": "48436669",
+"points": null,
+"comments": null,
+"title": "Proliferate (YC S25) is hiring to building open source Codex"
+},
+"urlv4::x.com/xiaomimimo/status/2063993790587904362": null,
+"urlv4::apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more": null,
+"urlv4::openai.com/index/openai-submits-confidential-s-1": {
+"id": "48452317",
+"points": 359,
+"comments": 316,
+"title": "Confidential submission of draft S-1 to the SEC"
+},
+"urlv4::apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences": null,
+"urlv4::apple.com/apple-events/event-stream": {
+"id": "48448106",
+"points": 265,
+"comments": 533,
+"title": "Apple WWDC 2026"
+},
+"urlv4::wheresyoured.at/ai-is-slowing-down": {
+"id": "48446893",
+"points": 674,
+"comments": 770,
+"title": "AI is slowing down"
+},
+"urlv4::martinalderson.com/posts/xais-new-rental-business": {
+"id": "48446428",
+"points": 692,
+"comments": 552,
+"title": "xAI is looking more like a datacentre REIT than a frontier lab"
+},
+"urlv4::macrumors.com/2026/06/08/apple-reveals-new-ai-architecture": {
+"id": "48450142",
+"points": 738,
+"comments": 566,
+"title": "Apple reveals new AI architecture built around Google Gemini models"
+},
+"urlv4::cc.dev": {
+"id": "36836596",
+"points": 302,
+"comments": 101,
+"title": "Show HN: I made a MailChimp alternative that connects to your database"
+},
+"urlv4::arxiv.org/abs/2605.15184": {
+"id": "48460863",
+"points": 164,
+"comments": 64,
+"title": "Is grep all you need? How agent harnesses reshape agentic search"
+},
+"urlv4::blog.gitbutler.com/true-grit": {
+"id": "48466812",
+"points": 178,
+"comments": 306,
+"title": "Grit: Rewriting Git in Rust with agents"
+},
+"urlv4::jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html": {
+"id": "48467896",
+"points": 1036,
+"comments": 501,
+"title": "If Claude Fable stops helping you, you'll never know"
+},
+"urlv4::aarushgupta.io/posts/kan-fpga": {
+"id": "48466277",
+"points": 283,
+"comments": 52,
+"title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks"
+},
+"urlv4::techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos": {
+"id": "48465675",
+"points": 844,
+"comments": 309,
+"title": "CEOs who think AI replaces their employees are just bad CEOs"
+},
+"urlv4::techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropic-s-fable": null,
+"urlv4::dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation": {
+"id": "48487029",
+"points": 720,
+"comments": 317,
+"title": "Pokémon Go Scans Trained the Navigation Tech for Military Drones"
+},
+"urlv4::mceglowski.substack.com/p/laffaire-siloxane": {
+"id": "48456808",
+"points": 299,
+"comments": 55,
+"title": "L'Affaire Siloxane"
+},
+"urlv4::burr.apache.org": {
+"id": "48477400",
+"points": 251,
+"comments": 115,
+"title": "Apache Burr: Build reliable AI agents and applications"
+},
+"urlv4::normaltech.ai/p/why-ai-hasnt-replaced-software-engineers": {
+"id": "48487540",
+"points": 314,
+"comments": 364,
+"title": "Why AI hasn't replaced software engineers, and won't"
+},
+"urlv4::support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models": {
+"id": "48464258",
+"points": 609,
+"comments": 304,
+"title": "Anthropic requires 30 day data retention for Fable and Mythos"
+},
+"urlv4::lwn.net/subscriberlink/1077035/c7e7c14fbd60fae9": {
+"id": "48484584",
+"points": 552,
+"comments": 245,
+"title": "AI agent runs amok in Fedora and elsewhere"
+},
+"urlv4::theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail": {
+"id": "48489229",
+"points": 511,
+"comments": 445,
+"title": "Anthropic apologizes for invisible Claude Fable guardrails"
+},
+"urlv4::endorlabs.com/learn/claude-fable-5-mythos-grade-hype": {
+"id": "48492210",
+"points": 410,
+"comments": 250,
+"title": "Claude Fable 5: mid-tier results on coding tasks"
+},
+"urlv4::mimo.xiaomi.com/mimocode": {
+"id": "48490826",
+"points": 557,
+"comments": 315,
+"title": "MiMo Code is now released and open-source"
+},
+"urlv4::crlf.link/log/entries/260525-1": {
+"id": "48487829",
+"points": 104,
+"comments": 29,
+"title": "Making a vintage LLM from scratch"
+},
+"urlv4::waymo.com/blog/2026/06/waymo-premier": {
+"id": "48492304",
+"points": 208,
+"comments": 525,
+"title": "Waymo Premier"
+},
+"urlv4::mtgautodeck.com/articles/mtg-bench": {
+"id": "48492177",
+"points": 68,
+"comments": 34,
+"title": "MTG Bench: Testing how well LLMs can play Magic"
+},
+"urlv4::github.com/huggingface/open-r1": {
+"id": "48489917",
+"points": 246,
+"comments": 18,
+"title": "Open Reproduction of DeepSeek-R1"
+},
+"urlv4::fablepool.com": {
+"id": "48496539",
+"points": 526,
+"comments": 276,
+"title": "Show HN: FablePool – pool money behind a prompt, and Fable builds it in public"
+},
+"urlv4::williamcotton.com/articles/how-a-new-dsl-survives-in-the-era-of-llms": {
+"id": "48490939",
+"points": 54,
+"comments": 19,
+"title": "How a new DSL may survive in the era of LLMs"
+},
+"urlv4::briandouglas.ie/llm-tailwind-template": {
+"id": "48496483",
+"points": 111,
+"comments": 83,
+"title": "Tailwind and slop apps"
+},
+"urlv4::anthropic.com/news/fable-mythos-access": {
+"id": "48511072",
+"points": 3158,
+"comments": 2314,
+"title": "Statement on US government directive to suspend access to Fable 5 and Mythos 5"
+},
+"urlv4::correresmidestino.com/dont-you-just-upload-it-to-chatgpt": {
+"id": "48507278",
+"points": 479,
+"comments": 385,
+"title": "\"Don't You Just Upload It to ChatGPT?\""
+},
+"urlv4::ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos": {
+"id": "48507020",
+"points": 507,
+"comments": 127,
+"title": "How to setup a local coding agent on macOS"
+},
+"urlv4::ft.com/content/7ffcace7-9dc0-4e7e-9912-895ac073f979": {
+"id": "48509182",
+"points": 426,
+"comments": 114,
+"title": "Palantir loses legal challenge against Swiss investigative magazine"
+},
+"urlv4::github.com/danmcinerney/architect-loop": {
+"id": "48509133",
+"points": 104,
+"comments": 41,
+"title": "/architect: Reduce Fable tokens by 80%, Fable orchestrates/reviews, Codex builds"
+},
+"urlv4::bitboard.work": {
+"id": "48506545",
+"points": 58,
+"comments": 25,
+"title": "Launch HN: BitBoard (YC P25) – Analytics Workspace for Agents"
+},
+"urlv4::envs.net/~volpe/blog/posts/reduce-slop.html": {
+"id": "48504912",
+"points": 219,
+"comments": 136,
+"title": "Slightly reducing the sloppiness of AI generated front end"
+},
+"urlv4::github.com/tensorzero/tensorzero": {
+"id": "48516504",
+"points": 279,
+"comments": 175,
+"title": "AI OSS tool repo goes archived over night after raising $7.3M Seed"
+},
+"urlv4::stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke": {
+"id": "48518969",
+"points": 352,
+"comments": 294,
+"title": "AI coding at home without going broke"
+},
+"urlv4::news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661": {
+"id": "48520807",
+"points": 397,
+"comments": 198,
+"title": "Police officer investigated for using AI to 'create evidence' in multiple cases"
+},
+"urlv4::gabrielweinberg.com/p/people-are-consuming-ai-like-they": {
+"id": "48527700",
+"points": 512,
+"comments": 546,
+"title": "Not everyone is using AI for everything"
+},
+"urlv4::github.com/nex-agi/nex-n2/issues/4": {
+"id": "48528371",
+"points": 403,
+"comments": 236,
+"title": "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model"
+},
+"urlv4::github.com/dietrichgebert/ponytail": {
+"id": "48527946",
+"points": 98,
+"comments": 17,
+"title": "Ponytail – make your AI agent think like the laziest senior dev in the room"
+},
+"urlv4::github.com/meta-pytorch/torchcodec/releases/tag/v0.14.0": {
+"id": "48476539",
+"points": 62,
+"comments": 13,
+"title": "TorchCodec 0.14: HDR Video Decoding for CPU and CUDA, and Fast Wav Decoder"
+},
+"urlv4::platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models": {
+"id": "48536776",
+"points": 485,
+"comments": 225,
+"title": "Apple Foundation Models"
+},
+"urlv4::theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/5254141": {
+"id": "48532178",
+"points": 158,
+"comments": 145,
+"title": "AI is code – and can't be prompted into being smarter"
+},
+"urlv4::artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index": {
+"id": "48567759",
+"points": 916,
+"comments": 444,
+"title": "GLM-5.2 is the new leading open weights model on Artificial Analysis"
+},
+"urlv4::github.com/adam-cad/cadam": {
+"id": "48572553",
+"points": 215,
+"comments": 97,
+"title": "Launch HN: Adam (YC W25) – Open-Source AI CAD"
+},
+"urlv4::ghostinthedata.info/posts/2026/2026-06-13-human-connection-moat": {
+"id": "48573435",
+"points": 142,
+"comments": 123,
+"title": "The Competitive Moat That AI Can't Replicate"
+},
+"urlv4::mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt": {
+"id": "48578894",
+"points": 122,
+"comments": 206,
+"title": "ChatGPT's image generator can be manipulated to produce violent, sexual content"
+},
+"urlv4::arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year": {
+"id": "48577208",
+"points": 361,
+"comments": 4,
+"title": "Leaked financial docs show OpenAI is losing billions of dollars a year"
+},
+"urlv4::openrouter.ai/blog/insights/royale-last-agent-standing": {
+"id": "48576824",
+"points": 272,
+"comments": 210,
+"title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?"
+},
+"urlv4::techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo": null,
+"urlv4::wired.com/story/sk-tel...rols": null,
+"urlv4::blog.modelcontextprotocol.io/posts/enterprise-managed-auth": {
+"id": "48592163",
+"points": 278,
+"comments": 103,
+"title": "Zero-Touch OAuth for MCP"
+},
+"urlv4::agenticresourcediscovery.org/introduction": {
+"id": "48573268",
+"points": 75,
+"comments": 20,
+"title": "Agentic Resource Discovery Specification"
+},
+"urlv4::tester.army": {
+"id": "48586299",
+"points": 132,
+"comments": 69,
+"title": "Launch HN: TesterArmy (YC P26) – Agents that test web and mobile apps"
+},
+"urlv4::blog.jxmo.io/p/zen-and-the-art-of-machine-learning": {
+"id": "48549118",
+"points": 289,
+"comments": 105,
+"title": "Zen and the Art of Machine Learning Research"
+},
+"urlv4::reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19": {
+"id": "48600093",
+"points": 823,
+"comments": 588,
+"title": "Norway imposes near ban on AI in elementary school"
+},
+"urlv4::injuly.in/blog/napkin-inference-cost/index.html": {
+"id": "48560227",
+"points": 87,
+"comments": 18,
+"title": "Inference cost at scale with napkin math"
+},
+"urlv4::blog.cloudflare.com/temporary-accounts": {
+"id": "48608394",
+"points": 249,
+"comments": 151,
+"title": "Temporary Cloudflare accounts for AI agents"
+},
+"urlv4::argusred.com/cli": {
+"id": "48609231",
+"points": 93,
+"comments": 40,
+"title": "Show HN: We post-trained a model that pen tests instead of refusing"
+},
+"urlv4::github.com/raiyanyahya/recall": {
+"id": "48622590",
+"points": 138,
+"comments": 85,
+"title": "Show HN: Recall – Local project memory for Claude Code"
+},
+"urlv4::apertvs.ai": {
+"id": "48622778",
+"points": 534,
+"comments": 183,
+"title": "Apertus – Open Foundation Model for Sovereign AI"
+},
+"urlv4::mcipetition.com": {
+"id": "48623721",
+"points": 78,
+"comments": 81,
+"title": "Petition against Meta's employee training data collection for ML models"
+},
+"urlv4::teachmecoolstuff.com/viewarticle/fine-tuning-a-local-llm-to-categorize-questions": {
+"id": "48623434",
+"points": 215,
+"comments": 49,
+"title": "Good results fine tuning a local LLM like Qwen 3:0.6B to categorize questions"
+},
+"urlv4::marble.onl/posts/cancel_claude.html": {
+"id": "48622518",
+"points": 407,
+"comments": 330,
+"title": "There is minimal downside to switching to open models"
+},
+"urlv4::hustvl.github.io/moebius": {
+"id": "48630171",
+"points": 322,
+"comments": 83,
+"title": "Moebius: 0.2B image inpainting model with 10B-level performance"
+},
+"urlv4::patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic": {
+"id": "48630535",
+"points": 326,
+"comments": 225,
+"title": "The text in Claude Code’s “Extended Thinking” output"
+},
+"urlv4::unsloth.ai/docs/models/glm-5.2": {
+"id": "48636377",
+"points": 617,
+"comments": 305,
+"title": "GLM-5.2 – How to Run Locally"
+},
+"urlv4::role-confusion.github.io": {
+"id": "48631888",
+"points": 235,
+"comments": 116,
+"title": "Prompt Injection as Role Confusion"
+},
+"urlv4::oak.space/oak/oak": {
+"id": "48631726",
+"points": 216,
+"comments": 189,
+"title": "Show HN: Oak – Git alternative designed for agents"
+},
+"urlv4::chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center": {
+"id": "48630029",
+"points": 153,
+"comments": 160,
+"title": "Chevron signs 20-year power agreement with Microsoft for West Texas data center"
+},
+"urlv4::swipe.futo.tech": {
+"id": "48648619",
+"points": 708,
+"comments": 256,
+"title": "FUTO Swipe – A new swipe typing model"
+},
+"urlv4::github.com/y-times-y/y": {
+"id": "48653476",
+"points": 37,
+"comments": 23,
+"title": "Show HN: Y – A malleable coding-agent desktop app built with Electron"
+},
+"urlv4::nega.tv/posts/low-tech-ai-of-elden-ring.html": {
+"id": "48643489",
+"points": 166,
+"comments": 97,
+"title": "The Low-Tech AI of Elden Ring"
+},
+"urlv4::openai.com/index/openai-broadcom-jalapeno-inference-chip": {
+"id": "48659257",
+"points": 143,
+"comments": 1,
+"title": "OpenAI and Broadcom unveil LLM-optimized inference chip"
+},
+"relatedv4::https openai com index openai broadcom jalapeno inference ch#515#2026-06-25#": {
+"id": "48663324",
+"points": 831,
+"comments": 468,
+"title": "OpenAI unveils its first custom chip, built by Broadcom",
+"url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+"related": true
+},
+"urlv4::blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash": {
+"id": "48662999",
+"points": 242,
+"comments": 167,
+"title": "Computer use in Gemini 3.5 Flash"
+},
+"urlv4::krea.ai/blog/krea-2-technical-report": {
+"id": "48646659",
+"points": 415,
+"comments": 47,
+"title": "Krea 2: SOTA open-weights 12B image model"
+},
+"urlv4::interconnects.ai/p/glm-52-is-the-step-change-for-open": {
+"id": "48639840",
+"points": 367,
+"comments": 223,
+"title": "GLM-5.2 is a step change for open agents"
+},
+"urlv4::rubyllm.com": {
+"id": "48660711",
+"points": 447,
+"comments": 82,
+"title": "RubyLLM: A Ruby framework for all major AI providers"
+},
+"urlv4::greptile.com/blog/prs-on-openclaw": {
+"id": "48660579",
+"points": 265,
+"comments": 155,
+"title": "PR spam today looks like email spam in the early 2000s"
+},
+"urlv4::bloomberg.com/news/articles/2026-06-25/apple-to-skip-high-end-m6-mac-chips-to-launch-m7-pro-m7-max-m7-ultra-instead": {
+"id": "48676795",
+"points": 318,
+"comments": 380,
+"title": "Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line"
+},
+"urlv4::trakkr.ai/bias": {
+"id": "48672779",
+"points": 178,
+"comments": 310,
+"title": "Political bias in AI: Where the AI models stand"
+},
+"urlv4::idlemachines.co.uk/essays/pytorch-training-loop": {
+"id": "48638120",
+"points": 81,
+"comments": 19,
+"title": "The annotated PyTorch training loop"
+},
+"urlv4::github.com/inkeep/open-knowledge": {
+"id": "48675435",
+"points": 381,
+"comments": 173,
+"title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion"
+},
+"urlv4::reuters.com/technology/us-releases-anthropic-model-mythos-some-us-companies-semafor-reports-2026-06-26": {
+"id": "48694885",
+"points": 1,
+"comments": 0,
+"title": "US allows Anthropic to release Mythos AI to 'trusted' US organizations"
+},
+"relatedv4::https www reuters com technology us releases anthropic model#193#2026-06-27#": null,
+"urlv4::washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model": {
+"id": "48690101",
+"points": 1184,
+"comments": 1240,
+"title": "U.S. government will decide who gets to use GPT-5.6"
+},
+"urlv4::metr.org/blog/2026-06-26-gpt-5-6-sol": {
+"id": "48690710",
+"points": 10,
+"comments": 6,
+"title": "Summary of METR's predeployment evaluation of GPT-5.6 Sol"
+},
+"urlv4::github.com/workweave/router": {
+"id": "48688700",
+"points": 216,
+"comments": 113,
+"title": "Show HN: Smart model routing directly in Claude, Codex and Cursor"
+},
+"urlv4::agent-kits.com": {
+"id": "48692101",
+"points": 39,
+"comments": 2,
+"title": "AgentKits – 60 production-ready AI agent blueprints with guardrails"
+},
+"urlv4::reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24": {
+"id": "48664814",
+"points": 813,
+"comments": 1324,
+"title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities"
+},
+"urlv4::techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom": {
+"id": "48663324",
+"points": 831,
+"comments": 468,
+"title": "OpenAI unveils its first custom chip, built by Broadcom"
+},
+"urlv4::nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html": {
+"id": "48678873",
+"points": 179,
+"comments": 154,
+"title": "OpenAI leans toward waiting until next year for IPO"
+},
+"urlv4::fernandoi.cl/posts/hackmyclaw": {
+"id": "48681687",
+"points": 375,
+"comments": 160,
+"title": "What happened after 2k people tried to hack my AI assistant"
+},
+"urlv4::arxiv.org/abs/2606.25189": {
+"id": "48689606",
+"points": 8,
+"comments": 1,
+"title": "ActPlane: Programmable OS-Level Policy Enforcement for Agent Harnesses"
+},
+"urlv4::github.com/neospe/autofit2": {
+"id": "48673527",
+"points": 28,
+"comments": 2,
+"title": "Show HN: Autofit2 – End-to-end pipeline for multilingual text classification"
+},
+"urlv4::x.com/rohanpaul_ai/status/2070550479621488896": null,
+"urlv4::spectrum.ieee.org/ai-in-mathematics": {
+"id": "48692883",
+"points": 210,
+"comments": 181,
+"title": "AI in mathematics is forcing big questions"
+},
+"urlv4::openai.com/index/previewing-gpt-5-6-sol": {
+"id": "48689028",
+"points": 1139,
+"comments": 744,
+"title": "Previewing GPT‑5.6 Sol: a next-generation model"
+},
+"urlv4::semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies": {
+"id": "48692995",
+"points": 553,
+"comments": 809,
+"title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations"
+},
+"urlv4::github.com/deepseek-ai/deepspec/blob/main/dspark_paper.pdf": {
+"id": "48696585",
+"points": 797,
+"comments": 361,
+"title": "DSpark: Speculative decoding accelerates LLM inference [pdf]"
+},
+"urlv4::spectrum.ieee.org/ai-radio-chip-design": {
+"id": "48660021",
+"points": 272,
+"comments": 179,
+"title": "AI learns the “dark art” of RFIC design"
+},
+"urlv4::techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on": {
+"id": "48697958",
+"points": 283,
+"comments": 198,
+"title": "Asian AI startups launch Mythos-like models"
+},
+"urlv4::cephalosec.com/blog/cybersecurity-in-the-post-mythos-era-keep-calm-and-carry-on": {
+"id": "48698559",
+"points": 172,
+"comments": 71,
+"title": "Post-Mythos Cybersecurity: Keep calm and carry on"
+},
+"urlv4::arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities": {
+"id": "48699483",
+"points": 41,
+"comments": 29,
+"title": "Anthropic says Alibaba used 25k accounts to mine Claude"
+},
+"urlv4::github.com/kageroumado/adrafinil": {
+"id": "48701512",
+"points": 124,
+"comments": 78,
+"title": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work"
+},
+"urlv4::semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks": {
+"id": "48709670",
+"points": 1113,
+"comments": 516,
+"title": "GLM 5.2 beats Claude in our benchmarks"
+},
+"urlv4::tidal.com/ai-policy": {
+"id": "48718840",
+"points": 308,
+"comments": 346,
+"title": "Tidal AI Policy"
+},
+"urlv4::aleph-alpha.com/en/blog/model-training-as-code": {
+"id": "48673450",
+"points": 183,
+"comments": 24,
+"title": "Model Training as Code"
+},
+"urlv4::github.com/ogulcancelik/herdr": {
+"id": "48714802",
+"points": 166,
+"comments": 110,
+"title": "Herdr: Agent multiplexer that lives in your terminal"
+},
+"urlv4::arxiv.org/abs/2606.22283": {
+"id": "48702825",
+"points": 234,
+"comments": 29,
+"title": "Apple Neural Engine: Architecture, Programming, and Performance"
+},
+"urlv4::htmx.org/essays/working-with-ai": {
+"id": "48720064",
+"points": 197,
+"comments": 72,
+"title": "Working With AI: A concrete example"
+},
+"urlv4::vllm.ai/blog/2026-06-29-micro-agent-frontier-models": {
+"id": "48722802",
+"points": 81,
+"comments": 22,
+"title": "Micro-Agent: Beat Frontier Models with Collaboration Inside Model API"
+},
+"urlv4::kucoin.com/news/flash/deepseek-v4-launches-in-mid-july-with-peak-valley-pricing": {
+"id": "48717869",
+"points": 54,
+"comments": 33,
+"title": "DeepSeek V4 Peak Valley Pricing Change"
+},
+"urlv4::longcat.chat/blog/longcat-2.0": {
+"id": "48727116",
+"points": 281,
+"comments": 88,
+"title": "LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active"
+},
+"urlv4::github.com/smjai/open-memory-protocol": {
+"id": "48726966",
+"points": 33,
+"comments": 12,
+"title": "Open Memory Protocol – One Memory Store for Claude, ChatGPT, Curso"
+},
+"urlv4::auditablelicense.org": {
+"id": "48705878",
+"points": 23,
+"comments": 10,
+"title": "ACL 1.0: A source-available commercial license for the AI era"
+},
+"urlv4::kotaku.com/amazon-ai-game-guidebooks-alien-isolation-gears-of-war-2000711365": {
+"id": "48721494",
+"points": 55,
+"comments": 3,
+"title": "Amazon Is Awash with AI-Written Guideslop for Games That Aren't Even Out"
+},
+"urlv4::x.com/finkd/status/2086754845218726027": null,
+"urlv4::ithome.com/0/989/001.htm": null,
+"urlv4::deepmind.google/blog/introducing-gemini-3-7-flash": null,
+"urlv4::x.com/deepseek_ai/status/2087887408440164663": null,
+"urlv4::openai.com/index/builders-guide-to-gpt-5-6": null,
+"urlv4::api-docs.deepseek.com/zh-cn/updates": null,
+"urlv4::cursor.com/blog/joining-spacex": {
+"id": "49298211",
+"points": 107,
+"comments": 130,
+"title": "Cursor is now a part of SpaceX"
+},
+"urlv4::z.ai/blog/glm-5.3": {
+"id": "49294997",
+"points": 1171,
+"comments": 584,
+"title": "GLM-5.3: Frontier coding with emergent cyber capabilities"
+},
+"urlv4::x.com/alibaba_qwen/status/2088280182356611304": null,
+"urlv4::x.com/geminiapp/status/2088326407730692538": null,
+"urlv4::blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption": {
+"id": "49300314",
+"points": 498,
+"comments": 290,
+"title": "Google is making private AI practical with homomorphic encryption"
+},
+"urlv4::byhand.ai": {
+"id": "49300568",
+"points": 367,
+"comments": 31,
+"title": "AI by Hand"
+},
+"urlv4::github.com/lajosdeme/mole": {
+"id": "49303046",
+"points": 100,
+"comments": 14,
+"title": "Show HN: Mole – Deep research agent for your terminal"
+},
+"urlv4::flownie.com": {
+"id": "49305904",
+"points": 7,
+"comments": 0,
+"title": "Flownie – Open and Visual Data Workflow Platform with AI Agent Assistance"
+},
+"urlv4::ft.com/content/6f66a76d-0b2d-4301-886c-87ecc046731b": {
+"id": "49306491",
+"points": 15,
+"comments": 2,
+"title": "Nvidia discloses $21B stake in SpaceX"
+},
+"urlv4::arxiv.org/abs/2608.12700": {
+"id": "49301417",
+"points": 46,
+"comments": 0,
+"title": "A Contract-Grade Verifier for LLM-Generated GPU Kernels"
+},
+"urlv4::claude.com/blog/maximizing-the-value-of-your-claude-code-sessions": {
+"id": "49300800",
+"points": 319,
+"comments": 185,
+"title": "Maximizing the value of your Claude Code sessions"
+},
+"urlv4::run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0": {
+"id": "49299102",
+"points": 66,
+"comments": 8,
+"title": "AI Model Atlas – visualizing populations of ML models as interconnected 3D graph"
+},
+"urlv4::mp.weixin.qq.com/s": null,
+"urlv4::huggingface.co/qwen/qwen3.8-27b-fp8": {
+"id": "49299605",
+"points": 1438,
+"comments": 793,
+"title": "Qwen 3.8 27B"
+},
+"urlv4::chenxiachan.github.io/thoughtdag": {
+"id": "49307700",
+"points": 136,
+"comments": 63,
+"title": "Show HN: ThoughtDAG – An editable context graph for LLM conversations"
+},
+"urlv4::aicharts.grok.me/c/market-share": {
+"id": "49315630",
+"points": 25,
+"comments": 54,
+"title": "ChatGPT lost 22 points of web share in a year"
+},
+"urlv4::science.org/content/blog-post/so-how-ai-drug-discovery-doing-really": {
+"id": "49313367",
+"points": 188,
+"comments": 94,
+"title": "AI in drug discovery – what it is, where we stand and the path forward"
+},
+"urlv4::davidepiffer.com/p/ai-isnt-outthinking-mathematicians": {
+"id": "49312845",
+"points": 634,
+"comments": 522,
+"title": "AI isn’t outthinking mathematicians, it’s out-remembering them"
+},
+"urlv4::allen.bargi.org/notes/working-with-ai-feels-like-leadership": {
+"id": "49309451",
+"points": 338,
+"comments": 203,
+"title": "Working with AI feels more like leadership than coding"
+},
+"urlv4::stephen-cresswell.com/2026/08/15/yadda-3.0.0-bdd-in-the-age-of-ai-agents.html": {
+"id": "49310495",
+"points": 66,
+"comments": 28,
+"title": "Yadda 3.0.0: BDD in the Age of AI Agents"
+},
+"urlv4::bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion": {
+"id": "49330139",
+"points": 97,
+"comments": 47,
+"title": "Stripe to Buy OpenRouter for $7B"
+},
+"relatedv4::https www bloomberg com news articles 2026 08 16 stripe near#195#2026-08-17#": null,
+"urlv4::platform.claude.com/docs/en/release-notes/system-prompts": {
+"id": "49319556",
+"points": 762,
+"comments": 284,
+"title": "Claude: System Prompts"
+},
+"urlv4::simonwillison.net/2026/aug/16/qwen-38-27b": {
+"id": "49324985",
+"points": 802,
+"comments": 385,
+"title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things"
+},
+"urlv4::w4g1.dev/blog/models-are-getting-dumber-on-purpose": {
+"id": "49322695",
+"points": 335,
+"comments": 187,
+"title": "Models Are Getting Dumber on Purpose"
+},
+"urlv4::math-ai-org.github.io/mathcode": {
+"id": "49322330",
+"points": 118,
+"comments": 29,
+"title": "MathCode, Mathematical Coding Agent"
+},
+"urlv4::hwbusters.com/news/comma-ai-egpu-dock-runs-open-source-firmware-249-bare-799-with-an-rx-9060": {
+"id": "49292385",
+"points": 162,
+"comments": 51,
+"title": "Chestnut – eGPU dock with open-source firmware"
+},
+"urlv4::reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14": {
+"id": "49323686",
+"points": 254,
+"comments": 152,
+"title": "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee"
+},
+"urlv4::vectoral.com/blog/who-are-the-token-brokers": {
+"id": "49320611",
+"points": 334,
+"comments": 130,
+"title": "The AI Credit Resale Economy"
+},
+"urlv4::cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai": {
+"id": "49323136",
+"points": 103,
+"comments": 28,
+"title": "Red queen hypothesis – A new way forward for self-improving AI"
+},
+"urlv4::peterbloem.nl/blog/craft-coding": {
+"id": "49318735",
+"points": 99,
+"comments": 57,
+"title": "AI Coding Without the Vibes"
+},
+"urlv4::mimo.xiaomi.com/blog/mimo-tilert-1000tps": {
+"id": "48446639",
+"points": 628,
+"comments": 489,
+"title": "MiMo-v2.5-Pro-UltraSpeed: 1T model with 1000 tokens per second"
+},
+"urlv4::apple.com/apple-intelligence": {
+"id": "48449084",
+"points": 681,
+"comments": 704,
+"title": "Siri AI"
+},
+"urlv4::developer.apple.com/documentation/coreai": {
+"id": "48449665",
+"points": 367,
+"comments": 108,
+"title": "Apple Core AI Framework"
+},
+"urlv4::simonwillison.net/2026/jun/13/us-government-directive-to-suspend-access": null,
+"urlv4::twitter.com/noamshazeer/status/2067400851438932297": {
+"id": "48578913",
+"points": 355,
+"comments": 425,
+"title": "Noam Shazeer Joins OpenAI"
+},
+"relatedv4::https www wired com story sk tel rols #98#2026-06-19#The Korean telecom giant at the center o": {
+"id": "48584484",
+"points": 148,
+"comments": 141,
+"title": "The Korean telecom giant at the center of Anthropic's Mythos controversy",
+"url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
+"related": true
+},
+"titlev4::hn": null,
+"relatedv4::https www reuters com technology us releases anthropic model#193#2026-06-27#Smart model routing directly in Claude C": {
+"id": "48688700",
+"points": 216,
+"comments": 113,
+"title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+"url": "https://github.com/workweave/router",
+"related": true
+},
+"relatedv4::https x com deepseek_ai status 2083084415157022911#672#2026-08-01#": {
+"id": "49119559",
+"points": 745,
+"comments": 347,
+"title": "DeepSeek-V4-Flash Update",
+"url": "https://api-docs.deepseek.com/updates/",
+"related": true
+},
+"titlev4::google earth ai 卫星图像生成功能上线一日即被撤回": null,
+"titlev4::ai 公司收购绝版书后扫描销毁 引发知识保存争议": null,
+"titlev4::德国法院裁定 ai 音乐公司 suno 侵犯版权": null,
+"titlev4::thomson reuters 自建 ai 模型 跻身一流模型之列": null,
+"relatedv4::https www quantamagazine org is ai reasoning right for the w#118#2026-08-01#": {
+"id": "49124358",
+"points": 224,
+"comments": 250,
+"title": "Is AI reasoning right for the wrong reasons?",
+"url": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
+"related": true
+},
+"titlev4::google cancels ai studio app after 800k preorders": {
+"id": "49137268",
+"points": 49,
+"comments": 10,
+"title": "Google cancels AI Studio app after 800k preorders"
+},
+"titlev4::leopold aschenbrenner built a 45b ai hedge fund and lost mos": {
+"id": "49130576",
+"points": 9,
+"comments": 2,
+"title": "Leopold Aschenbrenner built a $45B AI hedge fund – and lost most of it in days"
+},
+"titlev4::assessment of open ai math results": {
+"id": "49136236",
+"points": 10,
+"comments": 4,
+"title": "Assessment of open AI math results"
+},
+"titlev4::the math superstar who s terrified of ai and just took a job": {
+"id": "49130385",
+"points": 7,
+"comments": 0,
+"title": "The Math Superstar Who's Terrified of AI–and Just Took a Job at OpenAI"
+},
+"relatedv4::https news ycombinator com#186#2026-08-06#": {
+"id": "49187575",
+"points": 333,
+"comments": 266,
+"title": "Muse Code and Muse Spark 1.2",
+"url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+"related": true
+},
+"relatedv4::https social treehouse systems mgorny 11705848303936#152#2026-08-09#": {
+"id": "49221864",
+"points": 174,
+"comments": 114,
+"title": "Gentoo bugzilla closed due AI bot scraper overload",
+"url": "https://social.treehouse.systems/@mgorny/117058483039362779",
+"related": true
+},
+"titlev4::youtube 的 ai 检测误伤了 kurzgesagt": null,
+"relatedv4::https x com finkd status 2086754845218726027#360#2026-08-11#": null,
+"titlev4::扎克伯格 超级智能应人人可用 meta 回归开源路线": null,
+"relatedv4::https www ithome com 0 989 001 htm#492#2026-08-13#": null,
+"titlev4::阿里开放 qwen3 8 2 4t a95b 模型权重 qwen max 级别首次开源": null,
+"relatedv4::https deepmind google blog introducing gemini 3 7 flash#617#2026-08-14#": {
+"id": "49289112",
+"points": 968,
+"comments": 495,
+"title": "Gemini 3.7 Flash",
+"url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+"related": true
+},
+"relatedv4::https x com deepseek_ai status 2087887408440164663#555#2026-08-14#": {
+"id": "49285244",
+"points": 747,
+"comments": 314,
+"title": "DeepSeek Harness developer preview",
+"url": "https://deepseek.com/harness/en/",
+"related": true
+},
+"relatedv4::https openai com index builders guide to gpt 5 6#420#2026-08-14#": null,
+"titlev4::gpt 5 6 构建者指南 以更低成本实现前沿智能体性能": null,
+"relatedv4::https x com Alibaba_Qwen status 2088280182356611304#902#2026-08-15#": null,
+"titlev4::通义千问兑现承诺 qwen3 8 系列开放权重全量发布": null,
+"titlev4::stripe 敲定超 70 亿美元收购 ai 网关公司 openrouter": null,
+"titlev4::gpt 5 6 sol 70 off in devin": null,
+"titlev4::predicting ai model release dates with stats": null,
+"relatedv4::https desertant com blog introducing desert ant labs #374#2026-09-10#": {
+"id": "49624823",
+"points": 489,
+"comments": 104,
+"title": "Desert Ant Labs: local, fast models that run on device",
+"url": "https://desertant.com/blog/introducing-desert-ant-labs/",
+"related": true
+},
+"relatedv4::https www marktechpost com 2026 09 10 deepseek ai released d#935#2026-09-11#": null,
+"titlev4::deepseek 发布 v4 1 flash 552b moe 1m 上下文 fp4 kv 缓存与跨层注意力复用": null,
+"titlev4::anthropic 威胁报告披露 claude 被用于间谍软件 导弹与无人机研发": null,
+"relatedv4::https www theverge com ai artificial intelligence 994441 tru#221#2026-09-14#Dario 发文 四家实验室负责人表态 A misalignment of AI": {
+"id": "49662371",
+"points": 1228,
+"comments": 1203,
+"title": "A misalignment of AI in mathematics",
+"url": "https://mathandai.org/",
+"related": true
+},
+"relatedv4::https techcrunch com 2026 06 18 openai is bringing on some b#278#2026-06-19#": null,
+"titlev4::15 openai ipo前连下两城 招揽transformer共同作者及前白宫ai政策官员 ai hot https ": null,
+"relatedv4::https x com rohanpaul_ai status 2070550479621488896#167#2026-06-27#": null,
+"titlev4::21 ai 聊天机器人政治偏见深度分析 ai hot https x com rohanpaul_ai status 2": null,
+"relatedv4::https x com deepseek_ai status 2083084415157022911#50#2026-08-01#": {
+"id": "49386163",
+"points": 498,
+"comments": 154,
+"title": "DeepSeek-v4-flash-vision-exp",
+"url": "https://api-docs.deepseek.com/guides/vision/",
+"related": true
+},
+"titlev4::8 google earth ai 卫星图像生成功能上线一日即被撤回 https www 404media co goo": null,
+"titlev4::20 ai 公司收购绝版书后扫描销毁 引发知识保存争议 https www heraldscotland com opi": null,
+"titlev4::21 德国法院裁定 ai 音乐公司 suno 侵犯版权 https www reuters com world germ": null,
+"titlev4::23 thomson reuters 自建 ai 模型 跻身一流模型之列 https www thomsonreuter": null,
+"titlev4::3 google cancels ai studio app after 800k preorders https tw": {
+"id": "49137268",
+"points": 49,
+"comments": 10,
+"title": "Google cancels AI Studio app after 800k preorders"
+},
+"titlev4::13 leopold aschenbrenner built a 45b ai hedge fund and lost ": {
+"id": "49130576",
+"points": 9,
+"comments": 2,
+"title": "Leopold Aschenbrenner built a $45B AI hedge fund – and lost most of it in days"
+},
+"titlev4::17 assessment of open ai math results https twitter com stal": {
+"id": "49136236",
+"points": 10,
+"comments": 4,
+"title": "Assessment of open AI math results"
+},
+"titlev4::21 the math superstar who s terrified of ai and just took a ": {
+"id": "49130385",
+"points": 7,
+"comments": 0,
+"title": "The Math Superstar Who's Terrified of AI–and Just Took a Job at OpenAI"
+},
+"titlev4::13 youtube 的 ai 检测误伤了 kurzgesagt https twitter com kurz_gesa": null,
+"titlev4:: 6 扎克伯格 超级智能应人人可用 meta 回归开源路线 https x com finkd status 20867": null,
+"titlev4:: 2 阿里开放 qwen3 8 2 4t a95b 模型权重 qwen max 级别首次开源 https www ith": null,
+"titlev4:: 3 gpt 5 6 构建者指南 以更低成本实现前沿智能体性能 https openai com index build": null,
+"relatedv4::https api docs deepseek com zh cn updates#735#2026-08-14#": null,
+"titlev4:: 4 deepseek v4 pro 正式版全渠道上线 agent 能力大幅增强 https api docs deep": null,
+"titlev4:: 3 通义千问兑现承诺 qwen3 8 系列开放权重全量发布 https x com alibaba_qwen stat": null,
+"relatedv4::https x com GeminiApp status 2088326407730692538#617#2026-08-15#": null,
+"titlev4:: 5 gemini 3 7 flash 全面开放 pro ultra 用户 gemini spark 同步升级 http": null,
+"titlev4::18 gpt 5 6 sol 70 off in devin https devin ai blog gpt 5 6 s": null,
+"titlev4::7 predicting ai model release dates with stats https release": null,
+"titlev4::1 deepseek 发布 v4 1 flash 552b moe 1m 上下文 fp4 kv 缓存与跨层注意力复用 h": null,
+"titlev4::2 anthropic 威胁报告披露 claude 被用于间谍软件 导弹与无人机研发 https the decoder": null,
+"relatedv4::https www theverge com ai artificial intelligence 994441 tru#221#2026-09-14#Dario 发文 四家实验室负责人表态": null,
+"titlev4::3 放缓前沿 之争进入第二天 微软 google 加入支持 白宫与开源派公开反对 https www theverge ": null
 }

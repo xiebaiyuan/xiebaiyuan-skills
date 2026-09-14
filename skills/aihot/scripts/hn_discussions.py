@@ -36,11 +36,22 @@ ALGOLIA = ("http://hn.algolia.com/api/v1/search?query={q}"
 ALGOLIA_TITLE = ("http://hn.algolia.com/api/v1/search?query={q}"
                  "&tags=story&hitsPerPage=8")
 CACHE_V = "v4"      # 匹配逻辑改了就把这个版本号 +1，避免复用旧结论（缓存按 key 存）
+HN_ITEM_JSON = "https://hacker-news.firebaseio.com/v0/item/{h}.json"
 
-LIST_ITEM = re.compile(r"^\s*(?:\d+\.|[-*])\s*\[")          # 条目行（带链接的列表项）
+# 条目行有两种历史写法：`42. [标题](url) …`（6 月后）与 `1. **标题** [HN]`（6 月模板，链接在下面独立行）
+LIST_ITEM = re.compile(r"^\s*(?:\d{1,3}\.|[-*])\s*(?=\S)")
+ENTRY_HEAD = re.compile(r"\*\*|\]\(")
+
+
+def is_item(ln: str) -> bool:
+    return bool(LIST_ITEM.match(ln)) and bool(ENTRY_HEAD.search(ln))
 MD_LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
-HN_FRAG = re.compile(r"HN（([^）]*)）")                        # HN（221 分） / HN（576 分，643 条评论）
-HN_BARE = re.compile(r"([—·+]\s*)HN(?![（\w])")                # 无括号的 HN 标记
+# HN 标记的形态五花八门（跨 6~9 月四种模板实测）：
+#   HN（221 分） / [HN (314 分)] / [HN (314pts)] / [HN](文章url) (798 up 782 comments)
+#   [HN] [HN 314pts] / [HN] [314pts] / [HN] / [HN · WSJ] / — HN
+HN_MARK = re.compile(r"\[HN[^\]]{0,26}\]|HN（[^）]{0,44}）|(?<=[—·+]\s)HN(?![（\w\[])|(?<=[—·+]\s)\[HN\]")
+SCORE_AFTER = re.compile(r"^(?:[ \t]*[（(][^）)]{0,40}[）)])*[ \t]*\[[\d, ]{1,7}(?:pts|up)?\]")
+SCORE_IN = re.compile(r"(\d[\d,]{0,6})\s*(?:分|pts?\b|up\b)|score:?\s*(\d[\d,]{0,6})")
 ALREADY = re.compile(r"news\.ycombinator\.com|\bHN 讨论\b")
 
 
@@ -91,11 +102,12 @@ def lookup(url: str, cache: dict, refresh: bool = False) -> dict | None:
 
 
 def recorded_score(frag: str) -> int | None:
-    m = re.search(r"([\d,]{1,7})\s*分", frag)
+    """简报里记的 HN 分数：兼容「314 分」「314pts」「314 pts」「798 up」「score: 314」。"""
+    m = SCORE_IN.search(frag or "")
     if not m:
         return None
     try:
-        return int(m.group(1).replace(",", ""))
+        return int((m.group(1) or m.group(2) or "").replace(",", ""))
     except ValueError:
         return None
 
@@ -255,31 +267,130 @@ def mk_link(h: dict) -> str:
     return f"[💬 讨论{tag}（{h['points']} 分{extra}）]({HN_ITEM.format(h['id'])})"
 
 
-def patch_line(ln: str, h: dict) -> str | None:
-    """把讨论链接插进这一行的 HN 标记；插不进去返回 None。"""
+def marker_span(ln: str):
+    """最后一个 HN 标记的 (start, end, 插入点)。插入点会跳过紧跟的 (文章url) 与 (798 up 782 comments) 或 [314pts]。"""
+    last = None
+    for m in HN_MARK.finditer(ln):
+        last = m
+    if not last:
+        return None
+    pos = last.end()
+    for _ in range(3):
+        rest = ln[pos:]
+        if rest.startswith("(") and ")" in rest:
+            close = ln.find(")", pos)
+            inner = ln[pos + 1:close]
+            if "http" in inner:                        # [HN](文章url)
+                pos = close + 1
+                continue
+            if re.search(r"\d", inner) and "http" not in inner:   # (798 up 782 comments) / (236 pts)
+                pos = close + 1
+                continue
+        m2 = SCORE_AFTER.match(rest)                   # [HN] [314pts]
+        if m2 and m2.group(0).strip():
+            pos += len(m2.group(0))
+            continue
+        break
+    return last.start(), last.end(), pos
+
+
+def patch_line(ln: str, h: dict, want: int | None = None) -> str | None:
+    """把讨论链接插到这一行的 HN 标记后面（跳过 url/分数括号）；插不进去返回 None。"""
     if ALREADY.search(ln):
         return None
-    link = mk_link(h)
-    m = HN_FRAG.search(ln)
-    if m:
-        inner = m.group(1).strip()
-        if "讨论" in inner:
-            return None
-        return ln[:m.start()] + f"HN（{inner} · {link}）" + ln[m.end():]
-    m = HN_BARE.search(ln)
-    if m:
-        return ln[:m.end()] + f" {link}" + ln[m.end():]
-    return None
+    sp = marker_span(ln)
+    if not sp:
+        return None
+    return ln[:sp[2]] + f" · {mk_link(h)}" + ln[sp[2]:]
+
+
+HN_ITEM_URL = re.compile(r"news\.ycombinator\.com/item\?id=(\d+)")
 
 
 def iter_items(text: str):
-    """产出 (行号, 行内容, 文章 url)"""
+    """产出 (行号, 行内容, 文章 url, 简报记录的分数)。
+    已有 HN 讨论链接的行由 articles 模式处理（那类缺的是原文链接），这里跳过。"""
     for i, ln in enumerate(text.splitlines()):
-        if not LIST_ITEM.match(ln) or "HN" not in ln:
+        if not is_item(ln) or "HN" not in ln:
             continue
-        m = MD_LINK.search(ln)
-        if m:
-            yield i, ln, m.group(2)
+        if HN_ITEM_URL.search(ln):
+            continue
+        links = MD_LINK.findall(ln)
+        if not links:
+            continue
+        url = links[0][1]
+        for label, u in links:                             # 6 月模板把文章 url 挂在 *HN* 标签上
+            if label.strip().upper().startswith("HN"):
+                url = u
+                break
+        sp = marker_span(ln)
+        want = recorded_score(ln[sp[1]:sp[2] + 45] if sp else "") or (
+            recorded_score(ln[sp[0]:sp[1]]) if sp else None)
+        yield i, ln, url, want
+
+
+def iter_hn_item_lines(text: str):
+    """产出 (行号, 行内容, HN item id)：已带讨论链接、但没带原文链接的条目行。"""
+    for i, ln in enumerate(text.splitlines()):
+        if not is_item(ln):
+            continue
+        m = HN_ITEM_URL.search(ln)
+        if not m:
+            continue
+        others = [u for lbl, u in MD_LINK.findall(ln) if "news.ycombinator.com" not in u]
+        if others:
+            continue
+        if re.search(r"\[原文\]", ln):
+            continue
+        yield i, ln, m.group(1)
+
+
+def hn_item(hid: str, cache: dict) -> dict | None:
+    """HN item 详情（只取 url/title），带缓存。"""
+    key = f"item{CACHE_V}::{hid}"
+    if key in cache:
+        return cache[key]
+    try:
+        with urllib.request.urlopen(HN_ITEM_JSON.format(h=hid), timeout=25) as r:
+            d = json.load(r)
+        out = {"url": d.get("url") or "", "title": d.get("title") or "",
+               "points": d.get("score"), "comments": d.get("descendants")}
+    except Exception as e:
+        log(f"[hn] item {hid} 取详情失败：{e}")
+        out = None
+    cache[key] = out
+    time.sleep(0.15)
+    return out
+
+
+def fill_articles(since: str | None, dry: bool, refresh: bool) -> int:
+    """反向补齐：条目只链了 HN 讨论页、没链原文 → 从 HN item 取 url 补上原文链接。"""
+    cache = load_cache()
+    files = sorted(glob.glob(os.path.join(VAULT, "20*.md")))
+    if since:
+        files = [f for f in files if os.path.basename(f)[:10] >= since]
+    n = 0
+    for path in files:
+        lines = open(path, encoding="utf-8").read().splitlines()
+        changed = 0
+        for i, ln, hid in list(iter_hn_item_lines("\n".join(lines))):
+            it = hn_item(hid, cache)
+            if not it or not it.get("url"):
+                continue                      # Ask HN / Show HN 自帖没有原文
+            ins = ln.find(")", ln.find("item?id="))
+            if ins == -1:
+                continue
+            lines[i] = ln[:ins + 1] + f" · [原文]({it['url']})" + ln[ins + 1:]
+            changed += 1
+            n += 1
+        if changed and not dry:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write("\n".join(lines) + "\n")
+        if changed:
+            log(f"[hn] {'(dry) ' if dry else ''}{os.path.basename(path)}：补 {changed} 条原文链接")
+    save_cache(cache)
+    log(f"[hn] 合计补原文链接 {n} 条（文件 {len(files)} 份）")
+    return n
 
 
 LINK_INSERTED = re.compile(r"\s*·?\s*\[💬 讨论(?:同题材)?（[^）]*）\]\(https://news\.ycombinator\.com/item\?id=\d+\)")
@@ -296,6 +407,7 @@ def reset(since: str | None, dry: bool) -> int:
         if "news.ycombinator.com" not in txt:
             continue
         new = LINK_INSERTED.sub("", txt)
+        new = re.sub(r"[ \t]+·[ \t]*$", "", new, flags=re.M)      # 行尾孤零零的 ·
         new = re.sub(r"（([^）\n]*?)\s+）", r"（\1）", new)
         cnt = len(LINK_INSERTED.findall(txt))
         n += cnt
@@ -316,9 +428,11 @@ def backfill(since: str | None, dry: bool, refresh: bool) -> tuple[int, int, int
         txt = open(path, encoding="utf-8").read()
         lines = txt.splitlines()
         changed = 0
-        for i, ln, url in list(iter_items(txt)):
-            frag = (HN_FRAG.search(ln) or [None, ""])[1] if HN_FRAG.search(ln) else ""
-            want = recorded_score(frag)
+        # 块内（含条目下面的独立行）已有讨论链接的 → 不再往条目行里插，避免同一帖子挂两条链接
+        covered = {s for s, blk in entry_blocks(lines) if HN_ITEM_URL.search("\n".join(blk))}
+        for i, ln, url, want in list(iter_items(txt)):
+            if i in covered:
+                continue
             h = lookup(url, cache, refresh=refresh)
             # 置信度：讨论页分数不会比采集时更小（分数只涨不跌）。明显更小 → 不是同一条帖
             if h and want and (h.get("points") or 0) < want * 0.5:
@@ -339,10 +453,20 @@ def backfill(since: str | None, dry: bool, refresh: bool) -> tuple[int, int, int
                     log(f"[hn] 分数对不上但保留文章自己的讨论串（简报 {want} 分 / 帖 "
                         f"{h.get('points')} 分）：{(t.group(1) if t else '')[:60]}  {os.path.basename(path)}")
                     n_lowconf += 1
+            if not h and want:
+                # 这个 URL 根本没上 HN（常发生在 X 帖/聚合源）→ 按分数 + 标题词找同题材帖
+                t0 = MD_LINK.search(ln)
+                ent_title = t0.group(1) if t0 else ""
+                h = (related_thread_lookup(url, ent_title, want, cache,
+                                           extra_queries=quoted_titles("\n".join(lines[i:i + 12])),
+                                           brief_date=os.path.basename(path)[:10])
+                     or title_lookup(ent_title, want, cache, article_url=url))
+                if h:
+                    log(f"[hn] URL 未上 HN，按同题材帖补上：{ent_title[:50]}  {os.path.basename(path)}")
             if not h:
                 n_miss += 1
                 continue
-            new = patch_line(lines[i], h)
+            new = patch_line(lines[i], h, want)
             if new is None:
                 n_skip += 1
                 continue
@@ -360,9 +484,145 @@ def backfill(since: str | None, dry: bool, refresh: bool) -> tuple[int, int, int
     return n_patch, n_skip, n_miss
 
 
+SWAP_TITLE = re.compile(
+    r"^(\s*\d+\.\s*\[)([^\]]+)(\]\()(https://news\.ycombinator\.com/item\?id=\d+)(\)\s*·\s*\[原文\]\()"
+    r"(https?://[^)]+)(\))")
+
+
+def swap_titles(since: str | None, dry: bool) -> int:
+    """7 月模板把「标题」链到了 HN 讨论页、原文挂在后面 —— 换回来：标题链原文，讨论留在 [HN] 标记上。"""
+    files = sorted(glob.glob(os.path.join(VAULT, "20*.md")))
+    if since:
+        files = [f for f in files if os.path.basename(f)[:10] >= since]
+    n = 0
+    for path in files:
+        lines = open(path, encoding="utf-8").read().splitlines()
+        changed = 0
+        for i, ln in enumerate(lines):
+            m = SWAP_TITLE.match(ln)
+            if not m:
+                continue
+            lines[i] = m.group(1) + m.group(2) + m.group(3) + m.group(6) + m.group(7) + ln[m.end():]
+            changed += 1
+        if changed and not dry:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write("\n".join(lines) + "\n")
+        if changed:
+            log(f"[hn] {'(dry) ' if dry else ''}{os.path.basename(path)}：标题链改指原文 {changed} 条")
+        n += changed
+    log(f"[hn] 合计换回 {n} 条标题链接")
+    return n
+
+
+def dedupe(since: str | None, dry: bool) -> int:
+    """同一帖子在一个条目里挂了两次链接时，删掉脚本插进去的那条（老模板条目下面本来就有 [HN 讨论] 行）。"""
+    files = sorted(glob.glob(os.path.join(VAULT, "20*.md")))
+    if since:
+        files = [f for f in files if os.path.basename(f)[:10] >= since]
+    n = 0
+    for path in files:
+        lines = open(path, encoding="utf-8").read().splitlines()
+        rm = set()
+        for start, blk in entry_blocks(lines):
+            blob = "\n".join(blk)
+            ids = re.findall(r"item\?id=(\d+)", blob)
+            for j, l in enumerate(blk):
+                for m in LINK_INSERTED.finditer(l):
+                    hid = re.search(r"id=(\d+)", m.group(0))
+                    if hid and ids.count(hid.group(1)) > 1:
+                        rm.add(start + j)
+        if not rm:
+            continue
+        for j in rm:
+            lines[j] = LINK_INSERTED.sub("", lines[j]).rstrip()
+            lines[j] = re.sub(r"[ \t]+·[ \t]*$", "", lines[j])
+            n += 1
+        if not dry:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write("\n".join(lines) + "\n")
+        log(f"[hn] {'(dry) ' if dry else ''}{os.path.basename(path)}：去重删掉 {len(rm)} 条重复链接")
+    log(f"[hn] 去重合计 {n} 条")
+    return n
+
+
+def entry_blocks(lines: list[str]):
+    """按条目切块：yield (起行号, 行列表)。有些月份的模板把 [原文]/[讨论] 放在条目下面的独立行。"""
+    start = None
+    for i, ln in enumerate(lines):
+        if is_item(ln):
+            if start is not None:
+                yield start, lines[start:i]
+            start = i
+        elif start is not None and re.match(r"^\s*#{1,6}\s", ln):
+            yield start, lines[start:i]
+            start = None
+    if start is not None:
+        yield start, lines[start:]
+
+
+def block_fill(since: str | None, dry: bool, refresh: bool) -> int:
+    """条目块级补链：块里有 HN 标记但没有讨论链接 → 用块内任意 http 链接反查 HN 帖。
+    这类是 6~7 月的模板（链接挂在 [原文]/[讨论] 独立行，条目行只有 [HN] 裸标记）。"""
+    cache = load_cache()
+    files = sorted(glob.glob(os.path.join(VAULT, "20*.md")))
+    if since:
+        files = [f for f in files if os.path.basename(f)[:10] >= since]
+    n_add = n_miss = n_nourl = n_already = 0
+    for path in files:
+        lines = open(path, encoding="utf-8").read().splitlines()
+        brief_date = os.path.basename(path)[:10]
+        ins = []                                   # (插入行号, 文本)
+        for start, blk in entry_blocks(lines):
+            blob = "\n".join(blk)
+            if "HN" not in blob:
+                continue
+            if HN_ITEM_URL.search(blob):
+                n_already += 1
+                continue
+            urls = [u for u in re.findall(r"\((https?://[^)\s]+)\)", blob)
+                    if "news.ycombinator.com" not in u]
+            if not urls:
+                n_nourl += 1
+                continue
+            url = urls[0]
+            want = recorded_score(blob)
+            h = lookup(url, cache, refresh=refresh)
+            if want and (not h or (h.get("points") or 0) < want * 0.9):
+                h2 = (related_thread_lookup(url, blk[0], want, cache,
+                                            extra_queries=quoted_titles(blob), brief_date=brief_date)
+                      or title_lookup(blk[0], want, cache, article_url=url))
+                h = h2 or h
+            if not h:
+                n_miss += 1
+                log(f"[hn] 块级未匹配：{blk[0][:70]}  {os.path.basename(path)}")
+                continue
+            line = f"   [讨论]({HN_ITEM.format(h['id'])})"
+            tgt = None
+            for j, l in enumerate(blk):
+                if re.match(r"^\s*\[原文\]", l):
+                    tgt = start + j + 1
+                    break
+            if tgt is None:
+                tgt = start + 1
+            while tgt <= start + len(blk) and tgt < len(lines) and lines[tgt - 1].strip() == "":
+                tgt += 1
+            ins.append((tgt, line))
+            n_add += 1
+        for pos, text in sorted(ins, reverse=True):
+            lines.insert(pos, text)
+        if ins and not dry:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write("\n".join(lines) + "\n")
+        if ins:
+            log(f"[hn] {'(dry) ' if dry else ''}{os.path.basename(path)}：块级补讨论行 {len(ins)} 条")
+    save_cache(cache)
+    log(f"[hn] 块级合计：新增 {n_add} · 已有 {n_already} · 块内无链接 {n_nourl} · 未匹配 {n_miss}")
+    return n_add
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["lookup", "backfill", "reset"])
+    ap.add_argument("mode", choices=["lookup", "backfill", "reset", "articles", "swap", "blocks", "dedupe"])
     ap.add_argument("url", nargs="?")
     ap.add_argument("--dry", action="store_true")
     ap.add_argument("--since")
@@ -370,6 +630,18 @@ def main():
     a = ap.parse_args()
     if a.mode == "reset":
         reset(a.since, a.dry)
+        return
+    if a.mode == "articles":
+        fill_articles(a.since, a.dry, a.refresh)
+        return
+    if a.mode == "swap":
+        swap_titles(a.since, a.dry)
+        return
+    if a.mode == "blocks":
+        block_fill(a.since, a.dry, a.refresh)
+        return
+    if a.mode == "dedupe":
+        dedupe(a.since, a.dry)
         return
     if a.mode == "lookup":
         if not a.url:

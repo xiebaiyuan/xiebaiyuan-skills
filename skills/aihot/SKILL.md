@@ -129,21 +129,32 @@ find ~/AI_DOC/wiki/entities -name "*${entity}*.md" 2>/dev/null
 
 简报末尾加提示行：哪些条目是 API 原文摘要、哪些是标题概括、哪些细节需以原文为准。数字不约、缩写不猜。
 
-## 收尾固定动作：HN 讨论链接自检（2026-09-14 新增）
+## 收尾固定动作：双向链接自检（2026-09-14 新增）
 
-简报写完后跑一次幂等回填脚本，它会逐条检查 HN 条目是否带讨论链接，缺的就用 Algolia 按文章 URL 反查 `item?id=` 补上（已带的会跳过）：
+**不变式：每条 HN 条目必须同时有「原文链接」和「HN 讨论链接」。** 历史简报两边都漏过：
+9 月模板写 `HN（221 分）` 却没讨论链接；6～8 月模板写 `[HN (1769↑)](item?id=…)` 却没原文链接。
+两个方向都由同一个幂等脚本兜：
 
 ```bash
 S=~/.hermes/skills/research/aihot/scripts/hn_discussions.py
-python3 $S backfill --since <今天>     # 回填当天简报
-python3 $S lookup <文章url>           # 单条查候选
-python3 $S reset --since <今天>        # 剥掉已插入的链接（重跑前用）
-python3 $S backfill --dry              # 全量预演，只报统计
+python3 $S backfill --since <今天>   # 缺讨论链接 → 按文章 URL 反查 item?id= 补上
+python3 $S blocks  --since <今天>   # 条目块级兜底（链接挂在条目下面的独立行、或 URL 根本没上 HN）
+python3 $S articles --since <今天>   # 缺原文链接（6～8 月模板）→ 从 HN item 取 url 补 [原文](…)
+python3 $S lookup <文章url>         # 单条查候选
+python3 $S dedupe                   # 同一帖子挂了两次 → 删掉脚本插的那条
+python3 $S reset --since <今天>      # 剥掉已插入的讨论链接（重跑前用）
+python3 $S backfill --dry            # 全量预演，只报统计
 ```
 
-- 缓存：`~/.hermes/skills/research/aihot/data/hn_lookup.json`，同一 URL 不重复请求。
-- **置信度规则**：URL 命中后，如果讨论页分数比简报记录值的一半还低（分数只涨不跌），说明不是同一条帖——脚本会改按「标题词重合 ≥60% + 域名一致 + 分数同量级」三闸匹配，三道不过就**不链**并在日志里报「低置信跳过」。宁缺勿错，错链比没链更糟。
-- 手动写作时也可以直接用：`item?id=` 就写在 HN 标记后面。
+- 缓存：`~/.hermes/skills/research/aihot/data/hn_lookup.json`，同一 URL/item 不重复请求。
+- **HN 标记有四种历史写法，脚本都能识别**：`HN（221 分）` / `[HN (314 分)]` / `[HN (314pts)]` / `[HN](文章url) (798 up 782 comments)` / `[HN] [314pts]`。写新简报统一用第一种，别自创。
+- **置信度规则**（宁缺勿错，错链比没链更糟）：
+  1. URL 命中就链；同一 URL 多次提交取分数最高那条。
+  2. 讨论页分数比简报记录值低（低于 0.9×，分数只涨不跌）→ 简报那分数属「另一 URL 的同题材帖」（如菲尔兹奖宣言：文章链陶蚙轩博客，分数属 mathandai.org 的帖）→ 按「正文引号英文帖名 / URL slug 词」搜 story，卡「分数 ≥0.9×、老帖不过 45 天、词重合 ≥0.6」→ 命中标 `[💬 讨论同题材（…）]`。
+  3. 同题材也找不到 → 退回文章自己的讨论串；连 URL 都命中不了（未上 HN/链接失效）→ 不链。
+- **改匹配逻辑后把 `CACHE_V` +1**，否则缓存里的旧结论会被复用（曾因此连续两次得到错链）。
+- 手动写作时直接写 `item?id=` 就行；`articles`/`blocks`/`swap`/`dedupe` 四个模式只服务历史简报回填，新简报不需要。
+- **覆盖率现状（2026-09-14 全量回填后）**：1062 条 HN 条目里 95% 带讨论链接、95% 带原文链接。剩下的缺口是三类真实情况：404media/techcrunch 类新闻 HN 讨论挂在别家 URL、X 帖没有对应的 HN 帖、Ask HN 自帖本来就没原文——不要再花时间硬碰，更不要凑链接。
 
 ## 已知坑（cron 实战 2026-08-11~18）
 
