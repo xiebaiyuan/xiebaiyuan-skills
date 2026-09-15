@@ -1,7 +1,7 @@
 {
 "0xsero/ai-data-extraction": {
 "stars": 1280,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "1.3k/h": {
 "stars": null,
@@ -25,7 +25,7 @@
 },
 "2dmurali/review-loop-skill": {
 "stars": 4,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "60/h": {
 "stars": null,
@@ -49,15 +49,15 @@
 },
 "acedatacloud/skills": {
 "stars": 17,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "addyosmani/agent-skills": {
-"stars": 94168,
-"date": "2026-09-14"
+"stars": 94353,
+"date": "2026-09-15"
 },
 "affaan-m/ecc": {
-"stars": 257987,
-"date": "2026-09-14"
+"stars": 258419,
+"date": "2026-09-15"
 },
 "agent-pulse/genmedia": {
 "stars": null,
@@ -65,12 +65,12 @@
 "err": "gh: Not Found (HTTP 404)"
 },
 "agentskills/agentskills": {
-"stars": 25308,
-"date": "2026-09-14"
+"stars": 25339,
+"date": "2026-09-15"
 },
 "agricidaniel/claude-seo": {
-"stars": 16879,
-"date": "2026-09-14"
+"stars": 16920,
+"date": "2026-09-15"
 },
 "ai-image-generation/image-to-video": {
 "stars": null,
@@ -78,176 +78,176 @@
 "err": "gh: Not Found (HTTP 404)"
 },
 "aipoch/medical-research-skills": {
-"stars": 1874,
-"date": "2026-09-14"
+"stars": 1875,
+"date": "2026-09-15"
 },
 "aipoch/open-science": {
-"stars": 4176,
-"date": "2026-09-14"
+"stars": 4182,
+"date": "2026-09-15"
 },
 "akitaonrails/ai-memory": {
-"stars": 6737,
-"date": "2026-09-14"
+"stars": 6820,
+"date": "2026-09-15"
 },
 "alchaincyf/nuwa-skill": {
-"stars": 32608,
-"date": "2026-09-14"
+"stars": 32647,
+"date": "2026-09-15"
 },
 "alchaincyf/zhangxuefeng-skill": {
-"stars": 10279,
-"date": "2026-09-14"
+"stars": 10283,
+"date": "2026-09-15"
 },
 "alirezarezvani/claude-skills": {
-"stars": 25938,
-"date": "2026-09-14"
+"stars": 25960,
+"date": "2026-09-15"
 },
 "alishahryar1/free-claude-code": {
-"stars": 54851,
-"date": "2026-09-14"
+"stars": 54951,
+"date": "2026-09-15"
 },
 "alwaysmeticulous/skills": {
 "stars": 11,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "am-will/codex-skills": {
 "stars": 1034,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "amazonappdev/devices-agent-skills": {
 "stars": 5,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "amelnagdy/delegate-skills": {
-"stars": 1998,
-"date": "2026-09-14"
+"stars": 2020,
+"date": "2026-09-15"
 },
 "amelnagdy/review-skills": {
-"stars": 113,
-"date": "2026-09-14"
+"stars": 114,
+"date": "2026-09-15"
 },
 "amplitude/mcp-marketplace": {
 "stars": 35,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "amruthpillai/reactive-resume": {
-"stars": 42801,
-"date": "2026-09-14"
+"stars": 42871,
+"date": "2026-09-15"
 },
 "anthropics/claude-plugins-community": {
-"stars": 3971,
-"date": "2026-09-14"
+"stars": 4027,
+"date": "2026-09-15"
 },
 "anthropics/claude-plugins-official": {
-"stars": 36250,
-"date": "2026-09-14"
+"stars": 36293,
+"date": "2026-09-15"
 },
 "anthropics/financial-services": {
-"stars": 34820,
-"date": "2026-09-14"
+"stars": 34826,
+"date": "2026-09-15"
 },
 "anthropics/knowledge-work-plugins": {
-"stars": 24012,
-"date": "2026-09-14"
+"stars": 24018,
+"date": "2026-09-15"
 },
 "anthropics/skills": {
-"stars": 176203,
-"date": "2026-09-14"
+"stars": 176330,
+"date": "2026-09-15"
 },
 "antibrow/anti-detect-browser-skills": {
-"stars": 350,
-"date": "2026-09-14"
+"stars": 398,
+"date": "2026-09-15"
 },
 "anywhere-labs/deepseek-harness-desktop": {
-"stars": 26358,
-"date": "2026-09-14"
+"stars": 26543,
+"date": "2026-09-15"
 },
 "appllama/appllama-skills": {
-"stars": 1662,
-"date": "2026-09-14"
+"stars": 1702,
+"date": "2026-09-15"
 },
 "asciimoo/hister": {
-"stars": 3750,
-"date": "2026-09-14"
+"stars": 3756,
+"date": "2026-09-15"
 },
 "assistant-ui/skills": {
 "stars": 27,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "autonnel/autonnel-skills": {
-"stars": 3,
-"date": "2026-09-14"
+"stars": 9,
+"date": "2026-09-15"
 },
 "awesome-dsh-plugin/awesome-dsh-plugin": {
-"stars": 15636,
-"date": "2026-09-14"
+"stars": 15700,
+"date": "2026-09-15"
 },
 "aws/agent-toolkit-for-aws": {
-"stars": 2608,
-"date": "2026-09-14"
+"stars": 2616,
+"date": "2026-09-15"
 },
 "axelfreeman/marketing-mindset": {
-"stars": 36,
-"date": "2026-09-14"
+"stars": 32,
+"date": "2026-09-15"
 },
 "ayi-ai/ayi-nonviolent-communication": {
 "stars": 177,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "better-auth/skills": {
 "stars": 218,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "bigpizzav3/codexplusplus": {
-"stars": 30863,
-"date": "2026-09-14"
+"stars": 30917,
+"date": "2026-09-15"
 },
 "binance/binance-skills-hub": {
 "stars": 1029,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "binaryify/open-kimi-ppt-skill": {
-"stars": 1597,
-"date": "2026-09-14"
+"stars": 1599,
+"date": "2026-09-15"
 },
 "bradautomates/claude-video": {
-"stars": 17180,
-"date": "2026-09-14"
+"stars": 17197,
+"date": "2026-09-15"
 },
 "brianlovin/agent-config": {
 "stars": 368,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "browser-use/video-use": {
-"stars": 24853,
-"date": "2026-09-14"
+"stars": 24884,
+"date": "2026-09-15"
 },
 "builderio/skills": {
-"stars": 4249,
-"date": "2026-09-14"
+"stars": 4255,
+"date": "2026-09-15"
 },
 "butterbase-ai/butterbase": {
-"stars": 3504,
-"date": "2026-09-14"
+"stars": 3520,
+"date": "2026-09-15"
 },
 "callstack/agent-device": {
-"stars": 4569,
-"date": "2026-09-14"
+"stars": 4577,
+"date": "2026-09-15"
 },
 "callstack/react-native-testing-library": {
 "stars": 3418,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "cathrynlavery/diagram-design": {
-"stars": 39503,
-"date": "2026-09-14"
+"stars": 39831,
+"date": "2026-09-15"
 },
 "ccch1mneyyy/dsh-tui": {
-"stars": 3025,
-"date": "2026-09-14"
+"stars": 3036,
+"date": "2026-09-15"
 },
 "chachamaru127/claude-code-harness": {
-"stars": 3112,
-"date": "2026-09-14"
+"stars": 3114,
+"date": "2026-09-15"
 },
 "chen_jeff/harmony-os-skill": {
 "stars": null,
@@ -255,140 +255,140 @@
 "err": "gh: Not Found (HTTP 404)"
 },
 "chrisbanes/skills": {
-"stars": 1038,
-"date": "2026-09-14"
+"stars": 1041,
+"date": "2026-09-15"
 },
 "chrisgreg/boop": {
-"stars": 752,
-"date": "2026-09-14"
+"stars": 755,
+"date": "2026-09-15"
 },
 "chromedevtools/chrome-devtools-mcp": {
-"stars": 51882,
-"date": "2026-09-14"
+"stars": 51961,
+"date": "2026-09-15"
 },
 "chuspeeism/dashiai-ppt-skill": {
-"stars": 8160,
-"date": "2026-09-14"
+"stars": 8190,
+"date": "2026-09-15"
 },
 "claude-office-skills/skills": {
 "stars": 468,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "clawlink-hq/skills": {
 "stars": 0,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "clerk/skills": {
 "stars": 72,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "clickhouse/agent-skills": {
 "stars": 535,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "cloudflare/security-audit-skill": {
-"stars": 3285,
-"date": "2026-09-14"
+"stars": 4012,
+"date": "2026-09-15"
 },
 "cloudflare/skills": {
-"stars": 2829,
-"date": "2026-09-14"
+"stars": 2830,
+"date": "2026-09-15"
 },
 "cloudinary-devs/skills": {
 "stars": 11,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "composiohq/composio": {
-"stars": 30162,
-"date": "2026-09-14"
+"stars": 30171,
+"date": "2026-09-15"
 },
 "conardli/garden-skills": {
-"stars": 12408,
-"date": "2026-09-14"
+"stars": 12420,
+"date": "2026-09-15"
 },
 "confident-ai/deepeval": {
-"stars": 18259,
-"date": "2026-09-14"
+"stars": 18271,
+"date": "2026-09-15"
 },
 "conorbronsdon/avoid-ai-writing": {
-"stars": 4370,
-"date": "2026-09-14"
+"stars": 4380,
+"date": "2026-09-15"
 },
 "coplaydev/unity-mcp": {
-"stars": 14208,
-"date": "2026-09-14"
+"stars": 14220,
+"date": "2026-09-15"
 },
 "cordiverse/cordis": {
-"stars": 8481,
-"date": "2026-09-14"
+"stars": 8501,
+"date": "2026-09-15"
 },
 "coreyhaines31/marketingskills": {
-"stars": 50102,
-"date": "2026-09-14"
+"stars": 50258,
+"date": "2026-09-15"
 },
 "crafter-station/petdex": {
-"stars": 4096,
-"date": "2026-09-14"
+"stars": 4099,
+"date": "2026-09-15"
 },
 "cursor/plugins": {
-"stars": 7658,
-"date": "2026-09-14"
+"stars": 7744,
+"date": "2026-09-15"
 },
 "cyrusagents/cyrus": {
-"stars": 806,
-"date": "2026-09-14"
+"stars": 807,
+"date": "2026-09-15"
 },
 "d4vinci/scrapling": {
-"stars": 80835,
-"date": "2026-09-14"
+"stars": 80964,
+"date": "2026-09-15"
 },
 "davidondrej/skills": {
-"stars": 4022,
-"date": "2026-09-14"
+"stars": 4032,
+"date": "2026-09-15"
 },
 "deepseek-ai/deepseek-harness": {
-"stars": 223254,
-"date": "2026-09-14"
+"stars": 224092,
+"date": "2026-09-15"
 },
 "denchisoft/vtubestudio": {
 "stars": 1293,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "designed-by-ai/skills": {
 "stars": 6,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "deusdata/codebase-memory-mcp": {
-"stars": 43172,
-"date": "2026-09-14"
+"stars": 43266,
+"date": "2026-09-15"
 },
 "deusyu/translate-book": {
-"stars": 1838,
-"date": "2026-09-14"
+"stars": 1845,
+"date": "2026-09-15"
 },
 "devenjarvis/lathe": {
-"stars": 1665,
-"date": "2026-09-14"
+"stars": 1666,
+"date": "2026-09-15"
 },
 "diet103/claude-code-infrastructure-showcase": {
-"stars": 10016,
-"date": "2026-09-14"
+"stars": 10018,
+"date": "2026-09-15"
 },
 "dietrichgebert/ponytail": {
-"stars": 137763,
-"date": "2026-09-14"
+"stars": 138481,
+"date": "2026-09-15"
 },
 "dmmulroy/anti-slop": {
-"stars": 4407,
-"date": "2026-09-14"
+"stars": 4470,
+"date": "2026-09-15"
 },
 "doany-skills/skills": {
 "stars": 8,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "dotnet/skills": {
-"stars": 5412,
-"date": "2026-09-14"
+"stars": 5415,
+"date": "2026-09-15"
 },
 "draw.io/mermaid": {
 "stars": null,
@@ -396,108 +396,108 @@
 "err": "gh: Not Found (HTTP 404)"
 },
 "earthtojake/text-to-cad": {
-"stars": 15679,
-"date": "2026-09-14"
+"stars": 15786,
+"date": "2026-09-15"
 },
 "ejirocodes/agent-skills": {
 "stars": 6,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "elementalsouls/claude-bughunter": {
-"stars": 4484,
-"date": "2026-09-14"
+"stars": 4492,
+"date": "2026-09-15"
 },
 "elevenlabs/skills": {
 "stars": 450,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "emilkowalski/skills": {
-"stars": 37535,
-"date": "2026-09-14"
+"stars": 37748,
+"date": "2026-09-15"
 },
 "eternityspring/shuohao-skills": {
-"stars": 3328,
-"date": "2026-09-14"
+"stars": 3356,
+"date": "2026-09-15"
 },
 "exa-labs/exa-mcp-server": {
-"stars": 5000,
-"date": "2026-09-14"
+"stars": 5003,
+"date": "2026-09-15"
 },
 "expo/skills": {
-"stars": 2526,
-"date": "2026-09-14"
+"stars": 2530,
+"date": "2026-09-15"
 },
 "fangqian616/consensus-pipeline": {
 "stars": 124,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "farion1231/cc-switch": {
-"stars": 132754,
-"date": "2026-09-14"
+"stars": 132861,
+"date": "2026-09-15"
 },
 "fast-editor/lynkr": {
 "stars": 550,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "feature-sliced/skills": {
 "stars": 98,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "fetcher-sh/fetcher-skills": {
 "stars": 1,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "firebase/agent-skills": {
-"stars": 440,
-"date": "2026-09-14"
+"stars": 443,
+"date": "2026-09-15"
 },
 "firecrawl/skills": {
 "stars": 103,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "fission-ai/openspec": {
-"stars": 68196,
-"date": "2026-09-14"
+"stars": 68273,
+"date": "2026-09-15"
 },
 "flowkit-labs/skills": {
 "stars": 4,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "flutter/agent-plugins": {
-"stars": 2932,
-"date": "2026-09-14"
+"stars": 2933,
+"date": "2026-09-15"
 },
 "forcedotcom/sf-skills": {
 "stars": 993,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "forward-future/loop-library": {
-"stars": 3130,
-"date": "2026-09-14"
+"stars": 3132,
+"date": "2026-09-15"
 },
 "fourteenwm/ppc-ai-skills": {
 "stars": 68,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "freestylefly/codexguide": {
-"stars": 3504,
-"date": "2026-09-14"
+"stars": 3518,
+"date": "2026-09-15"
 },
 "full-stack-skills/tauri-skills": {
 "stars": 11,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "gbasin/clanker-discipline": {
 "stars": 22,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "geeklee/srt-whiteboard-animation": {
-"stars": 3278,
-"date": "2026-09-14"
+"stars": 3300,
+"date": "2026-09-15"
 },
 "genmedia-labs/skills": {
 "stars": 7,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "genmedia/mattpocock": {
 "stars": null,
@@ -506,327 +506,327 @@
 },
 "geoffjay/claude-plugins": {
 "stars": 8,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "getsentry/skills": {
-"stars": 991,
-"date": "2026-09-14"
+"stars": 992,
+"date": "2026-09-15"
 },
 "github/awesome-copilot": {
-"stars": 38984,
-"date": "2026-09-14"
+"stars": 39005,
+"date": "2026-09-15"
 },
 "github/gh-stack": {
-"stars": 1496,
-"date": "2026-09-14"
+"stars": 1498,
+"date": "2026-09-15"
 },
 "github/github-mcp-server": {
-"stars": 32920,
-"date": "2026-09-14"
+"stars": 32934,
+"date": "2026-09-15"
 },
 "google-deepmind/science-skills": {
-"stars": 3030,
-"date": "2026-09-14"
+"stars": 3035,
+"date": "2026-09-15"
 },
 "google-gemini/gemini-skills": {
-"stars": 4113,
-"date": "2026-09-14"
+"stars": 4120,
+"date": "2026-09-15"
 },
 "google-labs-code/design.md": {
-"stars": 27898,
-"date": "2026-09-14"
+"stars": 27915,
+"date": "2026-09-15"
 },
 "google-labs-code/stitch-skills": {
-"stars": 8305,
-"date": "2026-09-14"
+"stars": 8311,
+"date": "2026-09-15"
 },
 "google/agents-cli": {
-"stars": 5925,
-"date": "2026-09-14"
+"stars": 5930,
+"date": "2026-09-15"
 },
 "google/mantis": {
-"stars": 1519,
-"date": "2026-09-14"
+"stars": 1528,
+"date": "2026-09-15"
 },
 "google/skills": {
-"stars": 19875,
-"date": "2026-09-14"
+"stars": 19912,
+"date": "2026-09-15"
 },
 "googleworkspace/cli": {
-"stars": 30988,
-"date": "2026-09-14"
+"stars": 31002,
+"date": "2026-09-15"
 },
 "gordensun/gordensuperpptskills": {
-"stars": 1950,
-"date": "2026-09-14"
+"stars": 1955,
+"date": "2026-09-15"
 },
 "grafana/skills": {
-"stars": 256,
-"date": "2026-09-14"
+"stars": 258,
+"date": "2026-09-15"
 },
 "graphify-labs/graphify": {
-"stars": 116557,
-"date": "2026-09-14"
+"stars": 116758,
+"date": "2026-09-15"
 },
 "greensock/gsap-skills": {
-"stars": 15253,
-"date": "2026-09-14"
+"stars": 15292,
+"date": "2026-09-15"
 },
 "handsomestwei/patent-disclosure-skill": {
-"stars": 9454,
-"date": "2026-09-14"
+"stars": 9498,
+"date": "2026-09-15"
 },
 "harnessrouter/starter-kit": {
 "stars": 47,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "haydenbleasel/ultracite": {
-"stars": 3268,
-"date": "2026-09-14"
+"stars": 3270,
+"date": "2026-09-15"
 },
 "hesreallyhim/awesome-claude-code": {
-"stars": 54001,
-"date": "2026-09-14"
+"stars": 54057,
+"date": "2026-09-15"
 },
 "heygen-com/hyperframes": {
-"stars": 49799,
-"date": "2026-09-14"
+"stars": 50050,
+"date": "2026-09-15"
 },
 "higgsfield-ai/skills": {
-"stars": 947,
-"date": "2026-09-14"
+"stars": 952,
+"date": "2026-09-15"
 },
 "himself65/finance-skills": {
-"stars": 3317,
-"date": "2026-09-14"
+"stars": 3319,
+"date": "2026-09-15"
 },
 "hisn00w/asu-skills": {
-"stars": 4494,
-"date": "2026-09-14"
+"stars": 4542,
+"date": "2026-09-15"
 },
 "hkuds/cli-anything": {
-"stars": 49375,
-"date": "2026-09-14"
+"stars": 49401,
+"date": "2026-09-15"
 },
 "htdt/godogen": {
-"stars": 6887,
-"date": "2026-09-14"
+"stars": 6898,
+"date": "2026-09-15"
 },
 "huaweicloud/huaweicloud-skills": {
 "stars": 49,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "huggingface/agents-course": {
-"stars": 32497,
-"date": "2026-09-14"
+"stars": 32528,
+"date": "2026-09-15"
 },
 "humanlayer/skills": {
-"stars": 4036,
-"date": "2026-09-14"
+"stars": 4066,
+"date": "2026-09-15"
 },
 "ibelick/ui-skills": {
-"stars": 8404,
-"date": "2026-09-14"
+"stars": 8483,
+"date": "2026-09-15"
 },
 "imbad0202/academic-research-skills": {
-"stars": 47968,
-"date": "2026-09-14"
+"stars": 48050,
+"date": "2026-09-15"
 },
 "inference-sh/skills": {
-"stars": 733,
-"date": "2026-09-14"
+"stars": 734,
+"date": "2026-09-15"
 },
 "inkeep/open-knowledge-skills": {
 "stars": 8,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "internet-court/internet-court-skill": {
-"stars": 5690,
-"date": "2026-09-14"
+"stars": 5711,
+"date": "2026-09-15"
 },
 "isjiamu/gzh-design-skill": {
-"stars": 3659,
-"date": "2026-09-14"
+"stars": 3663,
+"date": "2026-09-15"
 },
 "jakubantalik/transitions.dev": {
-"stars": 3985,
-"date": "2026-09-14"
+"stars": 4121,
+"date": "2026-09-15"
 },
 "jakubkrehel/make-interfaces-feel-better": {
-"stars": 3434,
-"date": "2026-09-14"
+"stars": 3442,
+"date": "2026-09-15"
 },
 "jakubkrehel/skills": {
-"stars": 6487,
-"date": "2026-09-14"
+"stars": 6610,
+"date": "2026-09-15"
 },
 "jane-o-o-o-o/agent-pulse-skill": {
 "stars": 1,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "jangviktor-web/nihaixia": {
-"stars": 2928,
-"date": "2026-09-14"
+"stars": 2932,
+"date": "2026-09-15"
 },
 "jau123/meigen-ai-design-mcp": {
-"stars": 1757,
-"date": "2026-09-14"
+"stars": 1762,
+"date": "2026-09-15"
 },
 "jeffallan/claude-skills": {
-"stars": 11457,
-"date": "2026-09-14"
+"stars": 11473,
+"date": "2026-09-15"
 },
 "jia-ethan/codex-keysmith": {
-"stars": 4464,
-"date": "2026-09-14"
+"stars": 4475,
+"date": "2026-09-15"
 },
 "jimliu/baoyu-skills": {
-"stars": 25879,
-"date": "2026-09-14"
+"stars": 25901,
+"date": "2026-09-15"
 },
 "jimmypaolini/codebase": {
 "stars": 0,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "jin-doh/traceknot": {
 "stars": 3,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "juliusbrussee/caveman": {
-"stars": 105458,
-"date": "2026-09-14"
+"stars": 105596,
+"date": "2026-09-15"
 },
 "juneyaooo/nihaisha-nishi-tcm": {
-"stars": 2079,
-"date": "2026-09-14"
+"stars": 2085,
+"date": "2026-09-15"
 },
 "k1tbyte/wand-enhancer": {
-"stars": 27167,
-"date": "2026-09-14"
+"stars": 27294,
+"date": "2026-09-15"
 },
 "kangarooking/cangjie-skill": {
-"stars": 9970,
-"date": "2026-09-14"
+"stars": 10021,
+"date": "2026-09-15"
 },
 "kepano/obsidian-skills": {
-"stars": 48293,
-"date": "2026-09-14"
+"stars": 48332,
+"date": "2026-09-15"
 },
 "kkkkhazix/khazix-skills": {
-"stars": 20654,
-"date": "2026-09-14"
+"stars": 20665,
+"date": "2026-09-15"
 },
 "klingai-tech/skills": {
 "stars": 1,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "kong/insomnia": {
-"stars": 40011,
-"date": "2026-09-14"
+"stars": 40014,
+"date": "2026-09-15"
 },
 "kortix-ai/agent-computer-use": {
 "stars": 58,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "kotlin/kotlin-agent-skills": {
-"stars": 1046,
-"date": "2026-09-14"
+"stars": 1048,
+"date": "2026-09-15"
 },
 "kotot/byted-ark-seedream-skill": {
 "stars": 1,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "kotot/byted-web-search": {
 "stars": 0,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "kotot/vision": {
 "stars": 2,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "langfuse/skills": {
 "stars": 275,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "larashero3-dotcom/lieflat-charts": {
-"stars": 5359,
-"date": "2026-09-14"
+"stars": 5403,
+"date": "2026-09-15"
 },
 "larashero3-dotcom/lieflat-less-ai-tone": {
-"stars": 741,
-"date": "2026-09-14"
+"stars": 748,
+"date": "2026-09-15"
 },
 "larashero3-dotcom/writing-dna-skill": {
-"stars": 1804,
-"date": "2026-09-14"
+"stars": 1819,
+"date": "2026-09-15"
 },
 "larksuite/cli": {
-"stars": 17172,
-"date": "2026-09-14"
+"stars": 17183,
+"date": "2026-09-15"
 },
 "leezythu/maoxuan-skill": {
-"stars": 1139,
-"date": "2026-09-14"
+"stars": 1143,
+"date": "2026-09-15"
 },
 "lennney/stop-that-shit": {
-"stars": 1971,
-"date": "2026-09-14"
+"stars": 1991,
+"date": "2026-09-15"
 },
 "leonxlnx/taste-skill": {
-"stars": 86979,
-"date": "2026-09-14"
+"stars": 87159,
+"date": "2026-09-15"
 },
 "leonxlnx/unlazy": {
-"stars": 3336,
-"date": "2026-09-14"
+"stars": 3360,
+"date": "2026-09-15"
 },
 "liaohch3/claude-tap": {
-"stars": 3194,
-"date": "2026-09-14"
+"stars": 3196,
+"date": "2026-09-15"
 },
 "lightningpixel/modly": {
-"stars": 7542,
-"date": "2026-09-14"
+"stars": 7561,
+"date": "2026-09-15"
 },
 "lijigang/ljg-skills": {
-"stars": 7347,
-"date": "2026-09-14"
+"stars": 7350,
+"date": "2026-09-15"
 },
 "limrun-inc/skills": {
 "stars": 1,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "linear/linear-release": {
 "stars": 66,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "liustack/modlens": {
-"stars": 3960,
-"date": "2026-09-14"
+"stars": 3962,
+"date": "2026-09-15"
 },
 "lllllllama/rigorpilot-skills": {
 "stars": 487,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "lobehub/lobehub": {
-"stars": 82462,
-"date": "2026-09-14"
+"stars": 82479,
+"date": "2026-09-15"
 },
 "lopopolo/harness-engineering": {
-"stars": 2685,
-"date": "2026-09-14"
+"stars": 2686,
+"date": "2026-09-15"
 },
 "luongnv89/claude-howto": {
-"stars": 41465,
-"date": "2026-09-14"
+"stars": 41480,
+"date": "2026-09-15"
 },
 "machina-sports/sports-skills": {
-"stars": 219,
-"date": "2026-09-14"
+"stars": 221,
+"date": "2026-09-15"
 },
 "makenotion/skills": {
 "stars": 162,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "mattpocock/prisma": {
 "stars": null,
@@ -834,8 +834,8 @@
 "err": "gh: Not Found (HTTP 404)"
 },
 "mattpocock/skills": {
-"stars": 261633,
-"date": "2026-09-14"
+"stars": 262110,
+"date": "2026-09-15"
 },
 "mattppocock/skills": {
 "stars": null,
@@ -843,36 +843,36 @@
 "err": "gh: Not Found (HTTP 404)"
 },
 "mcncarl/yichen-skills": {
-"stars": 2867,
-"date": "2026-09-14"
+"stars": 2876,
+"date": "2026-09-15"
 },
 "mcp-use/mcp-use": {
-"stars": 10621,
-"date": "2026-09-14"
+"stars": 10628,
+"date": "2026-09-15"
 },
 "meltedinhex/analyst-ai-pack": {
 "stars": 22,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "mengto/skills": {
-"stars": 5975,
-"date": "2026-09-14"
+"stars": 5984,
+"date": "2026-09-15"
 },
 "microsoft/aspire-skills": {
 "stars": 87,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "microsoft/azure-skills": {
-"stars": 1480,
-"date": "2026-09-14"
+"stars": 1481,
+"date": "2026-09-15"
 },
 "microsoft/playwright-cli": {
-"stars": 13287,
-"date": "2026-09-14"
+"stars": 13303,
+"date": "2026-09-15"
 },
 "microsoft/skill-recorder": {
-"stars": 3940,
-"date": "2026-09-14"
+"stars": 3945,
+"date": "2026-09-15"
 },
 "microsoft/skillopt": {
 "stars": null,
@@ -880,24 +880,24 @@
 "err": "Get \"https://api.github.com/repos/microsoft/skillopt\": EOF"
 },
 "microsoft/skills-for-fabric": {
-"stars": 1151,
-"date": "2026-09-14"
+"stars": 1155,
+"date": "2026-09-15"
 },
 "microsoftdocs/agent-skills": {
-"stars": 742,
-"date": "2026-09-14"
+"stars": 743,
+"date": "2026-09-15"
 },
 "miles990/claude-software-skills": {
 "stars": 21,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "minimax-ai/cli": {
-"stars": 2100,
-"date": "2026-09-14"
+"stars": 2101,
+"date": "2026-09-15"
 },
 "minimax-ai/minimax-music3": {
-"stars": 865,
-"date": "2026-09-14"
+"stars": 869,
+"date": "2026-09-15"
 },
 "mitsuhiko/gh-issue-sync": {
 "stars": null,
@@ -905,8 +905,8 @@
 "err": "Get \"https://api.github.com/repos/mitsuhiko/gh-issue-sync\": EOF"
 },
 "miuuyy/codex-chatgpt-web": {
-"stars": 6958,
-"date": "2026-09-14"
+"stars": 7079,
+"date": "2026-09-15"
 },
 "modelcontextprotocol/csharp-sdk": {
 "stars": null,
@@ -915,19 +915,19 @@
 },
 "modelstudioai/cli": {
 "stars": 331,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "modiqo/skillspec": {
 "stars": 741,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "momentic-ai/skills": {
 "stars": 13,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "motion-team/creative-strategy-skills": {
 "stars": 168,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "msmps/opentui-skill": {
 "stars": null,
@@ -935,56 +935,56 @@
 "err": "Get \"https://api.github.com/repos/msmps/opentui-skill\": EOF"
 },
 "mubaraknumann/unifideck": {
-"stars": 1343,
-"date": "2026-09-14"
+"stars": 1348,
+"date": "2026-09-15"
 },
 "multica-ai/andrej-karpathy-skills": {
-"stars": 212862,
-"date": "2026-09-14"
+"stars": 213021,
+"date": "2026-09-15"
 },
 "mvanhorn/last30days-skill": {
-"stars": 61991,
-"date": "2026-09-14"
+"stars": 62039,
+"date": "2026-09-15"
 },
 "neondatabase/agent-skills": {
 "stars": 88,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "next-1688/1688-shopkeeper": {
 "stars": 2224,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "nextlevelbuilder/ui-ux-pro-max-skill": {
-"stars": 127480,
-"date": "2026-09-14"
+"stars": 127648,
+"date": "2026-09-15"
 },
 "nrwl/nx": {
-"stars": 29327,
-"date": "2026-09-14"
+"stars": 29328,
+"date": "2026-09-15"
 },
 "nutlope/hallmark": {
-"stars": 28571,
-"date": "2026-09-14"
+"stars": 28617,
+"date": "2026-09-15"
 },
 "nvidia/skillspector": {
-"stars": 17135,
-"date": "2026-09-14"
+"stars": 17210,
+"date": "2026-09-15"
 },
 "obra/superpowers": {
-"stars": 286402,
-"date": "2026-09-14"
+"stars": 286712,
+"date": "2026-09-15"
 },
 "okx/onchainos-skills": {
-"stars": 331,
-"date": "2026-09-14"
+"stars": 333,
+"date": "2026-09-15"
 },
 "omdsh-dev/dsh-better-sidebar": {
-"stars": 3582,
-"date": "2026-09-14"
+"stars": 3601,
+"date": "2026-09-15"
 },
 "op7418/guizang-social-card-skill": {
-"stars": 7023,
-"date": "2026-09-14"
+"stars": 7027,
+"date": "2026-09-15"
 },
 "open.feishu.cn/lark-skills": {
 "stars": null,
@@ -992,8 +992,8 @@
 "err": "Get \"https://api.github.com/repos/open.feishu.cn/lark-skills\": EOF"
 },
 "openai/codex-plugin-cc": {
-"stars": 33113,
-"date": "2026-09-14"
+"stars": 33153,
+"date": "2026-09-15"
 },
 "openai/role-specific-plugins": {
 "stars": null,
@@ -1001,12 +1001,12 @@
 "err": "Get \"https://api.github.com/repos/openai/role-specific-plugins\": EOF"
 },
 "openai/skills": {
-"stars": 27137,
-"date": "2026-09-14"
+"stars": 27198,
+"date": "2026-09-15"
 },
 "othmanadi/planning-with-files": {
-"stars": 26872,
-"date": "2026-09-14"
+"stars": 26890,
+"date": "2026-09-15"
 },
 "packs/api": {
 "stars": null,
@@ -1014,28 +1014,28 @@
 "err": "gh: Not Found (HTTP 404)"
 },
 "palmier-io/palmier-pro": {
-"stars": 14389,
-"date": "2026-09-14"
+"stars": 14398,
+"date": "2026-09-15"
 },
 "pandoscope/skills": {
 "stars": 1,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "paramchoudhary/resumeskills": {
-"stars": 2273,
-"date": "2026-09-14"
+"stars": 2284,
+"date": "2026-09-15"
 },
 "pbakaus/impeccable": {
-"stars": 67904,
-"date": "2026-09-14"
+"stars": 68080,
+"date": "2026-09-15"
 },
 "petergyang/no-ai-slop": {
-"stars": 9322,
-"date": "2026-09-14"
+"stars": 9550,
+"date": "2026-09-15"
 },
 "phuryn/pm-skills": {
-"stars": 26308,
-"date": "2026-09-14"
+"stars": 26316,
+"date": "2026-09-15"
 },
 "pocock/matt": {
 "stars": null,
@@ -1048,220 +1048,220 @@
 "err": "Get \"https://api.github.com/repos/pocock/matt-pocock-skills\": EOF"
 },
 "prefecthq/fastmcp": {
-"stars": 27655,
-"date": "2026-09-14"
+"stars": 27663,
+"date": "2026-09-15"
 },
 "prisma/skills": {
 "stars": 57,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "punkpeye/awesome-mcp-servers": {
-"stars": 94943,
-"date": "2026-09-14"
+"stars": 95003,
+"date": "2026-09-15"
 },
 "qwenlm/qwen-mm-plugins": {
 "stars": 2816,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "remotion-dev/skills": {
-"stars": 4574,
-"date": "2026-09-14"
+"stars": 4581,
+"date": "2026-09-15"
 },
 "repoprompt/repoprompt-ce": {
 "stars": 928,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "resend/resend-skills": {
-"stars": 176,
-"date": "2026-09-14"
+"stars": 177,
+"date": "2026-09-15"
 },
 "riekelt/multi-agent-review": {
 "stars": 86,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "riekelt/principal-engineer": {
 "stars": 3,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "riekelt/technical-writer": {
 "stars": 16,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "rohitg00/agentmemory": {
-"stars": 28417,
-"date": "2026-09-14"
+"stars": 28442,
+"date": "2026-09-15"
 },
 "romus204/tree-sitter-manager.nvim": {
-"stars": 876,
-"date": "2026-09-14"
+"stars": 877,
+"date": "2026-09-15"
 },
 "rpamis/comet": {
-"stars": 3038,
-"date": "2026-09-14"
+"stars": 3042,
+"date": "2026-09-15"
 },
 "runcomfy-com/skills": {
 "stars": 12,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "s1dashu/ip-as-logo-skill": {
-"stars": 5225,
-"date": "2026-09-14"
+"stars": 5238,
+"date": "2026-09-15"
 },
 "sahir619/fable-method": {
-"stars": 2287,
-"date": "2026-09-14"
+"stars": 2289,
+"date": "2026-09-15"
 },
 "samber/cc-skills-golang": {
-"stars": 3251,
-"date": "2026-09-14"
+"stars": 3258,
+"date": "2026-09-15"
 },
 "sentimony/skills": {
 "stars": 3,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "shadcn-ui/ui": {
-"stars": 123712,
-"date": "2026-09-14"
+"stars": 123774,
+"date": "2026-09-15"
 },
 "shadcn/improve": {
-"stars": 9116,
-"date": "2026-09-14"
+"stars": 9122,
+"date": "2026-09-15"
 },
 "shadcn/ui": {
 "stars": 123712,
 "date": "2026-09-14"
 },
 "shanraisshan/claude-code-best-practice": {
-"stars": 65907,
-"date": "2026-09-14"
+"stars": 65929,
+"date": "2026-09-15"
 },
 "shareai-lab/learn-claude-code": {
-"stars": 76724,
-"date": "2026-09-14"
+"stars": 76779,
+"date": "2026-09-15"
 },
 "shopify/shopify-ai-toolkit": {
-"stars": 543,
-"date": "2026-09-14"
+"stars": 544,
+"date": "2026-09-15"
 },
 "sickn33/agentic-awesome-skills": {
-"stars": 46384,
-"date": "2026-09-14"
+"stars": 46413,
+"date": "2026-09-15"
 },
 "sider-ai/wandesk": {
 "stars": 67,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "silverstein/minutes": {
 "stars": 1478,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "simonlin1212/a-stock-data": {
-"stars": 9821,
-"date": "2026-09-14"
+"stars": 9831,
+"date": "2026-09-15"
 },
 "skills-101/superpowers": {
 "stars": 17,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "skymavis/skills": {
 "stars": 0,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "sleekdotdesign/agent-skills": {
-"stars": 574,
-"date": "2026-09-14"
+"stars": 575,
+"date": "2026-09-15"
 },
 "snyk/agent-scan": {
-"stars": 3037,
-"date": "2026-09-14"
+"stars": 3044,
+"date": "2026-09-15"
 },
 "software-mansion/argent": {
-"stars": 2805,
-"date": "2026-09-14"
+"stars": 2821,
+"date": "2026-09-15"
 },
 "solana-foundation/solana-dev-skill": {
 "stars": 558,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "solana-mobile/solana-mobile-skills": {
 "stars": 6,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "sonicbotman/dating-skills": {
 "stars": 18,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "southleft/figma-console-mcp-skills": {
-"stars": 82,
-"date": "2026-09-14"
+"stars": 83,
+"date": "2026-09-15"
 },
 "stablyai/orca": {
-"stars": 68215,
-"date": "2026-09-14"
+"stars": 68784,
+"date": "2026-09-15"
 },
 "steemleo/openswap": {
 "stars": 1,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "steipete/agent-scripts": {
-"stars": 6619,
-"date": "2026-09-14"
+"stars": 6620,
+"date": "2026-09-15"
 },
 "steipete/codexbar": {
-"stars": 21347,
-"date": "2026-09-14"
+"stars": 21398,
+"date": "2026-09-15"
 },
 "stripe/ai": {
-"stars": 1804,
-"date": "2026-09-14"
+"stars": 1808,
+"date": "2026-09-15"
 },
 "supabase/agent-skills": {
 "stars": 2600,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "sveltejs/ai-tools": {
 "stars": 324,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "tabularisdb/tabularis": {
-"stars": 4929,
-"date": "2026-09-14"
+"stars": 4938,
+"date": "2026-09-15"
 },
 "tavily-ai/skills": {
 "stars": 480,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "thedotmack/claude-mem": {
-"stars": 93819,
-"date": "2026-09-14"
+"stars": 93892,
+"date": "2026-09-15"
 },
 "thysrael/horizon": {
-"stars": 9344,
-"date": "2026-09-14"
+"stars": 9349,
+"date": "2026-09-15"
 },
 "tiger3807861189/j-space-cognition-suite": {
-"stars": 3008,
-"date": "2026-09-14"
+"stars": 3011,
+"date": "2026-09-15"
 },
 "titanwings/colleague-skill": {
-"stars": 24697,
-"date": "2026-09-14"
+"stars": 24732,
+"date": "2026-09-15"
 },
 "tonhowtf/omniget": {
-"stars": 12112,
-"date": "2026-09-14"
+"stars": 12285,
+"date": "2026-09-15"
 },
 "tradesdontlie/tradingview-mcp": {
-"stars": 6181,
-"date": "2026-09-14"
+"stars": 6197,
+"date": "2026-09-15"
 },
 "tt-a1i/archify": {
-"stars": 61460,
-"date": "2026-09-14"
+"stars": 62329,
+"date": "2026-09-15"
 },
 "tw93/waza": {
-"stars": 7014,
-"date": "2026-09-14"
+"stars": 7018,
+"date": "2026-09-15"
 },
 "ui/ux": {
 "stars": null,
@@ -1270,39 +1270,39 @@
 },
 "upstash/skills": {
 "stars": 25,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "useosint/osint-skills": {
 "stars": 35,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "usestrix/strix": {
-"stars": 62307,
-"date": "2026-09-14"
+"stars": 62465,
+"date": "2026-09-15"
 },
 "valkor-ai/loom": {
-"stars": 1009,
-"date": "2026-09-14"
+"stars": 1014,
+"date": "2026-09-15"
 },
 "vercel-labs/agent-browser": {
-"stars": 42530,
-"date": "2026-09-14"
+"stars": 42571,
+"date": "2026-09-15"
 },
 "vercel-labs/agent-skills": {
-"stars": 31177,
-"date": "2026-09-14"
+"stars": 31196,
+"date": "2026-09-15"
 },
 "vercel-labs/skills": {
-"stars": 31586,
-"date": "2026-09-14"
+"stars": 31633,
+"date": "2026-09-15"
 },
 "vercel/ai": {
-"stars": 26726,
-"date": "2026-09-14"
+"stars": 26742,
+"date": "2026-09-15"
 },
 "vercel/components.build": {
 "stars": 793,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "vercel/supabase": {
 "stars": null,
@@ -1311,43 +1311,43 @@
 },
 "vercel/vercel-plugin": {
 "stars": 284,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "vinayaklatthe/microsoft-security-skills": {
 "stars": 173,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "vincentwei1021/video-shotcraft": {
-"stars": 8500,
-"date": "2026-09-14"
+"stars": 8575,
+"date": "2026-09-15"
 },
 "virgiliojr94/book-to-skill": {
-"stars": 30549,
-"date": "2026-09-14"
+"stars": 30660,
+"date": "2026-09-15"
 },
 "volcengine/mediakit-cli": {
 "stars": 200,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "voltagent/awesome-agent-skills": {
-"stars": 34295,
-"date": "2026-09-14"
+"stars": 34330,
+"date": "2026-09-15"
 },
 "warpdotdev/common-skills": {
-"stars": 578,
-"date": "2026-09-14"
+"stars": 577,
+"date": "2026-09-15"
 },
 "wecomteam/wecom-cli": {
-"stars": 3068,
-"date": "2026-09-14"
+"stars": 3070,
+"date": "2026-09-15"
 },
 "wecomteam/wecom-unified": {
-"stars": 111,
-"date": "2026-09-14"
+"stars": 114,
+"date": "2026-09-15"
 },
 "wenyuchiou/awesome-agentic-ai-zh": {
-"stars": 6984,
-"date": "2026-09-14"
+"stars": 7003,
+"date": "2026-09-15"
 },
 "wiki/concepts": {
 "stars": null,
@@ -1360,80 +1360,80 @@
 "err": "gh: Not Found (HTTP 404)"
 },
 "wind-alice/alicemarket": {
-"stars": 111,
-"date": "2026-09-14"
+"stars": 112,
+"date": "2026-09-15"
 },
 "wind-information-co-ltd/wind-skills": {
-"stars": 111,
-"date": "2026-09-14"
+"stars": 112,
+"date": "2026-09-15"
 },
 "withgraphite/agent-skills": {
 "stars": 6,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "withkynam/vibecode-pro-max-kit": {
 "stars": 1127,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "wshobson/agents": {
-"stars": 39639,
-"date": "2026-09-14"
+"stars": 39654,
+"date": "2026-09-15"
 },
 "wso2/agent-skills": {
 "stars": 6,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "xiaoduoya/codex-with-chatgpt": {
-"stars": 4260,
-"date": "2026-09-14"
+"stars": 4302,
+"date": "2026-09-15"
 },
 "xinchen03/minta": {
 "stars": 11,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "yaklang/hack-skills": {
-"stars": 2195,
-"date": "2026-09-14"
+"stars": 2199,
+"date": "2026-09-15"
 },
 "yaojingang/yao-meta-skill": {
-"stars": 2611,
-"date": "2026-09-14"
+"stars": 2614,
+"date": "2026-09-15"
 },
 "yizhiyanhua-ai/fireworks-tech-graph": {
-"stars": 11383,
-"date": "2026-09-14"
+"stars": 11388,
+"date": "2026-09-15"
 },
 "yuan1z0825/nature-skills": {
-"stars": 41389,
-"date": "2026-09-14"
+"stars": 41517,
+"date": "2026-09-15"
 },
 "yusukebe/hono-skill": {
 "stars": 155,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "zeejay0/gathered-scenes-zine-skill": {
-"stars": 4999,
-"date": "2026-09-14"
+"stars": 5008,
+"date": "2026-09-15"
 },
 "zerx-lab/fluxdown": {
-"stars": 3035,
-"date": "2026-09-14"
+"stars": 3042,
+"date": "2026-09-15"
 },
 "zhaoxuya520/reverse-skill": {
-"stars": 35852,
-"date": "2026-09-14"
+"stars": 35921,
+"date": "2026-09-15"
 },
 "zhishile/codex-auth-helper": {
-"stars": 14969,
-"date": "2026-09-14"
+"stars": 15069,
+"date": "2026-09-15"
 },
 "zzzlc0405/photo-abstract-editorial": {
-"stars": 5600,
-"date": "2026-09-14"
+"stars": 5606,
+"date": "2026-09-15"
 },
 "caffeinelabs/skills": {
 "stars": 0,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "cursor/.github": {
 "stars": null,
@@ -1442,11 +1442,11 @@
 },
 "elastic/integration-skills": {
 "stars": 15,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "ericzakariasson/scandinavian-design": {
-"stars": 384,
-"date": "2026-09-14"
+"stars": 385,
+"date": "2026-09-15"
 },
 "incorrect/correct": {
 "stars": null,
@@ -1455,11 +1455,27 @@
 },
 "planetscale/skills": {
 "stars": 128,
-"date": "2026-09-14"
+"date": "2026-09-15"
 },
 "sentry/dev": {
 "stars": null,
 "date": "2026-09-14",
 "err": "gh: Not Found (HTTP 404)"
+},
+"bankai-skills/superpowers": {
+"stars": 0,
+"date": "2026-09-15"
+},
+"insforge/instacloud-skills": {
+"stars": 0,
+"date": "2026-09-15"
+},
+"interfacex-co-jp/genshijin": {
+"stars": 328,
+"date": "2026-09-15"
+},
+"tigrisdata/skills": {
+"stars": 3,
+"date": "2026-09-15"
 }
 }

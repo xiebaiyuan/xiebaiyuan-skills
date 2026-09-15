@@ -105,6 +105,7 @@ TOPIC_RULES = [
 FIELD_DOC = """| 列 | 含义 |
 |:--|:--|
 | 项目 | 真实 GitHub `owner/repo`（skills.sh 展示名与真实 repo 常不一致，本表一律用实测真实名） |
+| 干啥的 | 一句话说明解决什么问题：优先取调研文档里的「**解决的问题**」，其次 index.md 策展要点，最后 manual.json 的 `desc` |
 | 分类 | 官方/平台 · 聚合仓库 · 独立 skill · 风险样本（来自 index.md 的人工分类，可被 manual.json 覆盖） |
 | 来源 | 该文档来自哪条调研主线：`skills.sh`（安装量榜）/ `Trendshift`（GitHub 热度）/ 两者 |
 | 星数 | `gh api` 实时拉取（带缓存，日期见页首）；未入库/私有/非 GitHub 源为「—」 |
@@ -113,7 +114,6 @@ FIELD_DOC = """| 列 | 含义 |
 | 最近上榜 | 最近一次出现在榜单简报中的日期（空 = 只在调研文档里出现过） |
 | 榜单席位 | 该 repo 在榜单简报中累计被提及的次数（不是安装量） |
 | 调研文档 | 已产出的单项目调研文档（没有 = 只进过榜单、还没建档） |
-| 干啥的 | 一句话说明解决什么问题：优先取调研文档里的「**解决的问题**」，其次 index.md 策展要点，最后 manual.json 的 `desc` |
 """
 
 
@@ -224,8 +224,10 @@ def clean_md(s: str) -> str:
     s = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", s)
     s = s.replace("**", "").replace("⭐", "").replace("★", "")
     s = s.replace("|", "／")            # 表格里不能出现裸竖线
-    s = re.sub(r"\s+", " ", s)
-    return s.strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"^[>\-*•·\s]+", "", s)             # 引用块/列表符残渣（源文档的「解决的问题」行常带）
+    s = re.sub(r'^["“”\'\']+', "", s).strip()
+    return s
 
 
 def repo_from_index_cell(cells: list[str]) -> str:
@@ -568,14 +570,15 @@ def render(led: dict, skip_nodoc: bool = False) -> str:
     P("")
     P("## 三、主台账（全量，按星数倒序）")
     P("")
-    P("| 项目 | 分类 | 来源 | 星数 | 领域 | 首次收录 | 最近上榜 | 席位 | 调研文档 | 干啥的 |")
-    P("|:--|:--|:--|--:|:--|:--|:--|--:|:--|:--|")
+    P("| 项目 | 干啥的 | 分类 | 来源 | 星数 | 领域 | 首次收录 | 最近上榜 | 席位 | 调研文档 |")
+    P("|:--|:--|:--|:--|--:|:--|:--|:--|--:|:--|")
     for e in ranked:
         doc = f"[[调研分析/Skill与插件/{e['doc'][:-3]}\\|📄]]" if e["doc"] else (
             f"[[调研分析/Skill与插件/{e['doc_key'][:-3]}\\|📄]]" if e["doc_key"] else "—")
-        P(f"| [{e['repo']}](https://github.com/{e['repo']}) | {e['cat']} | {e['source']} | {fmt_stars(e['stars'])} | "
+        P(f"| [{e['repo']}](https://github.com/{e['repo']}) | {trim_desc(e['desc'])} | {e['cat']} | "
+          f"{e['source']} | {fmt_stars(e['stars'])} | "
           f"{e['topic']} | {(e['first_seen'] or '—')[5:]} | {(e['last_brief'] or '—')[5:]} | "
-          f"{e['mentions'] or '—'} | {doc} | {trim_desc(e['desc'])} |")
+          f"{e['mentions'] or '—'} | {doc} |")
     P("")
     P("## 四、只上榜、还没建档（待办清单）")
     P("")
@@ -583,19 +586,20 @@ def render(led: dict, skip_nodoc: bool = False) -> str:
       "按「官方技能 > 独立 skill > 聚合仓库」优先级补档。")
     P("")
     if no_doc:
-        P("| 项目 | 分类 | 星数 | 最近上榜 | 席位 | 干啥的 |")
-        P("|:--|:--|--:|:--|--:|:--|")
+        P("| 项目 | 干啥的 | 分类 | 星数 | 最近上榜 | 席位 |")
+        P("|:--|:--|:--|--:|:--|--:|")
         for e in sorted(no_doc, key=lambda x: (-(x["stars"] or 0), -(x["mentions"] or 0))):
-            P(f"| [{e['repo']}](https://github.com/{e['repo']}) | {e['cat']} | {fmt_stars(e['stars'])} | "
-              f"{(e['last_brief'] or '—')[5:]} | {e['mentions'] or '—'} | {trim_desc(e['desc'])} |")
+            P(f"| [{e['repo']}](https://github.com/{e['repo']}) | {trim_desc(e['desc'])} | {e['cat']} | "
+              f"{fmt_stars(e['stars'])} | "
+              f"{(e['last_brief'] or '—')[5:]} | {e['mentions'] or '—'} |")
     P("")
     P("## 五、平台风险样本（镜像 / 灌水 / 映射异常）")
     P("")
     if risk:
-        P("| 项目 | 星数 | 干啥的 |")
-        P("|:--|--:|:--|")
+        P("| 项目 | 干啥的 | 星数 |")
+        P("|:--|:--|--:|")
         for e in sorted(risk, key=lambda x: -(x["stars"] or 0)):
-            P(f"| [{e['repo']}](https://github.com/{e['repo']}) | {fmt_stars(e['stars'])} | {trim_desc(e['desc'], 120)} |")
+            P(f"| [{e['repo']}](https://github.com/{e['repo']}) | {trim_desc(e['desc'], 120)} | {fmt_stars(e['stars'])} |")
     else:
         P("（暂无，人工分类在 index.md 的「平台风险与反灌水」节）")
     P("")

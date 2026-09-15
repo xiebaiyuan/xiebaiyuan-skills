@@ -38,7 +38,8 @@
   "~dsh-tauri-desk": "dsh-tauri-desk/deepseek-harness-desktop",
   "~robots": "noneadchina/dsh-nonead-universal-robots",
   "~dsh-deepseek-tide": "~dsh-deepseek-tide",
-  "~dsh-plugin-subscriptions": "v1ki/dsh-plugin-subscriptions"
+  "~dsh-plugin-subscriptions": "v1ki/dsh-plugin-subscriptions",
+  "~dsh-prompt-optimizer": "WestFox-AwA/dsh-prompt-optimizer"
  },
  "track": {
   "kuangre123/deepseek-harness-mac": "界面与皮肤",
@@ -228,6 +229,8 @@
   "alibaba/anolisa": "阿里 Agentic OS：token 压缩 + 沙箱 + 可观测（企业级 agent 基座）",
   "tencent/browserskill": "真机浏览器控制 skill（腾讯）",
   "mrsutivu/plugin-effort-slider": "推理 effort 档位滑块：手动调模型思考强度",
-  "zorya-lind/dsh-behavior-enhancer": "行为增强：给提示词加工具调用纪律与安全约束段"
+  "zorya-lind/dsh-behavior-enhancer": "行为增强：给提示词加工具调用纪律与安全约束段",
+  "~deepseek-harness-desktop": "桌面客户端（注册中心 2 个同名仓库 evan1u / muelsysel，未定归属，先按同名歧义挂账）",
+  "mo-n/dsh-provider-qoder": "把 Qoder 订阅（国际站）当成 DSH 的模型来源：替换 LLM seam 的 provider"
  }
 }

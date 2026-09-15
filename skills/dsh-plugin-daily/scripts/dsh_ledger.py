@@ -146,6 +146,7 @@ INFRA_KEYS = {
 FIELD_DOC = """| 列 | 含义 |
 |:--|:--|
 | 插件 | 注册中心 id 或 `owner/repo` 短名 |
+| 一句话 | 干啥的。优先级：`manual.json` 的 `desc` 人工描述 > 日报原句 > 注册中心 summary；超过 90 字只留第一句 |
 | 类型 | dsh.fish 探测的实际加载形态：bundle / skill / agent-preset / profile |
 | 星数 | dsh.fish 快照抓取时的 stars（非实时，抓取时间见页首） |
 | 7日星速 | dsh.fish `starVelocity7d`（30 日字段全库为 0，不可用） |
@@ -153,7 +154,6 @@ FIELD_DOC = """| 列 | 含义 |
 | 赛道 | 本表按名称/简介/关键词自动归类，[推断]，可用 manual.json 覆盖 |
 | 首次/最近 | 该条目第一次 / 最近一次出现在日报中的日期 |
 | 状态 | 深调研（已出 ≥8KB 调研文档）/ 头部（≥1000★）/ 成长（星速≥20）/ 活跃（≥10★）/ 观察（<10★）/ 未入库（dsh.fish 未收录） |
-| 一句话 | 干啥的。优先级：`manual.json` 的 `desc` 人工描述 > 日报原句 > 注册中心 summary；超过 90 字只留第一句 |
 """
 
 
@@ -734,12 +734,12 @@ def render(ledger: dict) -> str:
     A("一个表装完：日报提到过的都在这里。`状态` 为 `未入库` 的表示 dsh.fish 注册中心里查不到"
       "（可能已改名、私有、只发 npm），其星数取自日报当时的快照值，可能已过时。")
     A("")
-    A("| 插件 | 类型 | 星数 | 7日星速 | 评级 | 赛道 | 首次 | 最近 | 状态 | 一句话 |")
-    A("|:--|:--|--:|--:|:-:|:--|:--|:--|:--|:--|")
+    A("| 插件 | 一句话 | 类型 | 星数 | 7日星速 | 评级 | 赛道 | 首次 | 最近 | 状态 |")
+    A("|:--|:--|:--|--:|--:|:-:|:--|:--|:--|:--|")
     for e in alle:
-        A(f"| {link_name(e)} | {e['kind'] or '—'} | {fmt_stars(e['stars'])} | "
+        A(f"| {link_name(e)} | {clean_cell(e['desc'])} | {e['kind'] or '—'} | {fmt_stars(e['stars'])} | "
           f"{e['velocity'] or '—'} | {e['grade'] or '—'} | {e['track']} | {e['first'][5:]} | "
-          f"{e['last'][5:]} | {e['status']} | {clean_cell(e['desc'])} |")
+          f"{e['last'][5:]} | {e['status']} |")
     A("")
     A("## 四、已出深度调研文档（Tier 1/2）")
     A("")
@@ -752,12 +752,12 @@ def render(ledger: dict) -> str:
     A("")
     A("## 五、生态基建与跨生态参考（不算插件，雷达持续跟踪）")
     A("")
-    A("| 项目 | 星数 | 说明 |")
-    A("|:--|--:|:--|")
+    A("| 项目 | 说明 | 星数 |")
+    A("|:--|:--|--:|")
     infra = [e for e in ents if e.get("is_infra")]
     for e in sorted(infra, key=lambda x: -x["stars"]):
         desc = INFRA_KEYS.get(e["key"], e["one_liner"])
-        A(f"| {link_name(e)} | {fmt_stars(e['stars']) or '—'} | {clean_cell(desc)} |")
+        A(f"| {link_name(e)} | {clean_cell(desc)} | {fmt_stars(e['stars']) or '—'} |")
     A("")
     A("## 六、注册中心未收录的条目（名单速览）")
     A("")
