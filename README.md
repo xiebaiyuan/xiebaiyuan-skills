@@ -16,6 +16,7 @@ Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-
 | [engineering-cybernetics-for-work](./skills/engineering-cybernetics-for-work/) | 女娲蒸馏 / nuwa | 工程控制论工作法，反馈闭环+综合集成+层次分解 / Turn daily work & learning into executable processes: feedback loops for tasks, meta-synthesis for learning, hierarchical decomposition for architecture, global optimum for decisions |
 | [performance-optimization-carmack-acton](./skills/performance-optimization-carmack-acton/) | 女娲蒸馏+达尔文优化 / nuwa+darwin | Carmack+Acton 性能优化思维，DOD+SIMD+缓存优化 / Performance-optimization mindset distilled from Carmack & Acton: profile-driven, data-oriented design (DOD), cache-aware, simplification-as-optimization (C/C++, image processing, SIMD) |
 | [obsidian-docs-link](./skills/obsidian-docs-link/) | Claude Code 手写 / hand-written | 创建软链接关联项目文档到 Obsidian Vault / Symlink project docs into your Obsidian vault (creates an `obsidian-docs` symlink) |
+| [model-release-deep-research](./skills/model-release-deep-research/) | Hermes 沉淀 / distilled | 新模型发布后的深度可分发调研：六层信息源取证 + 三口径数字对齐 + 去 AI 味落盘 / Deep, distributable research on a new model or AI product release: six-layer source forensics, multi-caliber number reconciliation, de-AI'd write-up |
 
 ---
 
