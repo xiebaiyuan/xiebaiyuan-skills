@@ -17,6 +17,7 @@ Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-
 | [performance-optimization-carmack-acton](./skills/performance-optimization-carmack-acton/) | 女娲蒸馏+达尔文优化 / nuwa+darwin | Carmack+Acton 性能优化思维，DOD+SIMD+缓存优化 / Performance-optimization mindset distilled from Carmack & Acton: profile-driven, data-oriented design (DOD), cache-aware, simplification-as-optimization (C/C++, image processing, SIMD) |
 | [obsidian-docs-link](./skills/obsidian-docs-link/) | Claude Code 手写 / hand-written | 创建软链接关联项目文档到 Obsidian Vault / Symlink project docs into your Obsidian vault (creates an `obsidian-docs` symlink) |
 | [model-release-deep-research](./skills/model-release-deep-research/) | Hermes 沉淀 / distilled | 新模型发布后的深度可分发调研：六层信息源取证 + 三口径数字对齐 + 去 AI 味落盘 / Deep, distributable research on a new model or AI product release: six-layer source forensics, multi-caliber number reconciliation, de-AI'd write-up |
+| [strategic-coordinator](./skills/strategic-coordinator/) | 手写（改编自 chief-of-staff 角色原型）/ hand-written, adapted from the chief-of-staff archetype | DSH Agent Teams 的 Lead 长线协调角色：常驻班组 + 任务板台账 + 验收闸门 + 救场与停止条件 / Long-horizon Lead role for DSH Agent Teams: standing crew, task-board ledger, acceptance gates, rescue path and stop conditions |
 
 ---
 
@@ -37,6 +38,7 @@ npx skills add xiebaiyuan/xiebaiyuan-skills --skill qian-xuesen-cybernetics-thin
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill engineering-cybernetics-for-work
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill performance-optimization-carmack-acton
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill obsidian-docs-link
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill strategic-coordinator
 ```
 
 或者用 bunx（更快）/ Or use bunx (faster):
@@ -50,6 +52,7 @@ bunx skills add xiebaiyuan/xiebaiyuan-skills --skill qian-xuesen-cybernetics-thi
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill engineering-cybernetics-for-work
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill performance-optimization-carmack-acton
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill obsidian-docs-link
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill strategic-coordinator
 ```
 
 运行后会弹出交互式界面，用空格选择要安装到的 agent，回车确认。
