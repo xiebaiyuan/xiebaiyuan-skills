@@ -2186,8 +2186,8 @@
 },
 "urlv4::clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo": {
 "id": "49684266",
-"points": 99,
-"comments": 88,
+"points": 101,
+"comments": 91,
 "title": "Houthis used Claude Code to develop missile guidance software: Anthropic"
 },
 "urlv4::theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting": null,
@@ -5453,5 +5453,384 @@
 "titlev4::1 deepseek 发布 v4 1 flash 552b moe 1m 上下文 fp4 kv 缓存与跨层注意力复用 h": null,
 "titlev4::2 anthropic 威胁报告披露 claude 被用于间谍软件 导弹与无人机研发 https the decoder": null,
 "relatedv4::https www theverge com ai artificial intelligence 994441 tru#221#2026-09-14#Dario 发文 四家实验室负责人表态": null,
-"titlev4::3 放缓前沿 之争进入第二天 微软 google 加入支持 白宫与开源派公开反对 https www theverge ": null
+"titlev4::3 放缓前沿 之争进入第二天 微软 google 加入支持 白宫与开源派公开反对 https www theverge ": null,
+"urlv4::pop.rdi.sh/dario-please": {
+"id": "49697893",
+"points": 245,
+"comments": 121,
+"title": "Dario, Please"
+},
+"urlv4::serpentine.com/posts/2026/x3-stripes": {
+"id": "49699489",
+"points": 142,
+"comments": 23,
+"title": "How my e-reader lost its stripes"
+},
+"urlv4::temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai": {
+"id": "49696335",
+"points": 74,
+"comments": 56,
+"title": "Temporal raises $550M at a $12.55B valuation"
+},
+"urlv4::ilinmaks.com/blog/en/ai-jobs-market-2026": {
+"id": "49696867",
+"points": 63,
+"comments": 68,
+"title": "The AI job market in 2026"
+},
+"urlv4::daniellitt.com/blog/2026/9/13/a-beginning-for-mathematics": {
+"id": "49698699",
+"points": 160,
+"comments": 91,
+"title": "A Beginning for Mathematics"
+},
+"urlv4::erkansaka.net/2026/09/10/ai-doom-rhetoric-safety-hype": {
+"id": "49699384",
+"points": 122,
+"comments": 170,
+"title": "For AI leaders Doom is a form of hype"
+},
+"urlv4::bcantrill.dtrace.org/2026/09/13/the-contagion-of-fear": {
+"id": "49689460",
+"points": 258,
+"comments": 184,
+"title": "The contagion of fear"
+},
+"urlv4::refactoringenglish.com/excerpts/write-an-effective-design-doc": {
+"id": "49696125",
+"points": 295,
+"comments": 128,
+"title": "How to write an effective software design document"
+},
+"urlv4::en.wikisource.org/wiki/the_coming_war_on_general_computation": {
+"id": "49690051",
+"points": 116,
+"comments": 37,
+"title": "The Coming War on General Computation (2011)"
+},
+"urlv4::law.justia.com/cases/federal/appellate-courts/ca9/26-1444/26-1444-2026-08-04.html": {
+"id": "49704008",
+"points": 157,
+"comments": 159,
+"title": "Amazon vs. Perplexity – U.S. Court of Appeals for the Ninth Circuit"
+},
+"urlv4::techtimes.co.uk/oracle-new-layoffs-restructuring-costs-2-8-billion-1808676": {
+"id": "49702239",
+"points": 145,
+"comments": 136,
+"title": "Oracle’s 6am layoff emails hit staff amid new wave of cuts"
+},
+"urlv4::arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed": null,
+"urlv4::arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots": null,
+"urlv4::arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam": null,
+"urlv4::arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai": null,
+"urlv4::arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements": null,
+"urlv4::techcrunch.com/2026/09/14/with-ios-27-im-actually-using-siri-again": null,
+"urlv4::theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit": null,
+"urlv4::theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct": {
+"id": "49698332",
+"points": 3,
+"comments": 1,
+"title": "Microsoft says 'people matter more than AI' following safety concerns"
+},
+"urlv4::techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans": null,
+"urlv4::techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says": null,
+"urlv4::techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work": {
+"id": "49699127",
+"points": 8,
+"comments": 0,
+"title": "Superhuman acquires YC-backed notetaker Fathom"
+},
+"urlv4::404media.co/new-york-district-attorney-seizes-12-celebrity-deepfake-websites": null,
+"urlv4::the-decoder.com/clay-mathematics-institute-says-the-navier-stokes-millennium-prize-problem-has-apparently-been-settled": null,
+"urlv4::normaltech.ai/p/the-ai-as-normal-technology-view": {
+"id": "49696329",
+"points": 7,
+"comments": 1,
+"title": "The AI-as-Normal-Technology view of loss-of-control incidents"
+},
+"urlv4::marktechpost.com/2026/09/14/agent-harness-vs-agent-framework-vs-mcp-which-layer-owns-the-loop-state-tools-permissions-and-recovery": null,
+"urlv4::tessl.io/blog/who-owns-yourthe-context": null,
+"urlv4::latent.space/p/recursive": {
+"id": "49700482",
+"points": 2,
+"comments": 1,
+"title": "Humanity's Last Invention"
+},
+"urlv4::artificialintelligence-news.com/news/why-most-enterprise-agent-pilots-never-reach-deployment": null,
+"urlv4::marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down": null,
+"urlv4::newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference": null,
+"urlv4::ithome.com/1/002/028.htm": null,
+"urlv4::withcapsule.app": {
+"id": "49712278",
+"points": 263,
+"comments": 114,
+"title": "Show HN: Capsule – Single-file web apps that save their data into SQLite"
+},
+"urlv4::dbtcharts.com/blog/charts-built-for-chat": {
+"id": "49704246",
+"points": 295,
+"comments": 89,
+"title": "Charts built for Chat"
+},
+"urlv4::pub.sakana.ai/pc-alm": {
+"id": "49701182",
+"points": 117,
+"comments": 45,
+"title": "Backprop Alternative: Augmented Lagrangian Predictive Coding"
+},
+"urlv4::strix.ai/blog/baseten-harbor-github-pat-takeover": {
+"id": "49716476",
+"points": 186,
+"comments": 96,
+"title": "We got admin access to Baseten's production GitHub in 25 minutes"
+},
+"urlv4::lawfaremedia.org/article/25-years-of-mass-surveillance-is-enough": {
+"id": "49711309",
+"points": 143,
+"comments": 7,
+"title": "25 Years of Mass Surveillance Is Enough [Auth: Cindy Cohn; Bruce Schneier]"
+},
+"urlv4::dallincrump.com/dystopian-surveillance-is-becoming-a-reality": {
+"id": "49715934",
+"points": 164,
+"comments": 88,
+"title": "Dystopian Surveillance Is Becoming a Reality"
+},
+"urlv4::thebignewsletter.com/p/ai-is-an-elite-crime-spree": {
+"id": "49755590",
+"points": 112,
+"comments": 38,
+"title": "AI is an elite crime spree"
+},
+"urlv4::qwen.ai/blog": {
+"id": "47792764",
+"points": 1274,
+"comments": 532,
+"title": "Qwen3.6-35B-A3B: Agentic coding power, now open to all"
+},
+"urlv4::x.ai/news/grok-4-7": {
+"id": "49788838",
+"points": 580,
+"comments": 491,
+"title": "Grok 4.7"
+},
+"urlv4::blog.cloudflare.com/python-workers-ga": {
+"id": "49787142",
+"points": 234,
+"comments": 38,
+"title": "Python Workers are now generally available"
+},
+"urlv4::zuckoff.app": {
+"id": "49785429",
+"points": 599,
+"comments": 4,
+"title": "ZuckOff Know when a camera is in the room"
+},
+"urlv4::macstories.net/stories/m5-ultra-mac-studio-review-the-dream-mac-for-local-ai-agents": {
+"id": "49787313",
+"points": 250,
+"comments": 249,
+"title": "M5 Ultra Mac Studio Review"
+},
+"urlv4::openai.com/index/advisory-group-on-mathematics-and-ai": {
+"id": "49790389",
+"points": 75,
+"comments": 58,
+"title": "Advisory Group on Mathematics and Artificial Intelligence"
+},
+"urlv4::terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence": {
+"id": "49791997",
+"points": 145,
+"comments": 67,
+"title": "The Advisory Group on Mathematics and Artificial Intelligence"
+},
+"urlv4::heretic-project.org": {
+"id": "49783101",
+"points": 252,
+"comments": 108,
+"title": "Heretic removes restrictions from language models"
+},
+"urlv4::nathan.rs/posts/gzip-lm": {
+"id": "49797323",
+"points": 167,
+"comments": 71,
+"title": "Can gzip be a language model?"
+},
+"urlv4::linear.app/now/ci-bottleneck-reworked": {
+"id": "49792067",
+"points": 249,
+"comments": 281,
+"title": "AI coding has made CI a bottleneck, so we reworked ours to keep up"
+},
+"urlv4::poloclub.github.io/transformer-explainer": {
+"id": "49792342",
+"points": 438,
+"comments": 67,
+"title": "Transformers Explained Visually"
+},
+"urlv4::github.com/jaredpalmer/kev/tree/main": {
+"id": "49783999",
+"points": 438,
+"comments": 196,
+"title": "Kev: Tiny Jev-like family of decision models built on top of Qwen3.5"
+},
+"urlv4::buchodi.com/chatgpt-now-knows-what-you-do-on-other-website": null,
+"urlv4::sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm": {
+"id": "49747070",
+"points": 746,
+"comments": 410,
+"title": "How to Write with an LLM"
+},
+"urlv4::john.hartnup.uk/2026/06/07/ai-event-posters.html": {
+"id": "49764791",
+"points": 1867,
+"comments": 948,
+"title": "AI-generated posters don’t have to be horrible"
+},
+"urlv4::laya.convaiinnovations.com": {
+"id": "49765348",
+"points": 1330,
+"comments": 314,
+"title": "I built non-autoregressive decision models with RL a year ago"
+},
+"urlv4::agentexecutor.io": {
+"id": "49780797",
+"points": 646,
+"comments": 295,
+"title": "AX – Google’s Open Agentic Orchestrator"
+},
+"urlv4::hacktron.ai/blog/hacking-openai": {
+"id": "49749656",
+"points": 488,
+"comments": 208,
+"title": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos"
+},
+"urlv4::prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio": {
+"id": "49763987",
+"points": 396,
+"comments": 180,
+"title": "GPT-6 Astra Solves a WWI German Radio Cipher"
+},
+"urlv4::erichgrunewald.substack.com/p/why-you-should-almost-never-use-": null,
+"urlv4::maharship.com/blog/why-mcp-was-always-a-bad-idea": {
+"id": "49779329",
+"points": 323,
+"comments": 320,
+"title": "MCP was always a bad idea?"
+},
+"urlv4::softwarecrisis.dev/letters/llmentalist": {
+"id": "49775104",
+"points": 226,
+"comments": 304,
+"title": "The LLMentalist Effect (2023)"
+},
+"urlv4::timdettmers.com/2026/09/21/dlab-open-source-week": {
+"id": "49791647",
+"points": 166,
+"comments": 83,
+"title": "Frontier AI on Your Own Hardware"
+},
+"urlv4::ft.com/content/c0cd359d-df84-4208-a789-ffa864b43666": {
+"id": "49783062",
+"points": 153,
+"comments": 88,
+"title": "AI chatbots give wrong answers to financial queries 'most of the time'"
+},
+"urlv4::github.com/browserbase/stagehand": {
+"id": "42635942",
+"points": 326,
+"comments": 86,
+"title": "Show HN: Stagehand – an open source browser automation framework powered by AI"
+},
+"urlv4::paulbakker.io/writing/no-ai-for-writing": {
+"id": "49784816",
+"points": 141,
+"comments": 83,
+"title": "Don't Use AI to Write"
+},
+"urlv4::i-kh.net/p/if-ai-coding-is-lowering-your-code": {
+"id": "49774795",
+"points": 123,
+"comments": 169,
+"title": "If AI coding is lowering your code quality, you're not managing quality right"
+},
+"urlv4::status.claude.com/incidents/7g1qpkyz5gxh": {
+"id": "49795579",
+"points": 118,
+"comments": 85,
+"title": "Claude Status – Elevated errors for multiple models"
+},
+"urlv4::evaluation.club": {
+"id": "49777111",
+"points": 117,
+"comments": 57,
+"title": "Prompts aren’t Real"
+},
+"urlv4::arxiv.org/abs/2510.03215": {
+"id": "49758615",
+"points": 107,
+"comments": 20,
+"title": "Cache-to-Cache: Direct Semantic Communication Between LLMs (2025)"
+},
+"urlv4::github.com/trycua/cua": {
+"id": "47936312",
+"points": 192,
+"comments": 43,
+"title": "Show HN: Drive any macOS app in the background without stealing the cursor"
+},
+"urlv4::nytimes.com/2026/09/21/business/ai-data-center-ipos.html": {
+"id": "49791944",
+"points": 67,
+"comments": 80,
+"title": "Wall Street is growing skeptical of the data center boom"
+},
+"urlv4::github.com/aru-labs/lossless-memory": {
+"id": "49786419",
+"points": 62,
+"comments": 26,
+"title": "Show HN: Lossless-memory – a personal AI memory that never summarizes"
+},
+"urlv4::noemamag.com/the-end-of-upward-mobility": {
+"id": "49786210",
+"points": 55,
+"comments": 33,
+"title": "The End Of Upward Mobility – AI is coming for the meritocracy"
+},
+"urlv4::norwegianscitechnews.com/2026/09/young-users-ditch-google-for-": null,
+"urlv4::github.com/naw103/foremerge": {
+"id": "49789356",
+"points": 42,
+"comments": 13,
+"title": "Show HN: Foremerge – Catch intent conflicts between parallel coding agents"
+},
+"urlv4::github.com/openlayer-ai/jevals": {
+"id": "49780849",
+"points": 42,
+"comments": 3,
+"title": "Show HN: jevals – replacing LLM judges with typed Jev decisions"
+},
+"urlv4::matthewbutterick.com/chron/drop-dead.html": {
+"id": "49790322",
+"points": 42,
+"comments": 0,
+"title": "Big AI to humanity: drop dead"
+},
+"urlv4::simonwillison.net/2026/sep/21/jev": {
+"id": "49796843",
+"points": 34,
+"comments": 8,
+"title": "Jev introduces a new shape of LLM"
+},
+"urlv4::tinybrains.dev": {
+"id": "49776523",
+"points": 106,
+"comments": 40,
+"title": "Show HN: A competition for small neural networks that play strategy games"
+},
+"urlv4::en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-outpu": null,
+"urlv4::artificialintelligence-news.com/news/toyota-physical-ai-factory-robotics": null,
+"urlv4::theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping": null,
+"urlv4::science.org/content/article/ai-chatbots-are-becoming-experts-at-changing-peoples-minds": null,
+"urlv4::variety.com/2026/film/news/robin-williams-daughter-ai-videos-1": null
 }
