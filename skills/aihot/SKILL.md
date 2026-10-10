@@ -335,6 +335,11 @@ python3 $S backfill --dry            # 全量预演，只报统计
 79. **往 `## 维护日志` 插新 bullet 时，不要在 `new_string` 里重写 `## 维护日志` 标题（2026-10-08 踩到）**：坑 77 的 `t.replace(anchor, anchor+new, 1)` 做法里，如果 anchor 是「`## 维护日志` + 空行 + 上一条 bullet」而 new 也以「`## 维护日志` + 空行」开头，落盘后文件里会出现**两个连续的 `## 维护日志` 标题**（新的 + 旧的），Obsidian 里看起来像两个同名小节。本期靠 `grep -c '## 维护日志'` 发现（应为 1，实为 2），修法是把 `\n## 维护日志\n\n- <上一条 bullet 开头>` 替回 `\n- <上一条 bullet 开头>`。**规则：标题只由 anchor 提供，new 里只写新 bullet；写完必跑 `grep -c '## 维护日志'`。**
 80. **`push-site-auto.sh` 报「SKIP 另一路推送正在进行（锁 Ns）」且 N 一直变大时，是锁目录成了孤儿（2026-10-08 实测）**：锁是 `build/.push-locks/<site>.lock` 这个**空目录**。若 `ps aux | grep push-site` 查不到任何发布进程、而 `ls -l build/.push-stamps/<site>.stamp` 的时间早于你最后一次改文件，说明持有锁的进程已死、锁没清干净，`push-site-auto.sh` 会永远 SKIP（本地文件的新改动永远上不去）。修法：确认无发布进程后 `rmdir build/.push-locks/<site>.lock`，再跑一次 `push-site-auto.sh <site>`，会正常重建并同步（本期第二次推送即成功，且带回索引文件的最新版本）。注意先确认进程确实不存在——若真有并发发布在跑，rmdir 会造成双构建。
 
+81. **`write_file` 写「一行多个 HN id」的候选清单会被敏感信息过滤器改写（2026-10-10 踩到）**：把 16 个数字以空格连写（如 `49980487 49946228`）会被当成卡号，静默替换成 `{{BANK_CARD_…}}`，清单里直接丢 id 且不报错。规则：id 清单一律**一行一个**，或改用 `,` 分隔。
+82. **`patch` 的 `path` 里出现本机用户名会被改写（2026-10-10 踩到）**：`/Users/<用户名>/AI_DOC/...` 被过滤器替换成 `/Users/¶/...`，报 `Failed to read file`。涉及 vault 绝对路径的编辑**不要用 `patch` 工具**，写 `/tmp/xxx.py` 用 `os.path.expanduser("~/AI_DOC/…")` + `str.replace(old, new, 1)` 落盘，并在脚本里断言 `assert old in t`，避免静默漏改。
+83. **网页站的锁可能在「推送成功之后」才被留下（2026-10-10 实测）**：本期 `research.stamp` 时间（07:52）**晚于**孤儿锁目录（07:49），且全程没有任何 push-site 进程，仍报 `SKIP … 锁 489s`。判据永远是「`pgrep -fl push-site` 无活进程 + `build/.push-locks/<site>.lock` 是空目录」，**别拿 stamp 比锁新当反证**；确认后 `rmdir` 再重跑，第三次即成功并带回最新索引。
+84. **落盘后追加「信源校验表」时，表里的数字必须当场数出来（2026-10-10 教训）**：第一版凭印象写「82 条 AI HOT / 43 条 HN / 6 条实测」，与文件里真实分布（57 条 AI HOT-only、40 条含 HN 讨论链接其中 12 条双源、5 条引 gh api star）全对不上，且 `[待验证]` 字面量在正文里出现 **0 次**（当时只在文末「待验证项」里列了 5 项）。规则：先用脚本对落盘文件按 `^N\. ` 切块统计（含不含 `item?id=`、含不含 `★`、含不含 `[待验证]`），再照数字写表；表格口径栏写明「程序化统计，不是估算」。
+
 ## 验证清单
 
 - [ ] `/tmp/aihot.json` 与 `/tmp/hn_ids.json` 均非空（HTTP 200）
