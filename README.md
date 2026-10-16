@@ -19,6 +19,10 @@ Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-
 | [de-ai-cn](./skills/de-ai-cn/) | 手写（合并两份社区 prompt + 本机实测）/ hand-written, merged from two community prompts + local tests | 中文去 AI 味：七类模式扫描 + 逐项改写 + 机械自检，附可直接粘贴的全局风格块 / Chinese de-AI-writing: seven-pattern scan, per-pattern rewrites, grep self-check, plus a paste-ready global style block |
 | [model-release-deep-research](./skills/model-release-deep-research/) | Hermes 沉淀 / distilled | 新模型发布后的深度可分发调研：六层信息源取证 + 三口径数字对齐 + 去 AI 味落盘 / Deep, distributable research on a new model or AI product release: six-layer source forensics, multi-caliber number reconciliation, de-AI'd write-up |
 | [strategic-coordinator](./skills/strategic-coordinator/) | 手写（改编自 chief-of-staff 角色原型）/ hand-written, adapted from the chief-of-staff archetype | DSH Agent Teams 的 Lead 长线协调角色：常驻班组 + 任务板台账 + 验收闸门 + 救场与停止条件 / Long-horizon Lead role for DSH Agent Teams: standing crew, task-board ledger, acceptance gates, rescue path and stop conditions |
+| [caveman-zh](./skills/caveman-zh/) | 手写（改编自 caveman 技能，按本机中文表达规则重写）/ hand-written, adapted from the caveman skill against local Chinese style rules | 中文简洁模式：答案在前、删客套、保留全部技术事实；触发后整个会话生效 / Terse Chinese response mode: answer first, no pleasantries, every technical fact kept; stays on for the whole session |
+| [aihot](./skills/aihot/) | Hermes 沉淀 / distilled | AI 每日要闻采集：并行拉取 AI HOT + HN API，中文简报入 Obsidian，含 88 条踩坑记录与脚本 / Daily AI news collection: parallel AI HOT + HN API pulls, Chinese digest into Obsidian, with 88 recorded pitfalls and scripts |
+| [dsh-plugin-daily](./skills/dsh-plugin-daily/) | Hermes 沉淀 / distilled | DeepSeek Harness 插件生态每日调研：多信源轮询 + 质量分级 + 简报入 Obsidian / Daily survey of the DeepSeek Harness plugin ecosystem: multi-source polling, quality grading, digest into Obsidian |
+| [trendshift-deep-research](./skills/trendshift-deep-research/) | Hermes 沉淀 / distilled | Trendshift 热门项目深度调研方法论：两层评估 + 10 维度框架 + 6 章报告结构 / Deep-research methodology for Trendshift trending projects: two-layer filter, 10-dimension framework, six-chapter report |
 
 ---
 
@@ -41,6 +45,11 @@ npx skills add xiebaiyuan/xiebaiyuan-skills --skill performance-optimization-car
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill obsidian-docs-link
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill de-ai-cn
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill strategic-coordinator
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill caveman-zh
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill aihot
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill dsh-plugin-daily
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill model-release-deep-research
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill trendshift-deep-research
 ```
 
 或者用 bunx（更快）/ Or use bunx (faster):
@@ -56,6 +65,11 @@ bunx skills add xiebaiyuan/xiebaiyuan-skills --skill performance-optimization-ca
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill obsidian-docs-link
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill de-ai-cn
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill strategic-coordinator
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill caveman-zh
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill aihot
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill dsh-plugin-daily
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill model-release-deep-research
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill trendshift-deep-research
 ```
 
 运行后会弹出交互式界面，用空格选择要安装到的 agent，回车确认。
@@ -186,6 +200,19 @@ SIMD 优化：灰度转换要不要写 NEON 版本？
 Analyze this hot spot from Carmack's perspective
 How would DOD optimize this data structure?
 SIMD: should the grayscale conversion use a NEON version?
+```
+
+### 中文简洁模式 / Terse Chinese Mode
+
+```
+/caveman
+说简短点
+省 token：解释一下这个报错
+```
+
+```
+/caveman
+Say less: explain what this stack trace means
 ```
 
 ---
