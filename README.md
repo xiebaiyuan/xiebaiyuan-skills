@@ -18,7 +18,7 @@ Personal AI Agent Skills repository. Distilled by [Hermes Agent](https://hermes-
 | [obsidian-docs-link](./skills/obsidian-docs-link/) | Claude Code 手写 / hand-written | 创建软链接关联项目文档到 Obsidian Vault / Symlink project docs into your Obsidian vault (creates an `obsidian-docs` symlink) |
 | [de-ai-cn](./skills/de-ai-cn/) | 手写（合并两份社区 prompt + 本机实测）/ hand-written, merged from two community prompts + local tests | 中文去 AI 味：七类模式扫描 + 逐项改写 + 机械自检，附可直接粘贴的全局风格块 / Chinese de-AI-writing: seven-pattern scan, per-pattern rewrites, grep self-check, plus a paste-ready global style block |
 | [model-release-deep-research](./skills/model-release-deep-research/) | Hermes 沉淀 / distilled | 新模型发布后的深度可分发调研：六层信息源取证 + 三口径数字对齐 + 去 AI 味落盘 / Deep, distributable research on a new model or AI product release: six-layer source forensics, multi-caliber number reconciliation, de-AI'd write-up |
-| [squad](./skills/squad/) | 手写（改编自 chief-of-staff 角色原型）/ hand-written, adapted from the chief-of-staff archetype | DSH Agent Teams 的 Lead 长线协调角色：常驻班组 + 任务板台账 + 验收闸门 + 救场与停止条件 / Long-horizon Lead role for DSH Agent Teams: standing crew, task-board ledger, acceptance gates, rescue path and stop conditions |
+| [lead](./skills/lead/) | 手写（改编自 chief-of-staff 角色原型）/ hand-written, adapted from the chief-of-staff archetype | DSH Agent Teams 的 Lead 长线协调角色：常驻班组 + 任务板台账 + 验收闸门 + 救场与停止条件 / Long-horizon Lead role for DSH Agent Teams: standing crew, task-board ledger, acceptance gates, rescue path and stop conditions |
 | [caveman-zh](./skills/caveman-zh/) | 手写（改编自 [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)，按本机中文表达规则重写）/ hand-written, adapted from JuliusBrussee/caveman against local Chinese style rules | 中文简洁模式：答案在前、删客套、保留全部技术事实；触发后整个会话生效 / Terse Chinese response mode: answer first, no pleasantries, every technical fact kept; stays on for the whole session |
 | [aihot](./skills/aihot/) | curator 回收（原 `~/.hermes/skills/.curator_backups/`；方法对齐 [mattpocock/skills](https://github.com/mattpocock/skills) `research`）/ recovered from curator backups, method aligned with mattpocock/skills `research` | AI 每日要闻采集：并行拉取 AI HOT + HN API，中文简报入 Obsidian，含踩坑记录与脚本 / Daily AI news collection: parallel AI HOT + HN API pulls, Chinese digest into Obsidian, with recorded pitfalls and scripts |
 | [dsh-plugin-daily](./skills/dsh-plugin-daily/) | curator 回收（原 `~/.hermes/skills/.curator_backups/`）/ recovered from curator backups | DeepSeek Harness 插件生态每日调研：多信源轮询 + 质量分级 + 简报入 Obsidian / Daily survey of the DeepSeek Harness plugin ecosystem: multi-source polling, quality grading, digest into Obsidian |
@@ -46,7 +46,7 @@ npx skills add xiebaiyuan/xiebaiyuan-skills --skill engineering-cybernetics-for-
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill performance-optimization-carmack-acton
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill obsidian-docs-link
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill de-ai-cn
-npx skills add xiebaiyuan/xiebaiyuan-skills --skill squad
+npx skills add xiebaiyuan/xiebaiyuan-skills --skill lead
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill caveman-zh
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill aihot
 npx skills add xiebaiyuan/xiebaiyuan-skills --skill dsh-plugin-daily
@@ -66,7 +66,7 @@ bunx skills add xiebaiyuan/xiebaiyuan-skills --skill engineering-cybernetics-for
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill performance-optimization-carmack-acton
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill obsidian-docs-link
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill de-ai-cn
-bunx skills add xiebaiyuan/xiebaiyuan-skills --skill squad
+bunx skills add xiebaiyuan/xiebaiyuan-skills --skill lead
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill caveman-zh
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill aihot
 bunx skills add xiebaiyuan/xiebaiyuan-skills --skill dsh-plugin-daily

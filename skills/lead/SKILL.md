@@ -1,5 +1,5 @@
 ---
-name: squad
+name: lead
 description: Lead 的长线协调角色，由人指定进入：带一支常驻 teammate 班组推进目标，定锚、派单、验收闸门与停止条件都有固定规程。
 disable-model-invocation: true
 metadata:
